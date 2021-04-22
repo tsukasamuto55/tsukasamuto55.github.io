@@ -10,5 +10,5 @@
 
 // document.querySelector("span").textContent = lastModified;
 
-const lastModif = new Date(document.lastModified);
+const lastModif = document.lastModified;
 document.querySelector("span").textContent = lastModif;
