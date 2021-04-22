@@ -1,14 +1,16 @@
-// toLocaleDateString
-const options = {
-  weekday: "long",
-  day: "numeric",
-  month: "long",
-  year: "numeric",
-};
+// // // Different way to display the last modified date
+// const options = {
+//   weekday: "long",
+//   day: "numeric",
+//   month: "long",
+//   year: "numeric",
+// };
 
-document.querySelector("span").textContent = new Date().toLocaleDateString(
-  "en-US",
-  options
-);
+// const lastModified = new Date().toLocaleDateString("en-US", options);
 
-`${dayName}, ${todaysdate.getDate()} ${monthName}, ${todaysdate.getFullYear()}`;
+// document.querySelector("span").textContent = lastModified;
+
+const lastModif = new Date(document.lastModified);
+document.querySelector("span").textContent = lastModif;
+
+alert(document.lastModified);
