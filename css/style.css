@@ -47,10 +47,24 @@ nav {
 @media only screen and (max-width: 450px) {
   body {
     margin: 0 auto;
+    display: block;
   }
 
   img {
-    display: none;
+    float: none;
+  }
+
+  h2,
+  img {
+    display: block;
+  }
+
+  h2 {
+    margin-bottom: 15px;
+  }
+
+  img {
+    margin: 0 auto;
   }
 
   h2 {
@@ -60,9 +74,5 @@ nav {
   nav ul li {
     list-style: none;
     margin-left: 25px;
-  }
-
-  footer {
-    text-align: justify;
   }
 }
