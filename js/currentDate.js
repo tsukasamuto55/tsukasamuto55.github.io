@@ -13,6 +13,6 @@
 const lastModif = document.lastModified;
 document.querySelector("#currentDate").textContent = lastModif;
 
-let date = new Date();
-const currnetYear = date.getFullYear();
-document.querySelector("#currentYear").textContent = currnetYear;
+const date = new Date();
+const currentYear = date.getFullYear();
+document.querySelector("#currentYear").textContent = currentYear;
