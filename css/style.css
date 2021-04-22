@@ -43,3 +43,26 @@ nav {
   margin: 0 0 30px 20px;
   line-height: 2;
 }
+
+@media only screen and (max-width: 450px) {
+  body {
+    margin: 0 auto;
+  }
+
+  img {
+    display: none;
+  }
+
+  h2 {
+    width: 90%;
+  }
+
+  nav ul li {
+    list-style: none;
+    margin-left: 25px;
+  }
+
+  footer {
+    text-align: justify;
+  }
+}
