@@ -12,5 +12,3 @@
 
 const lastModif = new Date(document.lastModified);
 document.querySelector("span").textContent = lastModif;
-
-alert(document.lastModified);
