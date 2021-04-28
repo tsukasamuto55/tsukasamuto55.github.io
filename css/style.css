@@ -29,7 +29,7 @@ h2 {
 
 img {
   float: right;
-  margin: -130px 15px -110px 0;
+  margin: -80px 15px -110px 0;
   box-shadow: 2px 2px 15px 3px grey;
   height: 225px;
 }
@@ -61,6 +61,7 @@ footer a {
 
   img {
     float: none;
+    margin: 0 auto;
   }
 
   h2,
@@ -70,10 +71,6 @@ footer a {
 
   h2 {
     margin-bottom: 15px;
-  }
-
-  img {
-    margin: 0 auto;
   }
 
   h2 {
