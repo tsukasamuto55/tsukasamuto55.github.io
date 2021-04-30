@@ -16,7 +16,12 @@ footer {
   padding: 0.2em;
   background-color: #efd2d2;
   color: #000;
-  text-align: center;
+  text-align: left;
+}
+
+header h1,
+header h2 {
+  margin-left: 1rem;
 }
 
 main {
@@ -47,7 +52,8 @@ section {
   border: 0.3em solid #efd2d2;
   margin: 0 0.3em 0.3em 0.3em;
   background-color: #fff;
-  padding: 0.5em;
+  padding: 0.5em 0.5em 1em 0.5em;
+  height: 90%;
 }
 
 section a:hover {
