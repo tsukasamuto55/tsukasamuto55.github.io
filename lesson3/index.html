@@ -4,10 +4,76 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Website Planning Document</title>
+    <meta
+      name="description"
+      content="Website Planning Document for Tsukasa Muto in WWD230 at BYU Idaho"
+    />
+    <title>Website Planning Document | Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Merriweather+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/lesson3/css/small.css" />
+    <link rel="stylesheet" href="/lesson3/css/medium.css" />
+    <link rel="stylesheet" href="/lesson3/css/large.css" />
+    <script src="/lesson2/js/currentDate.js" defer></script>
   </head>
   <body>
-    contents here. Links to other pages such as typography.html.
+    <header>
+      <img src="images/weather-icon-1-2.png" alt="Weather icon" />
+      <h1>Daily Rising Sun</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="/lesson3/index.html" class="active">Home</a></li>
+        <li><a href="/lesson3/target-audience.html">Target Audience</a></li>
+        <li><a href="/lesson3/color-scheme.html">Color Scheme</a></li>
+        <li><a href="/lesson3/typography.html">Typography</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div>
+        <h2>Site name</h2>
+        <p>"<b>Daily Sun Rising</b>"</p>
+      </div>
+      <div>
+        <h2>Site purpose</h2>
+        <p>
+          The purpose of this website is to help people find the information about local
+          weather, news, and events, and to provide them with relaxing moment by showing
+          high quality pictures of various types of weather. The user can use this website
+          to make a plan for an upcoming outside event, to find out about interesting
+          local events and gatherings, and to spoil their eyes with beautiful pictures. It
+          is designed to navigate them to the information they need at ease and bring a
+          sense of community with local focused news and events.
+        </p>
+        <div>
+          <h2>Site logo</h2>
+          <figure>
+            <img
+              id="logo"
+              src="/lesson3/images/weather-icon-1-2.png"
+              alt="Weather icon"
+            />
+          </figure>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <footer>
+        <p>
+          &copy; <span id="currentYear"></span> | Tsukasa Muto | Rexburg, Idaho |
+          <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+        </p>
+        <p id="last_modified">Last Modified: <span id="currentDate"></span></p>
+      </footer>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,35 @@
+@media (min-width: 40em) {
+  header {
+    display: flex;
+  }
+
+  header img {
+    width: 10%;
+  }
+
+  header h1 {
+    align-self: center;
+    margin-left: 2rem;
+  }
+
+  main {
+    text-align: left;
+  }
+
+  nav ul {
+    display: flex;
+    width: 100%;
+  }
+
+  nav ul li {
+    flex-basis: 25%;
+  }
+
+  main img {
+    width: auto;
+  }
+
+  #logo {
+    width: 25%;
+  }
+}
