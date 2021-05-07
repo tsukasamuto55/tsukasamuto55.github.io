@@ -109,6 +109,10 @@ footer a {
   color: #000;
 }
 
+footer a:hover {
+  color: #fff;
+}
+
 footer p:nth-last-of-type(1) {
   color: #ffff00;
 }
