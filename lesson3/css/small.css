@@ -105,3 +105,10 @@ section p {
 /* end of body*/
 
 /* start styling footer*/
+footer a {
+  color: #000;
+}
+
+footer p:nth-last-of-type(1) {
+  color: #ffff00;
+}
