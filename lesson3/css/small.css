@@ -106,11 +106,11 @@ section p {
 
 /* start styling footer*/
 footer a {
-  color: #000;
+  color: #fff;
 }
 
 footer a:hover {
-  color: #fff;
+  color: #ffff00;
 }
 
 footer p:nth-last-of-type(1) {
