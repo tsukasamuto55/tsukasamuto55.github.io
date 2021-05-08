@@ -32,4 +32,12 @@
   #logo {
     width: 25%;
   }
+
+  #color {
+    width: 50%;
+  }
+
+  .color-container {
+    text-align: center;
+  }
 }
