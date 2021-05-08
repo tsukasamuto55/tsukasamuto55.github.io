@@ -40,4 +40,8 @@
   .color-container {
     text-align: center;
   }
+
+  td:nth-child(5n) {
+    display: table-cell;
+  }
 }

@@ -78,6 +78,10 @@ td {
   margin: 0.8rem 0;
 }
 
+td:nth-child(5n) {
+  display: none;
+}
+
 .active {
   background: #ccc;
   color: var(--secondary-color);
@@ -120,6 +124,10 @@ div p {
 
 #color {
   width: 100%;
+}
+
+.color-container {
+  margin-top: 2rem;
 }
 
 /* end of body*/
