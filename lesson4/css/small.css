@@ -69,19 +69,27 @@ nav ul {
   display: block;
 }
 
-nav ul li {
+.xIcon {
+  display: none;
+  cursor: pointer;
+}
+
+nav ul li,
+.xIcon {
   list-style-type: none;
   font-size: 1.2rem;
 }
 
-nav a {
+nav a,
+.xIcon {
   color: var(--text-header);
   text-decoration: none;
   display: block;
   padding: 0.8rem 0; /* 44 min height */
 }
 
-nav a:hover {
+nav a:hover,
+.xIcon:hover {
   background: var(--text-header);
   color: var(--secondary-color);
 }
