@@ -27,8 +27,9 @@
     padding: 0.5rem 1rem;
   }
 
-  main {
-    width: auto;
+  main,
+  footer {
+    max-width: 65em;
   }
 
   main p {
