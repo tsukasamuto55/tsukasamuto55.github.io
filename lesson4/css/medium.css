@@ -1,0 +1,25 @@
+@media (min-width: 38em) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header img {
+    width: 7rem;
+  }
+
+  header h1 {
+    align-self: center;
+    margin-left: 2rem;
+  }
+
+  main {
+    width: 38em;
+  }
+
+  main p {
+    background-color: #586ba6;
+    color: #fff;
+  }
+}
