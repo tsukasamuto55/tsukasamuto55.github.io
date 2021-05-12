@@ -52,3 +52,13 @@ xIcon.addEventListener("click", () => {
   menuBtn.style.display = "block";
   xIcon.style.display = "none";
 });
+
+let banner = document.querySelector(".banner");
+
+function showBanner() {
+  if (currentDay !== "Saturday" || "Sunday") {
+    banner.style.display = "block";
+  }
+}
+
+showBanner();

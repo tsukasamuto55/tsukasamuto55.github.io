@@ -3,17 +3,26 @@
     width: 8rem;
   }
 
-  .navigation {
-    display: flex;
-  }
-
   .navigation li:first-child {
     display: none;
+  }
+
+  ul li.xIcon {
+    display: none;
+    border: 1px solid red;
+  }
+
+  .navigation {
+    display: flex;
   }
 
   .navigation li {
     display: block; /* change state in small view */
     flex: 1 1 auto;
+  }
+
+  .hide {
+    display: none;
   }
 
   nav ul {
