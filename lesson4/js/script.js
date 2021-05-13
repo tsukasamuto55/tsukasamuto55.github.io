@@ -2,7 +2,7 @@ const date = new Date();
 const currentYear = date.getFullYear();
 document.querySelector("#currentYear").textContent = currentYear;
 
-const weekday = [
+const day = [
   "Sunday",
   "Monday",
   "Tuesday",
@@ -27,7 +27,7 @@ const month = [
   "December",
 ];
 
-const currentDay = weekday[date.getDay()];
+const currentDay = day[date.getDay()];
 const currentMonth = month[date.getMonth()];
 const today = `${currentDay}, ${date.getDate()} ${currentMonth} ${currentYear}`;
 document.querySelector("#currentDate").textContent = today;
