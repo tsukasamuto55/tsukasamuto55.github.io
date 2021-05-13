@@ -1,8 +1,4 @@
-const date = new Date();
-const currentYear = date.getFullYear();
-document.querySelector("#currentYear").textContent = currentYear;
-
-const day = [
+const days = [
   "Sunday",
   "Monday",
   "Tuesday",
@@ -12,7 +8,7 @@ const day = [
   "Saturday",
 ];
 
-const month = [
+const months = [
   "January",
   "February",
   "March",
@@ -27,8 +23,12 @@ const month = [
   "December",
 ];
 
-const currentDay = day[date.getDay()];
-const currentMonth = month[date.getMonth()];
+const date = new Date();
+const currentYear = date.getFullYear();
+document.querySelector("#currentYear").textContent = currentYear;
+
+const currentDay = days[date.getDay()];
+const currentMonth = months[date.getMonth()];
 const today = `${currentDay}, ${date.getDate()} ${currentMonth} ${currentYear}`;
 document.querySelector("#currentDate").textContent = today;
 
@@ -51,10 +51,6 @@ menuBtn.addEventListener("click", () => {
 
 let banner = document.querySelector(".banner");
 
-function showBanner() {
-  if (currentDay === "Friday") {
-    banner.style.display = "block";
-  }
-}
-
-showBanner();
+document.addEventListener("DOMContentLoaded", () => {
+  if (currentDay === "Friday") banner.style.display = "block";
+});
