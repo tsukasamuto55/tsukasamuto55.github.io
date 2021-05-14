@@ -52,7 +52,6 @@ closeBtn.addEventListener("click", () => {
 });
 
 let banner = document.querySelector(".banner");
-
 document.addEventListener("DOMContentLoaded", () => {
-  if (currentDay === "Friday") banner.style.display = "block";
+  if (date.getDay() === 5) banner.style.display = "block";
 });
