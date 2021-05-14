@@ -8,7 +8,6 @@
   --text-header: #fff;
 }
 
-/*---  start styling body  --*/
 body {
   font-size: 16px;
   margin: 0 auto;
@@ -34,6 +33,7 @@ footer {
   line-height: 1.3;
 }
 
+/* Styling header starts */
 .banner {
   display: none;
   color: #fff;
