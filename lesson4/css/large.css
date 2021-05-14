@@ -28,11 +28,6 @@
     padding: 0.5rem 1rem;
   }
 
-  main,
-  footer {
-    max-width: 65em;
-  }
-
   main p {
     background-color: #023373;
   }
