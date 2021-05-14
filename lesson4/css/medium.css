@@ -1,4 +1,8 @@
 @media (min-width: 38em) {
+  body {
+    font-size: 20px;
+  }
+
   header {
     display: flex;
     justify-content: center;
@@ -6,7 +10,7 @@
   }
 
   header img {
-    width: 7rem;
+    width: 6rem;
   }
 
   header h1 {

@@ -1,4 +1,8 @@
 @media (min-width: 70em) {
+  body {
+    font-size: 22px;
+  }
+
   header img {
     width: 7rem;
   }
