@@ -44,7 +44,7 @@ footer {
 }
 
 header img {
-  background-color: var(--text-header);
+  background-color: transparent;
   width: 6rem;
 }
 
@@ -59,6 +59,7 @@ header p {
   opacity: 0.7;
 }
 
+/* Styling nav starts */
 nav {
   background-color: var(--secondary-color);
 }
@@ -71,17 +72,16 @@ nav ul {
   display: none;
 }
 
-.navigation li:first-child {
-  display: block;
-}
-
 .responsive li {
   display: block;
 }
 
-.xIcon {
+.responsive .menu {
   display: none;
-  cursor: pointer;
+}
+
+li.menu {
+  display: block;
 }
 
 nav ul li {
@@ -89,8 +89,7 @@ nav ul li {
   font-size: 1.2rem;
 }
 
-nav a,
-.xIcon {
+nav a {
   color: var(--text-header);
   text-decoration: none;
   display: block;
@@ -98,9 +97,15 @@ nav a,
 }
 
 nav a:hover,
-.xIcon:hover {
+#closeBtn:hover {
   background: var(--text-header);
   color: var(--secondary-color);
+  cursor: pointer;
+}
+
+#closeBtn {
+  padding: 0.6rem 0; /* 44 min height */
+  color: #fff;
 }
 
 .active {
@@ -108,6 +113,7 @@ nav a:hover,
   color: var(--secondary-color);
 }
 
+/*  Styling main starts */
 main {
   max-width: 63rem;
   padding: 1rem;

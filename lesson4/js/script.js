@@ -39,15 +39,16 @@ document.querySelector("#currentDate").textContent = today;
 
 let navBar = document.querySelector(".navigation");
 let menuBtn = document.querySelector(".menu");
-// let xIcon = document.querySelector(".xIcon");
+let closeBtn = document.querySelector("#closeBtn");
 
 menuBtn.addEventListener("click", () => {
   navBar.classList.toggle("responsive");
 });
 
-// xIcon.addEventListener("click", () => {
-//   navBar.classList.toggle("responsive");
-// });
+closeBtn.addEventListener("click", () => {
+  navBar.classList.toggle("responsive");
+  closeBtn.classList.toggle("responsive");
+});
 
 let banner = document.querySelector(".banner");
 

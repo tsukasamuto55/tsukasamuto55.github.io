@@ -3,15 +3,6 @@
     width: 8rem;
   }
 
-  .navigation li:first-child {
-    display: none;
-  }
-
-  ul li.xIcon {
-    display: none;
-    border: 1px solid red;
-  }
-
   .navigation {
     display: flex;
   }
@@ -21,7 +12,8 @@
     flex: 1 1 auto;
   }
 
-  .hide {
+  .navigation .menu,
+  #closeBtn {
     display: none;
   }
 
