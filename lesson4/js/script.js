@@ -42,12 +42,11 @@ let menuBtn = document.querySelector(".menu");
 let closeBtn = document.querySelector("#closeBtn");
 
 menuBtn.addEventListener("click", () => {
-  navBar.classList.toggle("responsive");
+  navBar.classList.add("responsive");
 });
 
 closeBtn.addEventListener("click", () => {
-  navBar.classList.toggle("responsive");
-  closeBtn.classList.toggle("responsive");
+  navBar.classList.remove("responsive");
 });
 
 let banner = document.querySelector(".banner");
