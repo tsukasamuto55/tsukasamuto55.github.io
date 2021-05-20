@@ -8,20 +8,6 @@
     margin-bottom: 0;
   }
 
-  .navigation {
-    display: flex;
-  }
-
-  .navigation li {
-    display: block; /* change state in small view */
-    flex: 1 1 auto;
-  }
-
-  .navigation .menu,
-  #closeBtn {
-    display: none;
-  }
-
   nav ul {
     padding-left: 1rem;
   }
@@ -31,29 +17,5 @@
 
   nav a {
     padding: 0.5rem 1rem;
-  }
-  /* 
-  main p {
-    background-color: #023373;
-  } */
-  .hero-container {
-    position: relative;
-  }
-  .hero-img {
-    border: 1px solid black;
-    width: 960px;
-    height: 300px;
-  }
-
-  main div aside.weather-summary {
-    background-color: #023373;
-    opacity: 0.5;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-  }
-
-  .weather-summary p > span {
-    color: yellow;
   }
 }

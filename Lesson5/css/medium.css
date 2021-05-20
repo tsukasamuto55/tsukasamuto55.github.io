@@ -11,10 +11,32 @@
 
   header img {
     width: 6rem;
+    margin-right: 0;
   }
 
   header h1 {
     align-self: center;
     margin-left: 2rem;
+  }
+
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li {
+    display: block; /* change state in small view */
+    flex: 1 1 auto;
+  }
+
+  .navigation .menu,
+  #closeBtn {
+    display: none;
+  }
+
+  .forecast-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 60%;
+    margin: 1.5rem auto;
   }
 }

@@ -26,7 +26,7 @@
   </head>
   <body>
     <div class="banner">
-      Preston Pancakes for kids in the Park! 8:00 a.m. tomorrow Saturday at the city park
+      Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park
       pavilion.
     </div>
     <header>
@@ -52,27 +52,108 @@
 
     <main>
       <h2>Preston, Idaho</h2>
+
       <div class="hero-container">
-        <div class="hero-img"></div>
+        <figure>
+          <img
+            class="hero-img"
+            src="../Lesson5/images/rising-sun-1.png"
+            alt="picture of a town"
+          />
+        </figure>
         <aside class="weather-summary">
           <h3>Weather Summary</h3>
-          <p>
-            Currently: <span>Sunny</span><br />
-            Temperature: <span>75 F</span><br />
-            Humidity: <span>69%</span><br />
-            Precipitation: <span>0 inches</span><br />
-            Wind Speed: <span>5 mph</span>
-          </p>
+          <ul class="weather-summary-labels">
+            <li>Currently:</li>
+            <li>Temperature:</li>
+            <li>Humidity:</li>
+            <li>Precipitation:</li>
+            <li>Wind Speed:</li>
+          </ul>
+          <ul class="weather-summary-info">
+            <li>Sunny</li>
+            <li>76&#8457;</li>
+            <li>35%</li>
+            <li>69%</li>
+            <li>5 mph</li>
+          </ul>
         </aside>
       </div>
-      <div>
-        <h3><em>5Day Forecast</em></h3>
-      </div>
-      <div>
-        <h3><em>Article</em></h3>
-      </div>
-      <div>
-        <h3><em>Contact Information</em></h3>
+
+      <section class="forecast-container">
+        <h3 class="forecast-heading"><em>5Day Forecast</em></h3>
+        <div class="forecast-box">
+          <div class="day">Wed</div>
+          <img src="../Lesson5/images/iconfinder_Sunny_47314.png" alt="Sunny icon" />
+          <div>89&#8457;</div>
+        </div>
+        <div class="forecast-box">
+          <div class="day">Thu</div>
+          <img src="../Lesson5/images/iconfinder_Sunny_47314.png" alt="Sunny icon" />
+          <div>87&#8457;</div>
+        </div>
+        <div class="forecast-box">
+          <div class="day">Fri</div>
+          <img src="../Lesson5/images/iconfinder_Sunny_47314.png" alt="Sunny icon" />
+          <div>78&#8457;</div>
+        </div>
+        <div class="forecast-box">
+          <div class="day">Sat</div>
+          <img src="../Lesson5/images/iconfinder_Sunny_47314.png" alt="Sunny icon" />
+          <div>75&#8457;</div>
+        </div>
+        <div class="forecast-box">
+          <div class="day">Sun</div>
+          <img src="../Lesson5/images/iconfinder_Sunny_47314.png" alt="Sunny icon" />
+          <div>72&#8457;</div>
+        </div>
+      </section>
+
+      <article class="article-container">
+        <figure>
+          <img
+            class="article-pic"
+            src="../Lesson5/images/marius-ciocirlan-buBl7GbbQ9w-unsplash.jpg"
+            alt="a picture of a local event"
+          />
+        </figure>
+        <h3>Pumpkin patch</h3>
+        <h4><em>by Kevin Smith</em></h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam
+          reprehenderit quisquam nam illo. Sequi alias ipsa consequatur distinctio cumque
+          excepturi, dignissimos nesciunt officia blanditiis, sit commodi tempora fugiat
+          placeat!<br /><br />
+
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam
+          reprehenderit quisquam nam illo. Sequi alias ipsa consequatur distinctio cumque
+          excepturi, dignissimos nesciunt officia blanditiis, sit commodi tempora fugiat
+          placeat!<br /><br />
+
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam
+          reprehenderit quisquam nam illo. Sequi alias ipsa consequatur distinctio cumque
+          excepturi, dignissimos nesciunt officia blanditiis, sit commodi tempora fugiat
+          placeat!<br /><br />
+        </p>
+      </article>
+
+      <div class="address-container">
+        <h3>Daily Rising Sun</h3>
+        <iframe
+          class="location-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.773853438026!2d-111.91534443111685!3d42.09974162639047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1621385151157!5m2!1sen!2sus"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+        <div>
+          <a href="https://goo.gl/maps/Fg7XYPravN16BBg38"
+            >&#127968;
+            <span class="address-info">70 W Oneida St, Preston, ID 83263</span></a
+          >
+        </div>
+        <div>&#128222; <span class="address-info">(012)345-6789</span></div>
+        <div>&#9993; <span class="address-info">weather@mail.com</span></div>
       </div>
     </main>
 
