@@ -18,4 +18,16 @@
   nav a {
     padding: 0.5rem 1rem;
   }
+
+  .location-map {
+    margin: 0.5rem;
+  }
+
+  .contact-info {
+    margin-left: 2.5rem;
+  }
+
+  .social {
+    margin: -9rem -1.5rem 0 2rem;
+  }
 }
