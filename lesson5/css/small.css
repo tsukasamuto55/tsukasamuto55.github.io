@@ -43,11 +43,16 @@ footer {
 
 /* Styling header starts */
 
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 header img {
   background-color: transparent;
-  width: 5rem;
-  float: left;
-  margin-right: -5rem;
+  width: 4rem;
+  margin-right: 1rem;
 }
 
 header h1,
