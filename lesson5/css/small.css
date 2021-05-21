@@ -31,17 +31,41 @@ footer {
   line-height: 1.3;
 }
 
-/* Banner info is here */
+/************ Styling banner starts *************/
+
 .banner {
   display: none;
-  color: #fff;
+  color: var(--secondary-color);
   padding: 1rem;
-  font-size: 2rem;
-  text-align: center;
-  background-color: var(--secondary-color);
+  font-size: 1.4rem;
+  font-weight: 800;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f1e767+0,feb645+100;Yellow+3D */
+  background: rgb(241, 231, 103); /* Old browsers */
+  background: -moz-linear-gradient(
+    left,
+    rgba(241, 231, 103, 1) 0%,
+    rgba(254, 182, 69, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    rgba(241, 231, 103, 1) 0%,
+    rgba(254, 182, 69, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgba(241, 231, 103, 1) 0%,
+    rgba(254, 182, 69, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=1 ); /* IE6-9 */
 }
 
-/* Styling header starts */
+.banner p {
+  max-width: 900px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/************ Styling header starts *************/
 
 header {
   display: flex;
@@ -71,7 +95,7 @@ header p {
   opacity: 0.7;
 }
 
-/* Styling nav starts */
+/************ Styling nav starts *************/
 nav {
   background-color: var(--secondary-color);
 }
@@ -122,7 +146,7 @@ nav a:hover,
   color: var(--secondary-color);
 }
 
-/*  Styling main starts */
+/************ Styling main starts *************/
 main {
   max-width: 63rem;
   /* padding: 1rem; */
@@ -281,9 +305,9 @@ article h4 {
   opacity: 0.6;
 }
 
-/* end of body*/
+/************ end of body *************/
 
-/* start styling footer*/
+/************ Styling footer starts *************/
 footer {
   max-width: 65rem;
   margin: 0 auto;
