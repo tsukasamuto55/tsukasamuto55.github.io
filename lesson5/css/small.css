@@ -51,8 +51,8 @@ header {
 
 header img {
   background-color: transparent;
-  width: 4rem;
-  margin-right: 1rem;
+  width: 3rem;
+  margin: 0 0.4rem 0 -1rem;
 }
 
 header h1,
