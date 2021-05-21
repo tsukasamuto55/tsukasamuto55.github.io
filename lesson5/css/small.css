@@ -17,6 +17,7 @@ body {
 
 header,
 footer,
+.banner,
 main h2,
 main h3,
 nav ul li {
@@ -38,7 +39,7 @@ footer {
   color: var(--secondary-color);
   padding: 1rem;
   font-size: 1.4rem;
-  font-weight: 800;
+  font-weight: 900;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f1e767+0,feb645+100;Yellow+3D */
   background: rgb(241, 231, 103); /* Old browsers */
   background: -moz-linear-gradient(
