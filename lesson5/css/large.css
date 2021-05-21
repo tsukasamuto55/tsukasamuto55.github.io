@@ -8,8 +8,9 @@
     margin-bottom: 0;
   }
 
-  nav ul {
-    padding-left: 1rem;
+  .navigation {
+    max-width: 63rem;
+    margin: 0 auto;
   }
   nav ul li {
     flex: 1 1 auto;
