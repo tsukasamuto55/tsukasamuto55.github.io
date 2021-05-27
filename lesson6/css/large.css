@@ -1,0 +1,34 @@
+@media (min-width: 70em) {
+  body {
+    font-size: 22px;
+  }
+
+  header img {
+    width: 7rem;
+    margin-bottom: 0;
+  }
+
+  .navigation {
+    max-width: 63rem;
+    margin: 0 auto;
+  }
+  nav ul li {
+    flex: 1 1 auto;
+  }
+
+  nav a {
+    padding: 0.5rem 1rem;
+  }
+
+  .location-map {
+    margin: 0.5rem;
+  }
+
+  .contact-info {
+    margin-left: 2.5rem;
+  }
+
+  .social {
+    margin: -9rem -1.5rem 0 2rem;
+  }
+}
