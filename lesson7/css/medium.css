@@ -58,4 +58,10 @@
     grid-column: 2/3;
     margin: -9rem -1.5rem 0 -0.5rem;
   }
+
+  /**************** Styling Gallery Page *******************/
+  section.gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
 }

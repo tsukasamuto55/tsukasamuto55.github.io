@@ -31,4 +31,8 @@
   .social {
     margin: -9rem -1.5rem 0 2rem;
   }
+
+  section.gallery-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
