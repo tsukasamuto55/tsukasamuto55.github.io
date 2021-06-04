@@ -2,9 +2,7 @@ const date = new Date();
 const currentYear = date.getFullYear();
 document.querySelector("#currentYear").textContent = currentYear;
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(date);
-
-const today = document.querySelector("#currentDate");
-today.textContent = fulldate;
+document.querySelector("#currentDate").textContent = fulldate;
 
 // Another way to format date, but this is long.
 // const days = [
@@ -61,35 +59,40 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Check if a value of local storage I want to use exits or not.
-if (!localStorage.getItem("currentDate")) {
-  // Store a data of when a user visits this site
-  localStorage.setItem("currentDate", fulldate);
+if (!localStorage.getItem("firstVisit")) {
+  // Store a data of when a user first visits this site
+  localStorage.setItem("firstVisit", fulldate);
 }
 
-let storedDate = localStorage.getItem("currentDate");
+if (!"lastVisit" in localStorage) {
+  // Store a data of when a user last visits this site
+  localStorage.setItem("lastVisit", fulldate);
+}
+
+const firstVisitDate = localStorage.getItem("firstVisit");
+const lastVisitDate = localStorage.getItem("lastVisit");
+const diffFromFirstVisit = getNumberOfDays(firstVisitDate, fulldate);
+const diffNumberOfDays = getNumberOfDays(lastVisitDate, fulldate);
 
 // Get the number of days between two dates //
-function getNumberOfDays(first, second) {
-  const date1 = new Date(first);
-  const date2 = new Date(second);
-  // one day in milliseconds
-  const oneDay = 1000 * 60 * 60 * 24;
-
-  // Calculating the time difference between two dates
-  const diffInTime = date2.getTime() - date1.getTime();
-
+function getNumberOfDays(start, end) {
+  const startDate = new Date(start);
+  const endDate = new Date(end);
+  // Calculating the time difference between two dates in milliseconds
+  const diffInTime = endDate.getTime() - startDate.getTime();
   //  Calculating the no. of days between two dates
-  const diffInDays = Math.round(diffInTime / oneDay);
-
+  const diffInDays = Math.round(diffInTime / (1000 * 3600 * 24));
   return diffInDays;
 }
 
-let diffNumberOfDays = getNumberOfDays(storedDate, fulldate);
-let showNumberOfDays = document.getElementById("different-days");
-console.log(diffNumberOfDays);
+const showNumberOfDays = document.getElementById("different-days");
 
 if (diffNumberOfDays === 1) {
-  showNumberOfDays.textContent = `(You first visited this site on ${storedDate} which was ${diffNumberOfDays} day ago.)`;
+  showNumberOfDays.textContent = `(You first visited this site on ${firstVisitDate} which was ${diffFromFirstVisit} day ago.<br> Your last visit on this site was ${lastVisitDate} which was ${diffNumberOfDays} day ago.)`;
 } else {
-  showNumberOfDays.textContent = `(You first visited this site on ${storedDate} which was ${diffNumberOfDays} days ago.)`;
+  showNumberOfDays.innerHTML =
+    `(You first visited this site on ${firstVisitDate} which was ${diffFromFirstVisit} days ago.<br>` +
+    `Your last visit on this site was ${lastVisitDate} which was ${diffNumberOfDays} days ago.)`;
 }
+
+localStorage.setItem("lastVisit", fulldate);

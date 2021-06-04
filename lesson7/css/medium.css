@@ -44,7 +44,7 @@
     font-size: 1.2rem;
   }
 
-  .contact-container {
+  .contact-box {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
   }
@@ -60,12 +60,14 @@
   }
 
   /**************** Styling Gallery Page *******************/
-  section.gallery-grid {
+  section.gallery-container {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
+    gap: 2rem;
+    margin: 0 4rem;
   }
 
-  section .gallery-container {
+  section .gallery-box {
     width: 22rem;
   }
 }
