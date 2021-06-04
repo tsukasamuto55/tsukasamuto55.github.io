@@ -323,6 +323,7 @@ section.gallery-container {
   display: grid;
   justify-content: center;
   gap: 1.5rem;
+  margin: 0 1rem;
 }
 
 section .gallery-box {
