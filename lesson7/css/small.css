@@ -308,8 +308,8 @@ article h4 {
 /********* Styling Gallery Page ************/
 
 .gallery-heading {
-  margin: 1.5rem 0 0 1rem;
-  text-align: left;
+  margin: 1.5rem 0 1rem 1rem;
+  text-align: center;
   color: var(--secondary-color);
 }
 
@@ -326,7 +326,7 @@ section.gallery-container {
 }
 
 section .gallery-box {
-  width: 26rem;
+  max-width: 400px;
   background: #023373;
   margin-bottom: 1rem;
 }
