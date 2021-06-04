@@ -313,11 +313,10 @@ article h4 {
   color: var(--secondary-color);
 }
 
-div#different-days {
+span#different-days {
   font-size: 0.8rem;
-  margin: 0 0 1rem 1rem;
-  text-align: left;
-  color: var(--secondary-color);
+  margin-top: 0.5rem;
+  color: #ffff00;
 }
 
 section.gallery-container {
@@ -354,16 +353,17 @@ footer {
   text-align: center;
 }
 
+footer p:first-child {
+  margin-bottom: 1rem;
+}
+
 footer a,
 .weather-summary {
   color: var(--text-header);
   text-decoration: none;
 }
 
-footer a:hover {
-  color: #ffff00;
-}
-
-footer p:nth-last-of-type(1) {
+footer a:hover,
+footer p span#currentDate {
   color: #ffff00;
 }

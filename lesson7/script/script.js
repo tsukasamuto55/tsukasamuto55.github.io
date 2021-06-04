@@ -1,8 +1,8 @@
 const date = new Date();
 const currentYear = date.getFullYear();
 document.querySelector("#currentYear").textContent = currentYear;
-const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(date);
-document.querySelector("#currentDate").textContent = fulldate;
+const today = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(date);
+document.querySelector("#currentDate").textContent = today;
 
 // Another way to format date, but this is long.
 // const days = [
@@ -58,21 +58,23 @@ document.addEventListener("DOMContentLoaded", () => {
   if (date.getDay() === 5) banner.style.display = "block";
 });
 
+// week 7 activity: Web Storage API
+const storedDate = new Intl.DateTimeFormat("en-US", { dateStyle: "short" }).format(date);
 // Check if a value of local storage I want to use exits or not.
 if (!localStorage.getItem("firstVisit")) {
   // Store a data of when a user first visits this site
-  localStorage.setItem("firstVisit", fulldate);
+  localStorage.setItem("firstVisit", storedDate);
 }
 
-if (!"lastVisit" in localStorage) {
+if (!localStorage.getItem("lastVisit")) {
   // Store a data of when a user last visits this site
-  localStorage.setItem("lastVisit", fulldate);
+  localStorage.setItem("lastVisit", storedDate);
 }
 
 const firstVisitDate = localStorage.getItem("firstVisit");
 const lastVisitDate = localStorage.getItem("lastVisit");
-const diffFromFirstVisit = getNumberOfDays(firstVisitDate, fulldate);
-const diffNumberOfDays = getNumberOfDays(lastVisitDate, fulldate);
+const diffFromFirstVisit = getNumberOfDays(firstVisitDate, storedDate);
+const diffNumberOfDays = getNumberOfDays(lastVisitDate, storedDate);
 
 // Get the number of days between two dates //
 function getNumberOfDays(start, end) {
@@ -88,11 +90,13 @@ function getNumberOfDays(start, end) {
 const showNumberOfDays = document.getElementById("different-days");
 
 if (diffNumberOfDays === 1) {
-  showNumberOfDays.textContent = `(You first visited this site on ${firstVisitDate} which was ${diffFromFirstVisit} day ago.<br> Your last visit on this site was ${lastVisitDate} which was ${diffNumberOfDays} day ago.)`;
+  showNumberOfDays.textContent =
+    `First visited on ${firstVisitDate} (${diffFromFirstVisit} days ago.)<br>` +
+    `Last visited on ${lastVisitDate} (${diffNumberOfDays} days ago.)`;
 } else {
   showNumberOfDays.innerHTML =
-    `(You first visited this site on ${firstVisitDate} which was ${diffFromFirstVisit} days ago.<br>` +
-    `Your last visit on this site was ${lastVisitDate} which was ${diffNumberOfDays} days ago.)`;
+    `First visited on ${firstVisitDate} (${diffFromFirstVisit} days ago.)<br>` +
+    `Last visited on ${lastVisitDate} (${diffNumberOfDays} days ago.)`;
 }
 
-localStorage.setItem("lastVisit", fulldate);
+localStorage.setItem("lastVisit", storedDate);
