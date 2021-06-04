@@ -34,5 +34,16 @@
 
   section.gallery-grid {
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+  }
+
+  section .gallery-container {
+    box-shadow: 0 0 6px 5px #838282;
+    transition: 0.5s;
+    width: 21rem;
+  }
+
+  section .gallery-container:hover {
+    box-shadow: 0 0 6px 10px #838282;
   }
 }

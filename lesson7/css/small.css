@@ -307,23 +307,23 @@ article h4 {
 
 /********* Styling Gallery Page ************/
 
+main h2 span#different-days {
+  font-size: 0.8rem;
+}
+
 .gallery-heading {
-  margin-top: 1.5rem;
-  margin-bottom: 0;
+  margin: 1.5rem 0 0 1rem;
+  text-align: left;
 }
 
 section.gallery-grid {
-  width: 100%;
   display: grid;
+  justify-content: center;
 }
 
-section.gallery-grid figure {
+section .gallery-container {
+  width: 26rem;
   background: #023373;
-}
-
-.gallery-container {
-  box-shadow: 2px 2px 5px 2px #838282;
-  margin: 1rem;
 }
 
 .gallery-image {
@@ -332,8 +332,10 @@ section.gallery-grid figure {
 
 figcaption {
   color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem;
   text-align: left;
-  padding: 0.8rem 0 0.8rem 1rem;
+  opacity: 0.8;
 }
 
 /************ end of body *************/
