@@ -60,8 +60,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // week 7 activity: Web Storage API
 const storedDate = new Intl.DateTimeFormat("en-US", { dateStyle: "short" }).format(date);
+const showNumberOfDays = document.getElementById("different-days");
+const firstVisitDate = localStorage.getItem("firstVisit");
+const lastVisitDate = localStorage.getItem("lastVisit");
+const diffFromFirstVisit = getNumberOfDays(firstVisitDate, storedDate);
+const diffNumberOfDays = getNumberOfDays(lastVisitDate, storedDate);
 // Check if a value of local storage I want to use exits or not.
 if (!localStorage.getItem("firstVisit")) {
+  showNumberOfDays.innerHTML = "This is your first time to visit this website!";
   // Store a data of when a user first visits this site
   localStorage.setItem("firstVisit", storedDate);
 }
@@ -69,12 +75,11 @@ if (!localStorage.getItem("firstVisit")) {
 if (!localStorage.getItem("lastVisit")) {
   // Store a data of when a user last visits this site
   localStorage.setItem("lastVisit", storedDate);
+} else {
+  showNumberOfDays.innerHTML =
+    `First visited on ${firstVisitDate} (${diffFromFirstVisit} days ago.)<br>` +
+    `Last visited on ${lastVisitDate} (${diffNumberOfDays} days ago.)`;
 }
-
-const firstVisitDate = localStorage.getItem("firstVisit");
-const lastVisitDate = localStorage.getItem("lastVisit");
-const diffFromFirstVisit = getNumberOfDays(firstVisitDate, storedDate);
-const diffNumberOfDays = getNumberOfDays(lastVisitDate, storedDate);
 
 // Get the number of days between two dates //
 function getNumberOfDays(start, end) {
@@ -86,11 +91,5 @@ function getNumberOfDays(start, end) {
   const diffInDays = Math.round(diffInTime / (1000 * 3600 * 24));
   return diffInDays;
 }
-
-const showNumberOfDays = document.getElementById("different-days");
-
-showNumberOfDays.innerHTML =
-  `First visited on ${firstVisitDate} (${diffFromFirstVisit} days ago.)<br>` +
-  `Last visited on ${lastVisitDate} (${diffNumberOfDays} days ago.)`;
 
 localStorage.setItem("lastVisit", storedDate);
