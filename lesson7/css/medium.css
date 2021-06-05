@@ -60,14 +60,14 @@
   }
 
   /**************** Styling Gallery Page *******************/
-  section.gallery-container {
+  div.gallery-container {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     gap: 2rem;
     margin: 0 4rem;
   }
 
-  section .gallery-box {
+  div .gallery-box {
     width: 22rem;
   }
 }

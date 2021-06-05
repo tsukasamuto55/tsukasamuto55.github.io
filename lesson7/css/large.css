@@ -32,18 +32,18 @@
     margin: -9rem -1.5rem 0 2rem;
   }
 
-  section.gallery-container {
+  div.gallery-container {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
   }
 
-  section .gallery-box {
+  div .gallery-box {
     box-shadow: 0 0 6px 5px #838282;
     transition: 0.5s;
     width: 21rem;
   }
 
-  section .gallery-box:hover {
+  div .gallery-box:hover {
     box-shadow: 0 0 6px 10px #838282;
   }
 }
