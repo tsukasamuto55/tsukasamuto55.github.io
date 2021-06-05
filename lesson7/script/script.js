@@ -89,14 +89,8 @@ function getNumberOfDays(start, end) {
 
 const showNumberOfDays = document.getElementById("different-days");
 
-if (diffNumberOfDays === 1) {
-  showNumberOfDays.textContent =
-    `First visited on ${firstVisitDate} (${diffFromFirstVisit} days ago.)<br>` +
-    `Last visited on ${lastVisitDate} (${diffNumberOfDays} days ago.)`;
-} else {
-  showNumberOfDays.innerHTML =
-    `First visited on ${firstVisitDate} (${diffFromFirstVisit} days ago.)<br>` +
-    `Last visited on ${lastVisitDate} (${diffNumberOfDays} days ago.)`;
-}
+showNumberOfDays.innerHTML =
+  `First visited on ${firstVisitDate} (${diffFromFirstVisit} days ago.)<br>` +
+  `Last visited on ${lastVisitDate} (${diffNumberOfDays} days ago.)`;
 
 localStorage.setItem("lastVisit", storedDate);
