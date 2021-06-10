@@ -2,7 +2,7 @@ table {
   font-family: "Ubuntu", sans-serif;
   margin: 15% auto;
   border-collapse: collapse;
-  border: 2px solid #b0c2bd;
+  border: 1px solid #b0c2bd;
   width: 700px;
   font-size: 16px;
   box-shadow: 10px 10px 16px #628ca6;
@@ -17,11 +17,12 @@ thead tr:first-child th {
 
 thead tr:last-child th,
 tbody td {
-  border: 2px solid #b0c2bd;
+  border: 1px solid #b0c2bd;
   padding: 0.5rem 0;
 }
 
 thead tr:last-child th {
+  border: 1px solid #b0c2bd;
   color: #fff;
   font-size: 1.3rem;
   font-weight: bold;
