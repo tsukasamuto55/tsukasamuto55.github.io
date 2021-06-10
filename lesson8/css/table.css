@@ -15,17 +15,17 @@ thead tr:first-child th {
   padding: 0.5rem 0;
 }
 
-thead tr:last-child th {
-  color: #fff;
-  font-weight: 950;
-  background-color: #628ca6;
-}
-
 thead tr:last-child th,
 tbody td {
   border: 2px solid #b0c2bd;
   padding: 0.5rem 0;
-  font-weight: 500;
+}
+
+thead tr:last-child th {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  background-color: #628ca6;
 }
 
 tbody tr:nth-child(odd) {
