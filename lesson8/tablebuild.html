@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Table Build Activity for Wek 8 for Tsukasa Muto in WWD230 at BYU Idaho"
+    />
+    <title>Table build Activity</title>
+    <link rel="shortcut icon" href="../lesson5/images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/table.css" />
+    <script src="script/tableBuild.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="3">ACME Wildwest</th>
+          </tr>
+          <tr>
+            <th>Period</th>
+            <th>Sales</th>
+            <th>Sales Goal</th>
+          </tr>
+          <tbody>
+            <tr>
+              <td>August</td>
+              <td>$3,590</td>
+              <td>$4,000</td>
+            </tr>
+            <tr>
+              <td>September</td>
+              <td>$4,420</td>
+              <td>$5,000</td>
+            </tr>
+            <tr>
+              <td>October</td>
+              <td>$4,870</td>
+              <td>$5,000</td>
+            </tr>
+            <tr>
+              <td>November</td>
+              <td>$8,610</td>
+              <td>$7,500</td>
+            </tr>
+            <tr>
+              <td>Black Friday</td>
+              <td colspan="2">$3,200</td>
+            </tr>
+            <tr>
+              <td>December</td>
+              <td>$6,820</td>
+              <td>$7,500</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Complied <span id="compliedDate"></span> by Tsukasa Muto </td>
+            </tr>
+          </tfoot>
+        </thead>
+      </table>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="currentYear"></span> | Table Build Activity | Tsukasa Muto |
+        <a href="https://tsukasamuto55.github.io/">Assignment Portal</a>
+      </p>
+      <p><span id="currentDate"></span></p>
+      <p><span id="different-days"></span></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Merriweather Sans", "Merriweather"],
+        },
+      });
+    </script>
+  </body>
+</html>
