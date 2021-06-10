@@ -1,9 +1,14 @@
+body {
+  background-color: rgb(187, 240, 234);
+  text-align: center;
+}
+
 table {
   font-family: "Ubuntu", sans-serif;
-  margin: 15% auto;
+  margin: 10rem auto;
   border-collapse: collapse;
   border: 1px solid #b0c2bd;
-  width: 700px;
+  max-width: 700px;
   font-size: 16px;
   box-shadow: 10px 10px 16px #628ca6;
 }
@@ -56,14 +61,14 @@ tfoot td {
   font-weight: bolder;
 }
 
-@media (min-width: 38.01rem) {
+@media (min-width: 42rem) {
   table {
-    width: 60%;
+    width: 80%;
   }
 }
 
-@media (max-width: 38rem) {
+@media (max-width: 42.01rem) {
   table {
-    width: 80%;
+    width: 70%;
   }
 }
