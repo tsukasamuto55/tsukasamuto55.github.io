@@ -71,3 +71,23 @@
     width: 22rem;
   }
 }
+
+/*----------- Styling Form --------------*/
+main.form-main {
+  text-align: left;
+}
+
+form label.top textarea {
+  display: block;
+  max-width: 24rem;
+}
+
+main.thanks-main h2 {
+  margin-top: 5rem;
+  font-size: 1.4rem;
+}
+
+/*----------- Styling Thanks page --------------*/
+main.thanks-main h2 {
+  font-size: 2rem;
+}

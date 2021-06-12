@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Thank you page for Weather site for Tsukasa Muto in WWD230 at BYU Idaho"
+    />
+    <title>Daily Rising Sun | Storm Center</title>
+    <link rel="shortcut icon" href="../lesson5/images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Merriweather+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <script
+      src="https://kit.fontawesome.com/e5fb0b605c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script/script.js" defer></script>
+  </head>
+  <body>
+    <div class="banner">
+      <p>
+        Saturday = Preston Pancakes in the Park!<br />
+        9:00 a.m. Saturday at the city park pavilion.
+      </p>
+    </div>
+    <header>
+      <img src="images/weather-icon.png" alt="Weather icon" />
+      <div>
+        <h1>Daily Rising Sun</h1>
+        <p><em>New day, New ideas</em></p>
+      </div>
+    </header>
+
+    <nav>
+      <ul class="navigation">
+        <li class="menu"><a href="#">&#9776; Menu</a></li>
+        <li id="closeBtn"><b>&#10799; </b> Close</li>
+        <li><a href="#">Home </a></li>
+        <li><a href="../lesson6/preston-6.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="stormcenter.html" class="active">Storm Center</a></li>
+        <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main class="thanks-main">
+      <h2>Thank you for sending your storm report!</h2>
+      <p>This information will benefit our community.</p>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="currentYear"></span> | Daily Rising Sun | Tsukasa Muto |
+        <a href="https://tsukasamuto55.github.io/">Assignment Portal</a>
+      </p>
+      <p><span id="currentDate"></span></p>
+      <p><span id="different-days"></span></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Merriweather Sans", "Merriweather"],
+        },
+      });
+    </script>
+  </body>
+</html>
