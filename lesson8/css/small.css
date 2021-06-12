@@ -424,11 +424,12 @@ form label.top select {
   font-size: 1rem;
   border: solid 1px #444;
   border-radius: 4px;
-  padding: 0.75rem;
+  padding: 1rem;
   color: #333;
   width: 100%;
   max-width: 20rem;
   background-color: hsla(214, 97%, 23%, 0.1);
+  line-height: 1.2;
 }
 
 form label.sbs,
@@ -461,14 +462,14 @@ form input.submitBtn {
 }
 
 form input.submitBtn:hover {
-  background: radial-gradient(hsl(214, 97%, 23%), hsl(214, 97%, 40%));
+  background: radial-gradient(hsl(214, 97%, 23%), hsl(214, 97%, 50%));
 }
 
 form label.top input:required {
-  border: 3px solid #9c2c13;
+  background: hsla(11, 78%, 34%, 0.2);
 }
 form label.top input:required:valid {
-  border: 3px solid #023373;
+  background: hsla(214, 97%, 23%, 0.2);
 }
 
 form label input:focus {
