@@ -424,7 +424,7 @@ form label.top select {
   color: #333;
   width: 100%;
   max-width: 20rem;
-  background-color: hsla(214, 97%, 23%, 0.1);
+  background-color: hsla(214, 97%, 23%, 0.2);
   line-height: 1.2;
 }
 
