@@ -91,3 +91,7 @@ main.thanks-main h2 {
 main.thanks-main h2 {
   font-size: 2rem;
 }
+
+form input.submitBtn {
+  margin: 0 0 2rem 2%;
+}
