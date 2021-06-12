@@ -10,8 +10,8 @@
 
 body {
   font-size: 18px;
-  background: -webkit-linear-gradient(to right, #8fa1d9, #ddd);
-  background: linear-gradient(to right, #8fa1d9, #ddd);
+  background: -webkit-linear-gradient(to left, #8fa1d9, #ddd);
+  background: linear-gradient(to left, #8fa1d9, #ddd);
 }
 
 header,
