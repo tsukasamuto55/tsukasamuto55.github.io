@@ -5,7 +5,7 @@ fetch(requestURL)
   .then((response) => response.json())
   .then((jsonObject) => {
     const prophets = jsonObject["prophets"];
-    for (let i = 0; i < prophets.length; i++) {
+    for (let prophet of prophets) {
       const card = document.createElement("section");
       const h2 = document.createElement("h2");
       const para1 = document.createElement("p");
@@ -13,14 +13,14 @@ fetch(requestURL)
       const para3 = document.createElement("p");
       const img = document.createElement("img");
 
-      h2.textContent = prophets[i].name + " " + prophets[i].lastname;
-      para1.textContent = "Date of Birth: " + prophets[i].birthdate;
-      para2.textContent = "Date of Death: " + prophets[i].death;
-      para3.textContent = "Place of Birth: " + prophets[i].birthplace;
-      img.setAttribute("src", prophets[i].imageurl);
+      h2.textContent = `${prophet.name} ${prophet.lastname}`;
+      para1.textContent = `Date of Birth: ${prophet.birthdate}`;
+      para2.textContent = "Date of Death: " + prophet.death;
+      para3.textContent = "Place of Birth: " + prophet.birthplace;
+      img.setAttribute("src", prophet.imageurl);
       img.setAttribute(
         "alt",
-        prophets[i].name + " " + prophets[i].lastname + "-" + [i + 1]
+        prophet.name + " " + prophet.lastname + "-" + prophet.order
       );
 
       card.appendChild(h2);
