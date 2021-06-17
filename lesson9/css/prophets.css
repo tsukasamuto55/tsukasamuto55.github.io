@@ -40,6 +40,12 @@ div.cards section img {
   box-shadow: 0 0 16px 4px rgb(97, 96, 96);
 }
 
+footer {
+  padding: 0.8rem;
+  background: hsla(230, 100%, 25%, 1);
+  color: #ddd;
+}
+
 @media (min-width: 42rem) {
   body {
     width: 90%;
