@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Storm Center page for Weather site for Tsukasa Muto in WWD230 at BYU Idaho"
+    />
+    <title>Daily Rising Sun | Storm Center</title>
+    <link rel="shortcut icon" href="../lesson5/images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Merriweather+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <script
+      src="https://kit.fontawesome.com/e5fb0b605c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script/script.js" defer></script>
+  </head>
+  <body>
+    <div class="banner">
+      <p>
+        Saturday = Preston Pancakes in the Park!<br />
+        9:00 a.m. Saturday at the city park pavilion.
+      </p>
+    </div>
+    <header>
+      <img src="images/weather-icon.png" alt="Weather icon" />
+      <div>
+        <h1>Daily Rising Sun</h1>
+        <p><em>New day, New ideas</em></p>
+      </div>
+    </header>
+
+    <nav>
+      <ul class="navigation">
+        <li class="menu"><a href="#">&#9776; Menu</a></li>
+        <li id="closeBtn"><b>&#10799; </b> Close</li>
+        <li><a href="index.html">Home </a></li>
+        <li><a href="preston-6.html">Preston</a></li>
+        <li><a href="soda-springs.html">Soda Springs</a></li>
+        <li><a href="fish-haven.html">Fish Haven</a></li>
+        <li><a href="stormcenter.html" class="active">Storm Center</a></li>
+        <li><a href="gallery-7.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main class="form-main">
+      <h2>Report on Storm</h2>
+      <form method="get" action="thanks.html">
+        <fieldset>
+          <legend>Your Information</legend>
+          <label class="top"
+            >Full Name<span style="color: #9c2c13">*</span
+            ><input
+              type="text"
+              name="fullname"
+              pattern="[a-zA-Z -.]{5,}"
+              required
+              autofocus
+          /></label>
+          <label class="top"
+            >Email<span style="color: #9c2c13">*</span
+            ><input type="email" name="email" placeholder="example@gmail.com" required
+          /></label>
+          <label class="top"
+            >Phone<span style="color: #9c2c13">*</span
+            ><input
+              type="tel"
+              name="phone"
+              pattern="(?:(\+\d{1,})[ -]?)?\(?(\d{3})\)?[ -]?(\d{3})[ -]?(\d{4})"
+              placeholder="(012)345-6789"
+              required
+          /></label>
+          <label class="top"
+            >zip code<span style="color: #9c2c13">*</span
+            ><input type="number" name="zip" required
+          /></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Storm Information</legend>
+          <label class="top">Storm Date<input type="date" name="date" /></label>
+          <label class="top"
+            >Storm Type
+            <input list="storm-type" name="storm-type" />
+            <datalist id="storm-type">
+              <option value="Flash Flood"></option>
+              <option value="Hail"></option>
+              <option value="Hurricane"></option>
+              <option value="Thunderstorm"></option>
+              <option value="Tornado"></option>
+            </datalist>
+          </label>
+          <label class="slider"
+            >Storm Severity<input
+              id="storm-slider"
+              type="range"
+              min="1"
+              max="10"
+              value="5" /><span id="storm-output"></span
+          ></label>
+          <label class="top"
+            >Storm Region
+            <select name="storm-region">
+              <option value="" disabled selected>Select Region ...</option>
+              <option value="preston">Preston</option>
+              <option value="soda-spring">Soda Spring</option>
+              <option value="fish-haven">Fish Haven</option>
+            </select>
+          </label>
+          <div>Are you in danger?</div>
+          <label class="sbs"
+            ><input type="radio" name="is-danger" value="yes" /> Yes</label
+          >
+          <label class="sbs"><input type="radio" name="is-danger" value="no" /> No</label>
+          <label class="sbs"
+            ><input class="sbs" type="radio" name="is-danger" value="maybe" />
+            Maybe</label
+          >
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Information</legend>
+          <label class="top"
+            >Please leave us a comment<textarea
+              name="comment"
+              rows="12"
+              cols="40"
+            ></textarea>
+          </label>
+        </fieldset>
+
+        <input class="submitBtn" type="submit" value="Send My Report  " />
+      </form>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="currentYear"></span> | Daily Rising Sun | Tsukasa Muto |
+        <a href="https://tsukasamuto55.github.io/">Assignment Portal</a>
+      </p>
+      <p><span id="currentDate"></span></p>
+      <p><span id="different-days"></span></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Merriweather Sans", "Merriweather"],
+        },
+      });
+    </script>
+  </body>
+</html>

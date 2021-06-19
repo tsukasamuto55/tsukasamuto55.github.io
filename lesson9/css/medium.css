@@ -44,7 +44,7 @@
     font-size: 1.2rem;
   }
 
-  .contact-box {
+  .contact-container {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
   }
@@ -70,28 +70,58 @@
   div .gallery-box {
     width: 22rem;
   }
-}
 
-/*----------- Styling Form --------------*/
-main.form-main {
-  text-align: left;
-}
+  /*----------- Styling Form --------------*/
+  main.form-main {
+    text-align: left;
+  }
 
-form label.top textarea {
-  display: block;
-  max-width: 24rem;
-}
+  form label.top textarea {
+    display: block;
+    max-width: 24rem;
+  }
 
-main.thanks-main h2 {
-  margin-top: 5rem;
-  font-size: 1.4rem;
-}
+  main.thanks-main h2 {
+    margin-top: 5rem;
+    font-size: 1.4rem;
+  }
 
-/*----------- Styling Thanks page --------------*/
-main.thanks-main h2 {
-  font-size: 2rem;
-}
+  /*----------- Styling Thanks page --------------*/
+  main.thanks-main h2 {
+    font-size: 2rem;
+  }
 
-form input.submitBtn {
-  margin: 0 0 2rem 2%;
+  form input.submitBtn {
+    margin: 0 0 2rem 2%;
+  }
+
+  /*----------- Styling Home page --------------*/
+  .home-main .town-containers {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .home-main .town-containers section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .home-main .town-containers #sodaSprings .town-info {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .home-main .town-containers #sodaSprings img {
+    border-radius: 10px 0 0 10px;
+  }
+
+  .town-containers section > img {
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+  }
+
+  .town-article-pic {
+    float: left;
+    margin: 0 1rem;
+  }
 }

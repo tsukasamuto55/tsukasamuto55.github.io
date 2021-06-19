@@ -143,14 +143,14 @@ nav a:hover,
 }
 
 /************ Styling main starts *************/
-main.gallery-main {
+main {
   max-width: 63rem;
   margin: 0 auto;
   text-align: center;
   font-family: "Merriweather", serif;
 }
 
-main.gallery-main h2 {
+main h2 {
   margin: 1rem 0;
 }
 
@@ -168,8 +168,8 @@ section h3 {
   margin: 0 1rem;
 }
 
-.hero-img {
-  max-width: 100%;
+.hero-container .hero-image {
+  max-height: 350px;
 }
 
 .weather-summary {
@@ -492,4 +492,78 @@ main.thanks-main h2 {
 
 main.thanks-main p {
   margin-bottom: 15rem;
+}
+
+/********* Styling Home Page ************/
+.home-main .hero-container {
+  margin: 2rem 1rem 1rem 1rem;
+}
+
+.home-main .town-containers {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.home-main .town-containers a {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0.5rem;
+  width: 100%;
+  text-decoration: none;
+  color: #023373;
+}
+
+.town-containers #sodaSprings {
+  order: -1;
+}
+
+.town-containers #preston {
+  order: -2;
+}
+
+.home-main .town-article-container {
+  margin: 1rem 2rem;
+}
+
+.town-containers section {
+  background-color: var(--background-color);
+  margin-bottom: 1rem;
+  border: 1px solid #555;
+  border-radius: 10px;
+}
+
+.town-containers .town-info {
+  margin: 1.5rem 0;
+}
+
+.town-containers h2 {
+  margin-bottom: 0.4rem;
+  color: #281e7c;
+  text-shadow: 2px 2px 4px #444;
+}
+
+.town-containers .town-info div {
+  font-size: 0.8rem;
+  color: #9e3c0e;
+}
+
+.town-containers section p:first-of-type {
+  margin-top: 1.2rem;
+}
+
+.town-containers section p {
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.town-containers section img {
+  width: 100%;
+  margin-bottom: -0.165rem;
+  border-radius: 0 0 10px 10px;
+}
+
+.town-containers section:hover {
+  box-shadow: 1px 1px 5px 1px #555;
+  transition: ease-in 0.2s;
+  transform: scale(1.01);
 }
