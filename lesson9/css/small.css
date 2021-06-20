@@ -496,7 +496,7 @@ main.thanks-main p {
 
 /********* Styling Home Page ************/
 .home-main .hero-container {
-  margin: 2rem 0 1rem 0;
+  margin: 2rem 0.5rem 1rem 0.5rem;
 }
 
 .home-main .town-containers {
@@ -504,6 +504,7 @@ main.thanks-main p {
   grid-template-columns: 1fr;
   border: 1px solid #555;
   border-radius: 10px;
+  margin: 0 0.5rem;
 }
 
 .home-main .town-containers a {
@@ -521,15 +522,6 @@ main.thanks-main p {
 
 .town-containers #preston {
   order: -2;
-}
-
-.home-main .town-article-container {
-  margin: 1rem 0;
-  border-radius: 10px;
-}
-
-.town-article-container img.town-article-pic {
-  margin-bottom: 0.5rem;
 }
 
 .town-containers section {
@@ -565,12 +557,23 @@ main.thanks-main p {
 
 .town-containers section img {
   width: 100%;
-  margin-bottom: -0.165rem;
   border-radius: 0 0 10px 10px;
+  margin-bottom: -0.2rem;
 }
 
 .town-containers section:hover {
   box-shadow: 1px 1px 5px 1px #555;
   transition: ease-in 0.2s;
   transform: scale(1.01);
+}
+
+.home-main .town-article-container {
+  margin: 1rem 0.5rem;
+  border-radius: 10px;
+}
+
+.town-article-container img.town-article-pic {
+  max-width: 600px;
+  width: 100%;
+  padding: 0.5rem;
 }

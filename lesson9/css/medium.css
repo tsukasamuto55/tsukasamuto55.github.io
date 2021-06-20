@@ -125,4 +125,8 @@
     float: left;
     margin: 0 1rem;
   }
+
+  .town-containers section img {
+    margin-bottom: 0;
+  }
 }
