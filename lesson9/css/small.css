@@ -496,12 +496,14 @@ main.thanks-main p {
 
 /********* Styling Home Page ************/
 .home-main .hero-container {
-  margin: 2rem 1rem 1rem 1rem;
+  margin: 2rem 0 1rem 0;
 }
 
 .home-main .town-containers {
   display: grid;
   grid-template-columns: 1fr;
+  border: 1px solid #555;
+  border-radius: 10px;
 }
 
 .home-main .town-containers a {
@@ -522,7 +524,12 @@ main.thanks-main p {
 }
 
 .home-main .town-article-container {
-  margin: 1rem 2rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+}
+
+.town-article-container img.town-article-pic {
+  margin-bottom: 0.5rem;
 }
 
 .town-containers section {

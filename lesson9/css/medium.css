@@ -104,6 +104,7 @@
   .home-main .town-containers section {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
   }
 
   .home-main .town-containers #sodaSprings .town-info {
