@@ -1,0 +1,132 @@
+@media (min-width: 42em) {
+  body {
+    font-size: 20px;
+  }
+
+  header img {
+    width: 6rem;
+    margin-right: 0;
+  }
+
+  header h1 {
+    align-self: center;
+    margin-left: 2rem;
+  }
+
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li {
+    display: block; /* change state in small view */
+    flex: 1 1 auto;
+  }
+
+  .navigation .menu,
+  #closeBtn {
+    display: none;
+  }
+
+  .forecast-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 80%;
+    margin: 1.5rem auto;
+  }
+
+  .article-pic {
+    width: 40%;
+    float: right;
+    margin: 1.4rem 2rem 0 1rem;
+  }
+
+  article p {
+    font-size: 1.2rem;
+  }
+
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+  }
+
+  .location-map {
+    display: block;
+    margin-right: 2rem;
+  }
+
+  .social {
+    grid-column: 2/3;
+    margin: -9rem -1.5rem 0 -0.5rem;
+  }
+
+  /**************** Styling Gallery Page *******************/
+  div.gallery-container {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 2rem;
+    margin: 0 4rem;
+  }
+
+  div .gallery-box {
+    width: 22rem;
+  }
+
+  /*----------- Styling Form --------------*/
+  main.form-main {
+    text-align: left;
+  }
+
+  form label.top textarea {
+    display: block;
+    max-width: 24rem;
+  }
+
+  main.thanks-main h2 {
+    margin-top: 5rem;
+    font-size: 1.4rem;
+  }
+
+  /*----------- Styling Thanks page --------------*/
+  main.thanks-main h2 {
+    font-size: 2rem;
+  }
+
+  form input.submitBtn {
+    margin: 0 0 2rem 2%;
+  }
+
+  /*----------- Styling Home page --------------*/
+  .home-main .town-containers {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .home-main .town-containers section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .home-main .town-containers #sodaSprings .town-info {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .home-main .town-containers #sodaSprings img {
+    border-radius: 10px 0 0 10px;
+  }
+
+  .town-containers section > img {
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+  }
+
+  .town-article-pic {
+    float: left;
+    margin: 0 1rem;
+  }
+
+  .town-containers section img {
+    margin-bottom: 0;
+  }
+}

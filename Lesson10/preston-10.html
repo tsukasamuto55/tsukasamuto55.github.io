@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Preston page for the weather site project for Tsukasa Muto in WWD230 at BYU Idaho"
+    />
+    <title>Daily Rising Sun | Preston</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Merriweather+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <script
+      src="https://kit.fontawesome.com/e5fb0b605c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/windchill.js" defer></script>
+    <script src="js/weatherapi.js" defer></script>
+  </head>
+  <body>
+    <div class="banner">
+      <p>
+        Saturday = Preston Pancakes in the Park!<br />
+        9:00 a.m. Saturday at the city park pavilion.
+      </p>
+    </div>
+    <header>
+      <img src="images/weather-icon.png" alt="Weather icon" />
+      <div>
+        <h1>Daily Rising Sun</h1>
+        <p><em>New day, New ideas</em></p>
+      </div>
+    </header>
+
+    <nav>
+      <ul class="navigation">
+        <li class="menu"><a href="#">&#9776; Menu</a></li>
+        <li id="closeBtn"><b>&#10799; </b> Close</li>
+        <li><a href="index.html">Home </a></li>
+        <li><a href="preston-10.html" class="active">Preston</a></li>
+        <li><a href="soda-springs.html">Soda Springs</a></li>
+        <li><a href="fish-haven.html">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery-7.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="hero-container">
+        <picture>
+          <img
+            class="hero-image"
+            src="images/preston-hero.jpg"
+            alt="picture of sunny day"
+          />
+        </picture>
+        <aside class="weather-summary">
+          <h3>Weather Summary</h3>
+          <ul>
+            <li class="temp-symbol"><span id="current-temp"></span>&deg;F</li>
+          </ul>
+          <ul class="weather-summary-info">
+            <li id="city-name">Preston</li>
+            <li id="description"></li>
+            <li>
+              Hi &nbsp;<span id="high-temp"></span>&deg;F&nbsp;&nbsp;&nbsp;&nbsp; Lo
+              &nbsp;<span id="low-temp"></span>&deg;F
+            </li>
+          </ul>
+
+          <ul class="weather-summary-labels">
+            <li>Wind Chill:</li>
+            <li>Humidity:</li>
+            <li>Wind Speed:</li>
+          </ul>
+
+          <ul class="weather-summary-info">
+            <li><span class="wind-chill"></span></li>
+            <li><span id="humidity"></span>&percnt;</li>
+            <li><span class="wind-speed"></span>mph</li>
+          </ul>
+        </aside>
+      </div>
+
+      <section class="forecast-container">
+        <h3 class="forecast-heading">
+          Preston 5Day Forecast
+          <span id="openweather"
+            >(Weather information provided by
+            <a href="https://openweathermap.org/">OpenWeather</a>)</span
+          >
+        </h3>
+      </section>
+
+      <article class="article-container">
+        <figure>
+          <img
+            class="article-pic"
+            src="images/article-pic.jpg"
+            alt="a picture of a local event"
+          />
+        </figure>
+        <h3>Pumpkin patch</h3>
+        <h4><em>by Kevin Smith</em></h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam
+          reprehenderit quisquam nam illo. Sequi alias ipsa consequatur distinctio cumque
+          excepturi, dignissimos nesciunt officia blanditiis, sit commodi tempora fugiat
+          placeat!<br /><br />
+
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam
+          reprehenderit quisquam nam illo. Sequi alias ipsa consequatur distinctio cumque
+          excepturi, dignissimos nesciunt officia blanditiis, sit commodi tempora fugiat
+          placeat!<br /><br />
+
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam
+          reprehenderit quisquam nam illo. Sequi alias ipsa consequatur distinctio cumque
+          excepturi, dignissimos nesciunt officia blanditiis, sit commodi tempora fugiat
+          placeat!<br /><br />
+        </p>
+      </article>
+
+      <section class="contact-container">
+        <iframe
+          class="location-map"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d189463.07935818416!2d-111.880325!3d42.099747!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1621554131792!5m2!1sen!2sus"
+          width="450"
+          height="315"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+        <div class="contact-info">
+          <div class="address">
+            <h3>Daily Rising Sun</h3>
+            <div>
+              <i class="fas fa-home"></i>
+              70 W Oneida St<br />
+              Preston, ID 83263
+            </div>
+          </div>
+          <div><i class="fas fa-phone"></i>(012)345-6789</div>
+          <div><i class="fas fa-envelope"></i>dailyrisingsun@mail.com</div>
+        </div>
+        <div class="social">
+          <a href="https://www.instagram.com/"
+            ><img src="images/instagram.png" alt="instagram icon"
+          /></a>
+          <a href="https://www.pinterest.com/"
+            ><img src="images/pinterest.png" alt="pinterest icon"
+          /></a>
+          <a href="https://www.youtube.com/"
+            ><img src="images/iconfinder_YouTube_570623.png" alt="youtube icon"
+          /></a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="currentYear"></span> | Daily Rising Sun | Tsukasa Muto |
+        <a href="https://tsukasamuto55.github.io/">Assignment Portal</a>
+      </p>
+      <p><span id="currentDate"></span></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Merriweather Sans", "Merriweather"],
+        },
+      });
+    </script>
+  </body>
+</html>
