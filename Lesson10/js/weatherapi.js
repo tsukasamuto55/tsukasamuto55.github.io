@@ -5,7 +5,7 @@ const prestonURL =
 fetch(prestonURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    temp = jsObject.main.temp;
+    const temp = jsObject.main.temp;
     document.getElementById("current-temp").textContent = temp.toFixed(0);
 
     const currentWeather = jsObject.weather[0].main;
@@ -23,11 +23,7 @@ fetch(prestonURL)
     const windSpeed = jsObject.wind.speed;
     document.querySelector(".wind-speed").textContent = windSpeed.toFixed(0);
 
-    if (temp <= 50 && windSpeed > 3) {
-      windChillFactor(temp, windSpeed);
-    } else {
-      windChill.textContent = "N/A";
-    }
+    windChillFactor(temp, windSpeed);
   });
 
 // //////// Forecast API ////////////////
