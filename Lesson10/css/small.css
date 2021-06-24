@@ -180,7 +180,8 @@ section h3 {
   position: absolute;
   top: 20px;
   left: 20px;
-  width: 410px;
+  max-width: 400px;
+  width: 90%;
   box-shadow: 2px 0 12px 4px #838282;
   display: grid;
   grid-template-columns: 1fr 1fr;
