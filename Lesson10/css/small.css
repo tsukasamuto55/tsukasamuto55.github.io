@@ -203,10 +203,14 @@ aside.weather-summary h3 {
 
 .weather-summary .temp-symbol,
 #current-temp {
-  font-size: 3rem;
+  font-size: 2.2rem;
   list-style: none;
   text-align: left;
   color: hsla(176, 56%, 55%, 1);
+}
+
+#current-temp {
+  margin-left: 4rem;
 }
 
 aside.weather-summary ul:first-of-type {
@@ -218,7 +222,7 @@ aside.weather-summary ul:first-of-type li {
 }
 
 #city-name {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 
 .weather-summary-labels {
@@ -236,6 +240,7 @@ aside.weather-summary ul:first-of-type li {
 .weather-summary-info {
   list-style: none;
   line-height: 1.4;
+  font-size: 0.8rem;
 }
 
 .forecast-container {

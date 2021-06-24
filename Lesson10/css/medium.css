@@ -38,6 +38,24 @@
     opacity: 0.8;
   }
 
+  .weather-summary .temp-symbol,
+  #current-temp {
+    font-size: 3rem;
+  }
+
+  #current-temp {
+    margin-left: 0;
+  }
+
+  #city-name {
+    font-size: 1.8rem;
+  }
+
+  .weather-summary-labels,
+  .weather-summary-info {
+    font-size: 1rem;
+  }
+
   .forecast-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
