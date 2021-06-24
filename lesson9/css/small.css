@@ -496,7 +496,7 @@ main.thanks-main p {
 
 /********* Styling Home Page ************/
 .home-main .hero-container {
-  margin: 2rem 0.5rem 1rem 0.5rem;
+  margin: 1rem 0;
 }
 
 .home-main .town-containers {
@@ -510,6 +510,7 @@ main.thanks-main p {
 .home-main .town-containers a {
   display: grid;
   grid-template-columns: 1fr;
+  text-align: center;
   padding: 0.5rem;
   width: 100%;
   text-decoration: none;
@@ -533,6 +534,7 @@ main.thanks-main p {
 
 .town-containers .town-info {
   margin: 1.5rem 0;
+  padding-left: 1rem;
 }
 
 .town-containers h2 {
@@ -552,7 +554,15 @@ main.thanks-main p {
 
 .town-containers section p {
   margin-bottom: 0.3rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
+}
+
+.town-containers .town-info li {
+  font-size: 0.8rem;
+  padding: 0.2rem 1rem;
+  color: #281e7c;
+  list-style: none;
+  font-weight: 900;
 }
 
 .town-containers section img {

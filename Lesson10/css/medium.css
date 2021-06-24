@@ -107,6 +107,10 @@
   }
 
   /*----------- Styling Home page --------------*/
+  .home-main .hero-container {
+    margin: 2rem 0.5rem 1rem 0.5rem;
+  }
+
   .home-main .town-containers {
     display: grid;
     grid-template-columns: 1fr;

@@ -31,6 +31,8 @@ fetch(requestURL)
 
       const averageRainFall = document.createElement("p");
 
+      const townEvent = document.createElement("p");
+
       const img = document.createElement("img");
 
       townName.innerHTML = `<bold>${town.name}</bold>`;
@@ -38,23 +40,39 @@ fetch(requestURL)
       yearFounded.textContent = `Year Founded: ${town.yearFounded}`;
       currentPopulation.textContent = `Population: ${town.currentPopulation}`;
       averageRainFall.textContent = `Average Rain Fall: ${town.averageRainfall}`;
+      townEvent.textContent = `Events for this year: `;
 
       if (town.name === "Preston") {
         // Adding an href attribute to each anchor element.
         townLink.setAttribute("href", "preston-6.html");
         appendChild();
+        eventList();
       }
 
       if (town.name === "Soda Springs") {
         // Adding an href attribute to each anchor element.
         townLink.setAttribute("href", "soda-springs.html");
         appendChild();
+        eventList();
       }
 
       if (town.name === "Fish Haven") {
         // Adding an href attribute to each anchor element.
         townLink.setAttribute("href", "fish-haven.html");
         appendChild();
+        eventList();
+      }
+
+      function eventList() {
+        const events = town.events;
+        const eventList = document.createElement("ul");
+
+        for (let event of events) {
+          const eventName = document.createElement("li");
+          eventName.textContent = event;
+          eventList.appendChild(eventName);
+        }
+        townInfo.appendChild(eventList);
       }
 
       function appendChild() {
@@ -67,6 +85,7 @@ fetch(requestURL)
         townInfo.appendChild(yearFounded);
         townInfo.appendChild(currentPopulation);
         townInfo.appendChild(averageRainFall);
+        townInfo.appendChild(townEvent);
         card.appendChild(img);
 
         // adding all elements above to each anchor element so that you can click it to jump to the designated town page.

@@ -57,6 +57,21 @@
     display: block;
   }
 
+  .home-main .town-containers a {
+    text-align: left;
+  }
+
+  .town-containers .town-info li {
+    text-align: left;
+    font-size: 0.8rem;
+    padding: 0.2rem 1rem;
+  }
+
+  #preston section .town-info,
+  #sodaSprings section .town-info {
+    margin-bottom: 45px;
+  }
+
   .town-containers section > img,
   .home-main .town-containers #sodaSprings img {
     height: auto;
