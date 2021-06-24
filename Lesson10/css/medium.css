@@ -27,6 +27,17 @@
     display: none;
   }
 
+  .hero-container .hero-image {
+    display: block;
+  }
+
+  .weather-summary {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    opacity: 0.8;
+  }
+
   .forecast-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
