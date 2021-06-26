@@ -63,10 +63,20 @@
     margin: 1.5rem auto;
   }
 
-  .article-pic {
-    width: 40%;
-    float: right;
+  #news-heading {
+    text-align: left;
+  }
+
+  .article-img {
+    width: 30%;
+    float: left;
     margin: 1.4rem 2rem 0 1rem;
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
   }
 
   article p {

@@ -31,6 +31,7 @@
     <script src="js/localStorage.js" defer></script>
     <script src="js/windchill.js" defer></script>
     <script src="js/prestonWeatherAPI.js" defer></script>
+    <script src="js/prestonNewsAPI.js" defer></script>
     <script src="js/countdown.js" defer></script>
   </head>
   <body>
@@ -103,38 +104,21 @@
           Preston 5 Day Forecast
           <span id="openweather"
             >(Weather information provided by
-            <a href="https://openweathermap.org/">OpenWeather</a>)</span
+            <a href="https://openweathermap.org/" target="_blank">OpenWeather</a>)</span
           >
         </h3>
       </section>
 
-      <article class="article-container">
-        <figure>
-          <img
-            class="article-pic"
-            src="images/article-pic.jpg"
-            alt="a picture of a local event"
-          />
-        </figure>
-        <h3>Pumpkin patch</h3>
-        <h4><em>by Kevin Smith</em></h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam
-          reprehenderit quisquam nam illo. Sequi alias ipsa consequatur distinctio cumque
-          excepturi, dignissimos nesciunt officia blanditiis, sit commodi tempora fugiat
-          placeat!<br /><br />
-
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam
-          reprehenderit quisquam nam illo. Sequi alias ipsa consequatur distinctio cumque
-          excepturi, dignissimos nesciunt officia blanditiis, sit commodi tempora fugiat
-          placeat!<br /><br />
-
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam
-          reprehenderit quisquam nam illo. Sequi alias ipsa consequatur distinctio cumque
-          excepturi, dignissimos nesciunt officia blanditiis, sit commodi tempora fugiat
-          placeat!<br /><br />
-        </p>
-      </article>
+      <section>
+        <h3 id="news-heading">
+          Latest News
+          <span id="news-api"
+            >(News information provided by
+            <a href="https://newsapi.org/" target="_blank">News API</a>)</span
+          >
+        </h3>
+        <section class="article-container"></section>
+      </section>
 
       <section class="contact-container">
         <iframe
