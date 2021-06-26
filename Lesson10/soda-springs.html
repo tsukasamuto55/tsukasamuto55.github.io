@@ -29,6 +29,7 @@
     <script src="js/script.js" defer></script>
     <script src="js/windchill.js" defer></script>
     <script src="js/sodaWeatherAPI.js" defer></script>
+    <script src="js/sodaNewsAPI.js"></script>
   </head>
   <body>
     <header>
@@ -99,33 +100,16 @@
         </h3>
       </section>
 
-      <article class="article-container">
-        <figure>
-          <img
-            class="article-pic"
-            src="images/article-pic.jpg"
-            alt="a picture of a local event"
-          />
-        </figure>
-        <h3>Pumpkin patch</h3>
-        <h4><em>by Kevin Smith</em></h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam
-          reprehenderit quisquam nam illo. Sequi alias ipsa consequatur distinctio cumque
-          excepturi, dignissimos nesciunt officia blanditiis, sit commodi tempora fugiat
-          placeat!<br /><br />
-
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam
-          reprehenderit quisquam nam illo. Sequi alias ipsa consequatur distinctio cumque
-          excepturi, dignissimos nesciunt officia blanditiis, sit commodi tempora fugiat
-          placeat!<br /><br />
-
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam
-          reprehenderit quisquam nam illo. Sequi alias ipsa consequatur distinctio cumque
-          excepturi, dignissimos nesciunt officia blanditiis, sit commodi tempora fugiat
-          placeat!<br /><br />
-        </p>
-      </article>
+      <section>
+        <h3 id="news-heading">
+          Latest News
+          <span id="news-api"
+            >(News information provided by
+            <a href="https://newsapi.org/" target="_blank">News API</a>)</span
+          >
+        </h3>
+        <section class="article-container"></section>
+      </section>
 
       <section class="contact-container">
         <iframe
