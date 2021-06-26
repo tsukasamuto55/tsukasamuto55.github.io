@@ -3,7 +3,7 @@ const url = `https://newsapi.org/v2/everything?q=idaho+('soda'+'springs')&sortBy
 fetch(url)
   .then((response) => response.json())
   .then((data) => {
-    const articleInfo = data.articles[0];
+    const articleInfo = data.articles[1];
 
     const articleContainer = document.querySelector(".article-container");
 
