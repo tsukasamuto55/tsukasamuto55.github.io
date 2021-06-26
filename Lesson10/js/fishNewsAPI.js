@@ -3,7 +3,7 @@ const url = `https://newsapi.org/v2/everything?q=idaho+("fish"+"haven")&sortBy=p
 fetch(url)
   .then((response) => response.json())
   .then((data) => {
-    const articleInfo = data.articles[1];
+    const articleInfo = data.articles[0];
 
     const articleContainer = document.querySelector(".article-container");
 
