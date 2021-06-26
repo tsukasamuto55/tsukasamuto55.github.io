@@ -1,4 +1,4 @@
-const url = `https://newsapi.org/v2/everything?q=idaho+('soda'+'springs')&from=${today}&sortBy=popularity&apiKey=74dab407fa3042b79355cb6bb5d85ea2`;
+const url = `https://newsapi.org/v2/everything?q=idaho+('soda'+'springs')&sortBy=popularity&apiKey=74dab407fa3042b79355cb6bb5d85ea2`;
 
 fetch(url)
   .then((response) => response.json())
