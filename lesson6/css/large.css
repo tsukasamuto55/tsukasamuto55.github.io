@@ -1,4 +1,4 @@
-@media (min-width: 70em) {
+@media (min-width: 1500px) {
   body {
     font-size: 22px;
   }
@@ -9,7 +9,7 @@
   }
 
   .navigation {
-    max-width: 63rem;
+    max-width: 70em;
     margin: 0 auto;
   }
   nav ul li {

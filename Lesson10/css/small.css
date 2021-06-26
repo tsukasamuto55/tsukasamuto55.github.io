@@ -278,10 +278,6 @@ aside.weather-summary ul:first-of-type li {
   font-family: "Merriweather Sans", sans-serif;
 }
 
-.forecast-box img {
-  width: 100px;
-}
-
 div.day {
   color: var(--text-header);
   border-bottom: 1px solid #858383;

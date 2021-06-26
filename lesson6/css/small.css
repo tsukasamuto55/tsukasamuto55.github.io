@@ -127,8 +127,8 @@ nav a {
 
 nav a:hover,
 #closeBtn:hover {
-  background: var(--text-header);
-  color: var(--secondary-color);
+  text-decoration: underline;
+  /* color: var(--secondary-color); */
   cursor: pointer;
 }
 
@@ -140,6 +140,54 @@ nav a:hover,
 .active {
   background: #ccc;
   color: var(--secondary-color);
+}
+
+/* ********** Styling search bar ****************/
+button {
+  margin-left: -5px;
+  background-color: lightslategray;
+  border: none;
+  padding: 0.5rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.wrapper {
+  max-width: 500px;
+  width: 100%;
+  background-color: #fff;
+  /* border-radius: 24px; */
+  margin: 0 auto;
+}
+
+.wrapper:hover {
+  box-shadow: 0 0 8px 2px #ddd;
+}
+
+.search-box {
+  display: flex;
+  padding: 0.5rem;
+}
+
+.search-btn {
+  align-items: center;
+  padding: 0 0.4rem 0 0.4rem;
+  background-color: transparent;
+}
+
+.search-btn:hover {
+  cursor: pointer;
+}
+
+.input-box {
+  max-width: 500px;
+  width: 90%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 0.9rem;
 }
 
 /************ Styling main starts *************/
@@ -237,6 +285,20 @@ div.day {
 div p {
   margin-bottom: 2.2rem;
   line-height: 1.4;
+}
+
+.article-image {
+  max-width: 500px;
+  width: 80%;
+  margin: 1rem 0 0 1rem;
+  float: left;
+  margin: 1rem;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 article {

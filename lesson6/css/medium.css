@@ -1,4 +1,4 @@
-@media (min-width: 38em) {
+@media (min-width: 1105px) {
   body {
     font-size: 20px;
   }
@@ -19,7 +19,7 @@
 
   .navigation li {
     display: block; /* change state in small view */
-    flex: 1 1 auto;
+    flex: 1 1 100%;
   }
 
   .navigation .menu,

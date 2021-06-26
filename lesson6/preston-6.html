@@ -28,6 +28,7 @@
     ></script>
     <script src="script/script.js" defer></script>
     <script src="script/windchill.js" defer></script>
+    <script src="script/newsAPItest.js" defer></script>
   </head>
   <body>
     <div class="banner">
@@ -48,6 +49,16 @@
       <ul class="navigation">
         <li class="menu"><a href="#">&#9776; Menu</a></li>
         <li id="closeBtn"><b>&#10799; </b> Close</li>
+        <li>
+          <form class="wrapper">
+            <div class="search-box">
+              <button type="submit" class="search-btn">
+                <i class="fas fa-search"></i>
+              </button>
+              <input type="input" class="input-box" placeholder="Search News..." />
+            </div>
+          </form>
+        </li>
         <li><a href="#">Home </a></li>
         <li><a href="preston-6.html" class="active">Preston</a></li>
         <li><a href="#">Soda Springs</a></li>
@@ -112,6 +123,15 @@
           <img src="images/iconfinder_Sunny_47314.png" alt="Sunny icon" />
           <div>72&#8457;</div>
         </div>
+      </section>
+
+      <section class="anews-api-container">
+        <article class="article-box clearfix">
+          <h3 class="title"></h3>
+          <h4 class="author"></h4>
+          <img class="article-image" src="" alt="" />
+          <p class="content"></p>
+        </article>
       </section>
 
       <article class="article-container">

@@ -50,9 +50,9 @@ fetch(prestonForecastURL)
         const image = document.createElement("img");
         image.setAttribute(
           "src",
-          "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png"
+          "http://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png"
         );
-        image.setAttribute("alt", "The weather icon");
+        image.setAttribute("alt", data.weather[0].description);
         forecastBox.appendChild(image);
 
         const forecastTemp = document.createElement("div");
