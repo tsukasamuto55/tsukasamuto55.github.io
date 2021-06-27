@@ -254,12 +254,14 @@ aside.weather-summary ul:first-of-type li {
 }
 
 #openweather,
-#news-api {
+#news-api,
+#news-source {
   font-size: 0.8rem;
 }
 
 #openweather a,
 #news-api a,
+#news-source a,
 article .headline a {
   text-decoration: none;
   color: #023373;
@@ -331,7 +333,7 @@ article .author {
 }
 
 article .headline {
-  line-height: ;
+  line-height: 1.8;
 }
 
 .contact-container {
@@ -646,9 +648,12 @@ main.thanks-main p {
   transform: scale(1.01);
 }
 
-.home-main .town-article-container {
+.town-article-container {
   margin: 1rem 0.5rem;
   border-radius: 10px;
+  border: 1px solid #555;
+  border-radius: 10px;
+  padding: 1rem;
 }
 
 .town-article-container img.town-article-pic {
