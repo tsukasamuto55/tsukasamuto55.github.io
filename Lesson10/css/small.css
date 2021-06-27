@@ -305,7 +305,7 @@ div p {
 
 .article-container {
   border: 1px solid #858383;
-  padding: 1.5rem 0 2rem 1rem;
+  padding: 0 1rem;
   margin: 2rem 1rem;
   font-family: "Merriweather", serif;
 }
@@ -331,7 +331,7 @@ article .author {
 }
 
 article .headline {
-  line-height: 1.4;
+  line-height: ;
 }
 
 .contact-container {
