@@ -5,6 +5,8 @@ fetch(url)
   .then((data) => {
     const articleInfo = data.articles[0];
 
+    console.log(articleInfo);
+
     const articleContainer = document.querySelector(".article-container");
 
     const articleBox = document.createElement("article");
