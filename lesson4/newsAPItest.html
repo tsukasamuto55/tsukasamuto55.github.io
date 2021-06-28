@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News API test site</title>
+
+    <script
+      src="https://kit.fontawesome.com/e5fb0b605c.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <style>
+      body {
+        background-color: lightskyblue;
+      }
+      article img {
+        max-width: 400px;
+        width: 100%;
+        margin: 1rem 0 0 1rem;
+      }
+
+      button {
+        margin-left: -5px;
+        background-color: lightslategray;
+        border: none;
+        padding: 0.5rem;
+      }
+
+      button:hover {
+        cursor: pointer;
+      }
+
+      .wrapper {
+        max-width: 400px;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 24px;
+      }
+
+      .wrapper:hover {
+        box-shadow: 0 0 8px 2px #ddd;
+      }
+
+      .search-box {
+        display: flex;
+        padding: 0.5rem;
+      }
+
+      .search-btn {
+        align-items: center;
+        padding: 0 0.4rem 0 0.4rem;
+        background-color: transparent;
+      }
+
+      .search-btn:hover {
+        cursor: pointer;
+      }
+
+      .input-box {
+        max-width: 400px;
+        width: 90%;
+        background-color: transparent;
+        outline: none;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="wrapper">
+      <div class="search-box">
+        <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+        <input type="input" class="input-box" placeholder="Search News..." />
+      </div>
+    </form>
+
+    <section class="article-container">
+      <article class="article-box">
+        <h3 class="title"></h3>
+        <h4 class="author"></h4>
+        <img class="article-img" src="" alt="" />
+        <p class="content"></p>
+      </article>
+    </section>
+    <script>
+      const searchBtn = document.querySelector(".search-btn");
+      const input = document.querySelector(".input-box");
+      const articleContainer = document.querySelector(".article-container");
+
+      searchBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        apiKey = "74dab407fa3042b79355cb6bb5d85ea2";
+
+        let keyword = input.value;
+        input.value = "";
+
+        window.url = `https://newsapi.org/v2/everything?q=${keyword.toLowerCase()}&sortBy=publishedAt&apiKey=${apiKey}`;
+
+        fetch(url)
+          .then((response) => response.json())
+          .then((data) => {
+            const articleInfo = data.articles[0];
+
+            const title = document.querySelector(".title");
+            title.textContent = articleInfo.title;
+
+            const author = document.querySelector(".author");
+            author.textContent = "By " + articleInfo.author;
+
+            const articleContent = document.querySelector(".content");
+            articleContent.innerHTML = `<a href='${articleInfo.url}' target='_blank'>... continue to read.</a>`;
+
+            const image = document.querySelector(".article-img");
+            image.setAttribute("src", articleInfo.urlToImage);
+            image.setAttribute("alt", articleInfo.description);
+
+            localStorage.setItem("currentSite", url);
+          });
+      });
+    </script>
+  </body>
+</html>
