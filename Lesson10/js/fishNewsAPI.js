@@ -1,4 +1,6 @@
-const url = `https://newsapi.org/v2/everything?q=idaho+("fish"+"haven")&sortBy=popularity&apiKey=74dab407fa3042b79355cb6bb5d85ea2`;
+const newsapiKey = "74dab407fa3042b79355cb6bb5d85ea2";
+
+const url = `https://newsapi.org/v2/everything?q=idaho+("fish"+"haven")&sortBy=popularity&apiKey=${newsapiKey}`;
 
 fetch(url)
   .then((response) => response.json())
