@@ -29,6 +29,7 @@
     <script src="js/script.js" defer></script>
     <script src="js/town.js" defer></script>
     <script src="js/localStorage.js" defer></script>
+    <script src="js/headlines.js" defer></script>
   </head>
   <body>
     <header>
@@ -61,36 +62,15 @@
 
       <div class="town-containers"></div>
 
-      <article class="town-article-container">
-        <figure>
-          <img
-            class="town-article-pic"
-            src="images/news-photo.jpg"
-            alt="a picture of a local event"
-          />
-        </figure>
-        <h3 class="title">
-          High police presence in Lyon, France, during the 25th weekend of the yellow
-          vests movement.
+      <section>
+        <h3 id="home-news-heading">
+          Latest News
+          <span id="news-source"
+            >(news is provided by <a href="https://gnews.io/">GNews API)</a></span
+          >
         </h3>
-        <h4 class="author"><em>by Emily Wilcken</em></h4>
-        <p class="headline">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam
-          reprehenderit quisquam nam illo. Sequi alias ipsa consequatur distinctio cumque
-          excepturi, dignissimos nesciunt officia blanditiis, sit commodi tempora fugiat
-          placeat!<br /><br />
-
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam
-          reprehenderit quisquam nam illo. Sequi alias ipsa consequatur distinctio cumque
-          excepturi, dignissimos nesciunt officia blanditiis, sit commodi tempora fugiat
-          placeat!<br /><br />
-
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aperiam
-          reprehenderit quisquam nam illo. Sequi alias ipsa consequatur distinctio cumque
-          excepturi, dignissimos nesciunt officia blanditiis, sit commodi tempora fugiat
-          placeat!<br /><br />
-        </p>
-      </article>
+        <article class="home-article-container"></article>
+      </section>
 
       <section class="contact-container">
         <iframe

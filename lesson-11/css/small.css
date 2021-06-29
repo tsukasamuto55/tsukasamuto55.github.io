@@ -297,7 +297,7 @@ div p {
   line-height: 1.4;
 }
 
-/******** Styling News Article starts below *******/
+/******** Styling News Article for each town starts below *******/
 #news-heading {
   text-align: center;
   font-family: "Merriweather Sans", sans-serif;
@@ -305,6 +305,7 @@ div p {
   text-shadow: 2px 2px 4px #666;
 }
 
+.home-article-container,
 .article-container {
   border: 1px solid #858383;
   padding: 0 1rem;
@@ -312,6 +313,7 @@ div p {
   font-family: "Merriweather", serif;
 }
 
+.home-article-img,
 .article-img {
   width: 85%;
   box-shadow: 0 0 10px 5px #838282;
@@ -334,6 +336,45 @@ article .author {
 
 article .headline {
   line-height: 1.8;
+}
+
+/********** Articles in Home Page ***********/
+.home-article-box {
+  display: grid;
+}
+
+.home-article-title {
+  grid-template-rows: 2;
+}
+
+.home-article-img {
+  width: 95%;
+}
+
+article .home-article-title {
+  text-align: left;
+  font-size: 1rem;
+  padding-top: 1rem;
+  grid-row: 1/2;
+}
+
+article .home-headline {
+  font-size: 0.8rem;
+  text-align: left;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+#home-news-heading {
+  margin: 2rem 0 -2rem 1rem;
+}
+
+.home-article-container .home-article-box:first-child {
+  margin-top: 1rem;
+}
+
+.home-article-container .home-article-box:last-child {
+  margin-bottom: 2rem;
 }
 
 /******** Styling event lists starts*********/
