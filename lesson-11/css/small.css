@@ -344,7 +344,7 @@ article .headline {
 }
 
 .home-article-title {
-  grid-template-rows: 2;
+  grid-row: 2;
 }
 
 .home-article-img {
@@ -363,6 +363,11 @@ article .home-headline {
   text-align: left;
   line-height: 1.8;
   margin-bottom: 1.5rem;
+}
+
+article .home-headline a {
+  text-decoration: none;
+  color: #0b088d;
 }
 
 #home-news-heading {
