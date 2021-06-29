@@ -83,6 +83,10 @@
     font-size: 1.2rem;
   }
 
+  .event-container {
+    width: 60%;
+  }
+
   .contact-container {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
