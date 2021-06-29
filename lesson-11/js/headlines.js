@@ -4,7 +4,7 @@ const url = `https://gnews.io/api/v4/search?q=idaho&from=2021-06-01&token=${news
 fetch(url)
   .then((response) => response.json())
   .then((data) => {
-    for (i = 0; i < 5; i++) {
+    for (i = 0; i < 3; i++) {
       const articleInfo = data.articles[i + 1];
 
       const articleContainer = document.querySelector(".home-article-container");
