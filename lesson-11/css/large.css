@@ -40,7 +40,7 @@
   div .gallery-box {
     box-shadow: 0 0 6px 5px #838282;
     transition: 0.5s;
-    width: 21rem;
+    width: 25rem;
   }
 
   div .gallery-box:hover {
