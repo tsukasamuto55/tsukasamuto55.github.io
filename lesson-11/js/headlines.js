@@ -16,8 +16,6 @@ fetch(url)
       image.setAttribute("class", "home-article-img");
       image.setAttribute("src", articleInfo.image);
       image.setAttribute("alt", articleInfo.description);
-      image.setAttribute("width", "235");
-      image.setAttribute("height", "160");
 
       const title = document.createElement("h3");
       title.setAttribute("class", "home-article-title");
