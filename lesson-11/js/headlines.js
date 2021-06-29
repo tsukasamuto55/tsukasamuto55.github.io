@@ -6,7 +6,7 @@ fetch(url)
   .then((response) => response.json())
   .then((data) => {
     for (i = 0; i < 3; i++) {
-      const articleInfo = data.articles[i + 1];
+      const articleInfo = data.articles[i];
 
       const articleContainer = document.querySelector(".home-article-container");
 
