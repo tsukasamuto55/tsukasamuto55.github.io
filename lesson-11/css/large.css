@@ -1,0 +1,81 @@
+@media (min-width: 70em) {
+  body {
+    font-size: 22px;
+  }
+
+  header img {
+    width: 7rem;
+    margin-bottom: 0;
+  }
+
+  .navigation {
+    max-width: 63rem;
+    margin: 0 auto;
+  }
+  nav ul li {
+    flex: 1 1 auto;
+  }
+
+  nav a {
+    padding: 0.5rem 1rem;
+  }
+
+  .location-map {
+    margin: 0.5rem;
+  }
+
+  .contact-info {
+    margin-left: 2.5rem;
+  }
+
+  .social {
+    margin: -9rem -1.5rem 0 2rem;
+  }
+
+  div.gallery-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+
+  div .gallery-box {
+    box-shadow: 0 0 6px 5px #838282;
+    transition: 0.5s;
+    width: 21rem;
+  }
+
+  div .gallery-box:hover {
+    box-shadow: 0 0 6px 10px #838282;
+  }
+
+  /*----------- Styling Home page --------------*/
+  .home-main .town-containers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .home-main .town-containers a > section {
+    display: block;
+  }
+
+  .home-main .town-containers a {
+    text-align: left;
+  }
+
+  .town-containers .town-info li {
+    text-align: left;
+    font-size: 0.8rem;
+    padding: 0.2rem 1rem;
+  }
+
+  #preston section .town-info,
+  #sodaSprings section .town-info {
+    margin-bottom: 45px;
+  }
+
+  .town-containers section > img,
+  .home-main .town-containers #sodaSprings img {
+    height: auto;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: -0.3rem;
+  }
+}

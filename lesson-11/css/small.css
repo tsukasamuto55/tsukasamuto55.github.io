@@ -1,0 +1,663 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --primary-color: #586ba6; /* blue */
+  --secondary-color: #023373; /* dark blue */
+  --background-color: #8fa1d9; /* background color of body, light blue */
+  --text-header: #fff;
+}
+
+body {
+  font-size: 18px;
+  background: -webkit-linear-gradient(to left, #8fa1d9, #ddd);
+  background: linear-gradient(to left, #8fa1d9, #ddd);
+}
+
+header,
+footer,
+main h2,
+main h3,
+nav ul li {
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+header,
+footer {
+  background-color: var(--primary-color);
+  color: var(--text-header);
+  padding: 1rem;
+  line-height: 1.3;
+}
+
+/************ Styling banner starts *************/
+
+.banner {
+  display: none;
+  color: var(--secondary-color);
+  font-family: "Merriweather", serif;
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-weight: 900;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f1e767+0,feb645+100;Yellow+3D */
+  background: rgb(241, 231, 103); /* Old browsers */
+  background: -moz-linear-gradient(
+    left,
+    rgba(241, 231, 103, 1) 0%,
+    rgba(254, 182, 69, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    rgba(241, 231, 103, 1) 0%,
+    rgba(254, 182, 69, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgba(241, 231, 103, 1) 0%,
+    rgba(254, 182, 69, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=1 ); /* IE6-9 */
+}
+
+.banner p {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/************ Styling header starts *************/
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  background-color: transparent;
+  width: 3rem;
+  margin: 0 0.4rem 0 -1rem;
+}
+
+header h1,
+header div {
+  text-shadow: 3px 3px 5px rgb(26, 25, 25);
+}
+
+header div {
+  margin-bottom: -2rem;
+  text-align: center;
+}
+
+header p {
+  margin-top: -1.5rem;
+  color: var(--text-header);
+  opacity: 0.7;
+}
+
+/************ Styling nav starts *************/
+nav {
+  background-color: var(--secondary-color);
+}
+
+nav ul {
+  text-align: center;
+}
+
+.navigation li,
+.responsive .menu {
+  display: none;
+}
+
+.responsive li,
+li.menu {
+  display: block;
+}
+
+nav ul li {
+  list-style-type: none;
+  font-size: 1.2rem;
+}
+
+nav a {
+  color: var(--text-header);
+  text-decoration: none;
+  display: block;
+  padding: 0.8rem 0; /* 44 min height */
+}
+
+nav a:hover,
+#closeBtn:hover {
+  background: var(--text-header);
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+#closeBtn {
+  padding: 0.8rem 0; /* 44 min height */
+  color: var(--text-header);
+}
+
+.active {
+  background: #ccc;
+  color: var(--secondary-color);
+}
+
+/************ Styling main starts *************/
+main {
+  max-width: 63rem;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Merriweather", serif;
+}
+
+main h2 {
+  margin: 1rem 0;
+}
+
+picture img {
+  width: 100%;
+}
+
+section h3 {
+  line-height: 1.4;
+  text-align: left;
+}
+
+.hero-container {
+  position: relative;
+  margin: 1rem;
+}
+
+.hero-container .hero-image {
+  display: none;
+  max-height: 350px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px 5px #838282;
+}
+
+.weather-summary {
+  background-color: #023373;
+  opacity: 1;
+  position: relative;
+  margin: 0 auto;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 2px 0 12px 4px #838282;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0.5rem 0 1rem 0;
+  font-size: 1rem;
+  font-family: "Merriweather Sans", sans-serif;
+  border-radius: 20px;
+}
+
+aside.weather-summary h3 {
+  grid-column: 1 / 3;
+  padding-top: 1rem;
+  text-align: center;
+  width: 90%;
+  margin-bottom: -1rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.weather-summary .temp-symbol,
+#current-temp {
+  font-size: 2.2rem;
+  list-style: none;
+  text-align: left;
+  color: hsla(176, 56%, 55%, 1);
+}
+
+#current-temp {
+  margin-left: 4rem;
+}
+
+aside.weather-summary ul:first-of-type {
+  align-self: center;
+}
+
+aside.weather-summary ul:first-of-type li {
+  text-align: center;
+}
+
+#city-name {
+  font-size: 1.4rem;
+}
+
+.weather-summary-labels {
+  text-align: right;
+  padding-right: 1.2rem;
+  font-weight: 900;
+}
+
+.weather-summary-info li {
+  text-align: left;
+  color: hsla(176, 56%, 55%, 1);
+}
+
+.weather-summary-labels,
+.weather-summary-info {
+  list-style: none;
+  line-height: 1.4;
+  font-size: 0.8rem;
+}
+
+.forecast-container {
+  display: none;
+}
+
+.forecast-heading {
+  margin-bottom: 0.5rem;
+  grid-column: span 6;
+  text-shadow: 2px 2px 4px #666;
+}
+
+#openweather,
+#news-api,
+#news-source {
+  font-size: 0.8rem;
+}
+
+#openweather a,
+#news-api a,
+#news-source a,
+article .headline a {
+  text-decoration: none;
+  color: #023373;
+}
+
+.forecast-box {
+  border: 1px solid #858383;
+  border-radius: 10px;
+  padding-bottom: 1.5rem;
+  box-shadow: 0 0 5px 2px #838282;
+}
+
+.forecast-box + .forecast-box {
+  margin-left: 0.8rem;
+}
+
+.forecast-box div {
+  font-size: 20px;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+div.day {
+  color: var(--text-header);
+  border-bottom: 1px solid #858383;
+  background-color: var(--primary-color);
+  border-radius: 10px 10px 0 0;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+div p {
+  margin-bottom: 2.2rem;
+  line-height: 1.4;
+}
+
+/******** Styling News Article starts below *******/
+#news-heading {
+  text-align: center;
+  font-family: "Merriweather Sans", sans-serif;
+  margin: 0 1rem -1.5rem 1rem;
+  text-shadow: 2px 2px 4px #666;
+}
+
+.article-container {
+  border: 1px solid #858383;
+  padding: 0 1rem;
+  margin: 2rem 1rem;
+  font-family: "Merriweather", serif;
+}
+
+.article-img {
+  width: 85%;
+  box-shadow: 0 0 10px 5px #838282;
+  margin: 1rem 0;
+}
+
+article .title,
+article .author,
+article .headline {
+  text-align: left;
+  padding: 1.4rem;
+}
+
+article .author {
+  margin-top: -0.5rem;
+  padding: 0 1.4rem 1.5rem 1.4rem;
+  color: #023373;
+  font-size: 0.7em;
+}
+
+article .headline {
+  line-height: 1.8;
+}
+
+.contact-container {
+  background-color: var(--background-color);
+  text-align: justify;
+  font-size: 0.9rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-info {
+  line-height: 1.5;
+}
+
+.address {
+  margin-bottom: 1rem;
+}
+
+.contact-info i {
+  margin-right: 0.5rem;
+}
+
+.location-map {
+  display: none;
+}
+
+.social {
+  padding: 0.4rem;
+  margin-left: -8rem;
+}
+
+.social img {
+  width: 24px;
+}
+
+.social img:hover {
+  opacity: 0.6;
+}
+
+/************ end of body *************/
+
+/************ Styling footer starts below*************/
+footer {
+  max-width: 65rem;
+  margin: 0 auto;
+  font-size: 1rem;
+  text-align: center;
+}
+
+footer p:first-child {
+  margin-bottom: 1rem;
+}
+
+footer a,
+.weather-summary {
+  color: var(--text-header);
+  text-decoration: none;
+}
+
+span#different-days {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: #ffff00;
+}
+
+footer a:hover,
+footer p span#currentDate {
+  color: #ffff00;
+}
+
+/********* Styling Gallery Page below************/
+
+.gallery-heading {
+  margin: 1.5rem 0 1rem 1rem;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+div.gallery-container {
+  display: grid;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 0 1rem;
+}
+
+div .gallery-box {
+  max-width: 400px;
+  background: #023373;
+  margin-bottom: 1rem;
+}
+
+.gallery-image {
+  width: 100%;
+}
+
+figcaption {
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem;
+  text-align: left;
+  opacity: 0.8;
+}
+
+/********* Styling Storm Center Page below************/
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+/*----------- Styling Form --------------*/
+main.form-main,
+main.form-main h2 {
+  max-width: 54rem;
+  width: 96%;
+  margin: 0 auto;
+  font-family: "Merriweather", serif;
+  text-align: center;
+}
+
+main.form-main h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+  color: hsl(214, 97%, 10%);
+}
+
+form fieldset {
+  margin: 2rem 0;
+  border: 2px solid hsl(214, 97%, 23%);
+  border-radius: 10px;
+  padding: 0.5rem 2% 1rem 2%;
+  text-align: left;
+}
+
+form legend {
+  color: hsl(214, 97%, 10%);
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+}
+
+form label.top,
+form div {
+  display: block;
+  padding-top: 1rem;
+  color: hsl(214, 97%, 10%);
+  font-size: 1rem;
+}
+
+form label.top input,
+form label.top select {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #444;
+  border-radius: 4px;
+  padding: 1rem;
+  color: hsl(214, 97%, 10%);
+  width: 100%;
+  max-width: 20rem;
+  background-color: hsla(214, 97%, 23%, 0.2);
+  line-height: 1.2;
+}
+
+form label.sbs,
+form label.slider {
+  display: block;
+  padding: 0.75rem;
+  color: hsl(214, 97%, 10%);
+  font-size: 1rem;
+}
+
+form label.slider {
+  padding: 1.75rem 0 1rem 0;
+}
+
+form label.slider > input {
+  margin: 0 0.5rem;
+  position: relative;
+  top: 2px;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #023373;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: 0 auto;
+  width: 96%;
+  max-width: 20rem;
+  text-align: center;
+}
+
+form input.submitBtn:hover {
+  background: radial-gradient(hsl(214, 97%, 23%), hsl(214, 97%, 50%));
+}
+
+form label.top input:required {
+  background: hsla(11, 78%, 34%, 0.2);
+}
+form label.top input:required:valid {
+  background: hsla(214, 97%, 23%, 0.2);
+}
+
+form label input:focus {
+  background-color: hsla(214, 97%, 40%, 0.3);
+}
+
+form label.top textarea {
+  display: block;
+  max-width: 18rem;
+  width: 100%;
+}
+/********** Styling Thanks page below**********/
+main.thanks-main h2,
+main.thanks-main p {
+  font-family: "Merriweather Sans", sans-serif;
+  text-align: center;
+}
+
+main.thanks-main h2 {
+  margin: 5rem 0 2rem 0;
+  font-size: 1.4rem;
+}
+
+main.thanks-main p {
+  margin-bottom: 15rem;
+}
+
+/********* Styling Home Page below************/
+.home-main .hero-container {
+  margin: 1rem 0;
+}
+
+.home-main .town-containers {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid #555;
+  border-radius: 10px;
+  margin: 0 0.5rem;
+}
+
+.home-main .town-containers a {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  padding: 0.5rem;
+  width: 100%;
+  text-decoration: none;
+  color: #023373;
+}
+
+.town-containers #sodaSprings {
+  order: -1;
+}
+
+.town-containers #preston {
+  order: -2;
+}
+
+.town-containers section {
+  background-color: var(--background-color);
+  margin-bottom: 1rem;
+  border: 1px solid #555;
+  border-radius: 10px;
+}
+
+.town-containers .town-info {
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+}
+
+.town-containers h2 {
+  margin-bottom: 0.4rem;
+  color: #281e7c;
+  text-shadow: 2px 2px 4px #444;
+}
+
+.town-containers .town-info div {
+  font-size: 0.7rem;
+  color: #33145c;
+}
+
+.town-containers section p:first-of-type {
+  margin-top: 1.2rem;
+}
+
+.town-containers section p {
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+}
+
+.town-containers .town-info li {
+  font-size: 0.8rem;
+  padding: 0.2rem 1rem;
+  color: #281e7c;
+  list-style: none;
+  font-weight: 900;
+}
+
+.town-containers section img {
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  margin-bottom: -0.2rem;
+}
+
+.town-containers section:hover {
+  box-shadow: 1px 1px 5px 1px #555;
+  transition: ease-in 0.2s;
+  transform: scale(1.01);
+}
+
+.town-article-container {
+  margin: 1rem 0.5rem;
+  border-radius: 10px;
+  border: 1px solid #555;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.town-article-container img.town-article-pic {
+  max-width: 600px;
+  width: 100%;
+  padding: 0.5rem;
+}
