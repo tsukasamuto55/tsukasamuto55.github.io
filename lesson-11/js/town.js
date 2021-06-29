@@ -44,26 +44,26 @@ fetch(requestURL)
 
       if (town.name === "Preston") {
         // Adding an href attribute to each anchor element.
-        townLink.setAttribute("href", "preston-6.html");
+        townLink.setAttribute("href", "preston.html");
         appendChild();
-        eventList();
+        addEventList();
       }
 
       if (town.name === "Soda Springs") {
         // Adding an href attribute to each anchor element.
         townLink.setAttribute("href", "soda-springs.html");
         appendChild();
-        eventList();
+        addEventList();
       }
 
       if (town.name === "Fish Haven") {
         // Adding an href attribute to each anchor element.
         townLink.setAttribute("href", "fish-haven.html");
         appendChild();
-        eventList();
+        addEventList();
       }
 
-      function eventList() {
+      function addEventList() {
         const events = town.events;
         const eventList = document.createElement("ul");
 
