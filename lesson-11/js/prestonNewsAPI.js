@@ -26,7 +26,7 @@ fetch(url)
 
     const articleContent = document.createElement("p");
     articleContent.classList.add("headline");
-    articleContent.innerHTML = `${articleInfo.description} <a href='${articleInfo.url}' target='_blank'>...<br>click here to read the full story.</a>`;
+    articleContent.innerHTML = `${articleInfo.description} <a href='${articleInfo.url}' target='_blank' rel='noopener' >...<br>click here to read the full story.</a>`;
 
     articleBox.appendChild(image);
     articleBox.appendChild(title);
