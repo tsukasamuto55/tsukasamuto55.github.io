@@ -5,7 +5,7 @@ const url = `https://gnews.io/api/v4/search?q=idaho&from=2021-06-01&token=${news
 fetch(url)
   .then((response) => response.json())
   .then((data) => {
-    for (i = 0; i < 3; i++) {
+    for (i = 0; i < 2; i++) {
       const articleInfo = data.articles[i];
 
       const articleContainer = document.querySelector(".home-article-container");
@@ -17,6 +17,8 @@ fetch(url)
       image.setAttribute("class", "home-article-img");
       image.setAttribute("src", articleInfo.image);
       image.setAttribute("alt", articleInfo.title);
+      image.setAttribute("with", "236");
+      image.setAttribute("height", "160");
 
       const title = document.createElement("h3");
       title.setAttribute("class", "home-article-title");
