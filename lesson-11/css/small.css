@@ -154,10 +154,6 @@ main h2 {
   margin: 1rem 0;
 }
 
-picture img {
-  width: 100%;
-}
-
 section h3 {
   line-height: 1.4;
   text-align: left;
@@ -173,6 +169,7 @@ section h3 {
   max-height: 350px;
   border-radius: 20px;
   box-shadow: 1px 1px 10px 5px #838282;
+  width: 100%;
 }
 
 .weather-summary {
@@ -348,7 +345,7 @@ article .headline {
 }
 
 .home-article-img {
-  width: 95%;
+  width: 60%;
 }
 
 article .home-article-title {
@@ -728,7 +725,7 @@ main.thanks-main p {
 }
 
 .town-article-container img.town-article-pic {
-  max-width: 600px;
-  width: 100%;
+  /* max-width: 600px; */
+  max-width: 100%;
   padding: 0.5rem;
 }

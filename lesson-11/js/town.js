@@ -78,8 +78,6 @@ fetch(requestURL)
       function appendChild() {
         img.setAttribute("src", "images/" + town.photo);
         img.setAttribute("alt", `a picture of ${town.name}`);
-        img.setAttribute("with", "312");
-        img.setAttribute("height", "234");
 
         card.appendChild(townInfo);
         townInfo.appendChild(townName);
