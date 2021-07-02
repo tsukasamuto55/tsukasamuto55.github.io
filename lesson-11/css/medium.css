@@ -59,7 +59,7 @@
   .forecast-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    width: 75%;
+    width: 80%;
     margin: 1.5rem auto;
   }
 
