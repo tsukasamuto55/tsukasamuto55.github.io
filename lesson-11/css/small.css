@@ -240,13 +240,16 @@ aside.weather-summary ul:first-of-type li {
 }
 
 .forecast-container {
-  display: none;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(60px, 1fr));
 }
 
 .forecast-heading {
   margin-bottom: 0.5rem;
   grid-column: span 6;
   text-shadow: 2px 2px 4px #666;
+  text-align: center;
+  width: 100%;
 }
 
 #openweather,
@@ -268,15 +271,24 @@ article .headline a {
   border-radius: 10px;
   padding-bottom: 1.5rem;
   box-shadow: 0 0 5px 2px #838282;
+  margin: 1rem 0;
 }
 
-.forecast-box + .forecast-box {
-  margin-left: 0.8rem;
+.forecast-box {
+  margin-left: 0.5rem;
 }
 
-.forecast-box div {
+.forecast-box:last-of-type {
+  margin-right: 0.5rem;
+}
+
+.forecast-box .forecast-box div {
   font-size: 20px;
   font-family: "Merriweather Sans", sans-serif;
+}
+
+.forecast-box img {
+  max-width: 100%;
 }
 
 div.day {

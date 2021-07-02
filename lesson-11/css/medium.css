@@ -59,8 +59,12 @@
   .forecast-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    width: 80%;
+    width: 75%;
     margin: 1.5rem auto;
+  }
+
+  .forecast-heading {
+    text-align: left;
   }
 
   .home-article-box {
