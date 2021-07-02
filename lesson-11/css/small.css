@@ -166,10 +166,8 @@ section h3 {
 
 .hero-container .hero-image {
   display: none;
-  max-height: 350px;
   border-radius: 20px;
   box-shadow: 1px 1px 10px 5px #838282;
-  width: 100%;
 }
 
 .weather-summary {

@@ -1,4 +1,3 @@
-///////////////// Weather API for Soda Springs //////////////////
 const lat = document.querySelector("h3").dataset["latitude"];
 const lon = document.querySelector("h3").dataset["longitude"];
 
