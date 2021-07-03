@@ -415,10 +415,9 @@ article .home-headline a {
 
 /********** Styling Contact info ***********/
 .contact-container {
-  background-color: var(--background-color);
   text-align: justify;
   font-size: 0.9rem;
-  padding: 1rem;
+  padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
