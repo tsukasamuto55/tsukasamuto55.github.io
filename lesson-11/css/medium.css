@@ -63,16 +63,15 @@
     margin: 1.5rem auto;
   }
 
-  .forecast-heading {
+  .town-data-heading,
+  .forecast-heading,
+  #news-heading,
+  #home-news-heading {
     text-align: left;
   }
 
   .home-article-box {
     display: block;
-  }
-
-  #news-heading {
-    text-align: left;
   }
 
   .home-article-img,

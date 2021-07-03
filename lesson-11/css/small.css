@@ -378,6 +378,7 @@ article .home-headline a {
 
 #home-news-heading {
   margin: 2rem 0 -2rem 1rem;
+  text-align: center;
 }
 
 .home-article-container .home-article-box:first-child {
@@ -678,6 +679,10 @@ main.thanks-main p {
   margin-bottom: 1rem;
   border: 1px solid #555;
   border-radius: 10px;
+}
+
+.town-data-heading {
+  margin: 2rem 1rem 0 1rem;
 }
 
 .town-containers .town-info {
