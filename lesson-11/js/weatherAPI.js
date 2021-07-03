@@ -1,9 +1,9 @@
 const lat = document.querySelector("h2").dataset["latitude"];
 const lon = document.querySelector("h2").dataset["longitude"];
 
-const sodaSpringsURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&APPID=836d037508b2397deaea6c8b8b8b90d9`;
+const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&APPID=836d037508b2397deaea6c8b8b8b90d9`;
 
-fetch(sodaSpringsURL)
+fetch(URL)
   .then((response) => response.json())
   .then((jsObject) => {
     temp = jsObject.main.temp;
@@ -32,9 +32,9 @@ fetch(sodaSpringsURL)
   });
 
 // Forecast API
-const sodaSpringsForecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=836d037508b2397deaea6c8b8b8b90d9`;
+const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=836d037508b2397deaea6c8b8b8b90d9`;
 
-fetch(sodaSpringsForecastURL)
+fetch(forecastURL)
   .then((response) => response.json())
   .then((jsObject) => {
     const dataLists = jsObject.list;
