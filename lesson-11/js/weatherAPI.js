@@ -1,5 +1,5 @@
-const lat = document.querySelector("h3").dataset["latitude"];
-const lon = document.querySelector("h3").dataset["longitude"];
+const lat = document.querySelector("h2").dataset["latitude"];
+const lon = document.querySelector("h2").dataset["longitude"];
 
 const sodaSpringsURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&APPID=836d037508b2397deaea6c8b8b8b90d9`;
 
