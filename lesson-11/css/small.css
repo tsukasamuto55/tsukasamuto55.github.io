@@ -248,6 +248,7 @@ aside.weather-summary ul:first-of-type li {
   margin: 0 0.5rem 0.5rem 0.5rem;
   grid-column: span 5;
   text-shadow: 2px 2px 4px #666;
+  text-align: center;
 }
 
 #openweather,
