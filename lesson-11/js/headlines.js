@@ -1,5 +1,5 @@
-// const newsapiKey = "a5b701a1f2abe183e1483766dc8465d2";
-const newsapiKey = "80786e58dc1c8cb0cc8f96aed97419fd";
+const newsapiKey = "a5b701a1f2abe183e1483766dc8465d2";
+// const newsapiKey = "80786e58dc1c8cb0cc8f96aed97419fd";
 const url = `https://gnews.io/api/v4/search?q=idaho&from=2021-06-01&token=${newsapiKey}`;
 
 fetch(url)
