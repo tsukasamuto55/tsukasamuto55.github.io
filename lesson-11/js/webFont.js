@@ -1,5 +1,5 @@
 WebFont.load({
   google: {
-    families: ["Merriweather Sans", "Merriweather"],
+    families: ["Open Sans", "Lora"],
   },
 });

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta
+        name="description"
+        content="Home page for Chamber of Commerce site for Tsukasa Muto in WWD230 at BYU Idaho"
+      />
+      <title>Rexburg Area Chamber of Commerce | Home</title>
+      <link rel="stylesheet" href="css/normalize.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans&display=swap"
+        rel="stylesheet"
+      />
+      <link rel="stylesheet" href="css/small.css" />
+      <link rel="stylesheet" href="css/medium.css" />
+      <link rel="stylesheet" href="css/large.css" />
+      <!-- <script src="js/modal.js" defer></script> -->
+      <script
+        src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+        defer
+      ></script>
+      <script defer>
+        WebFont.load({
+          google: {
+            families: ["Open Sans", "Lora"],
+          },
+        });
+      </script>
+      <script src="js/toggleButton.js" defer></script>
+    </head>
+    <body>
+      <div id="overlay"></div>
+      <div id="modal">
+        <h3>This is a modal</h3>
+        <button id="close-modal-btn">Close</button>
+      </div>
+
+      <header>
+        <img
+          class="logo"
+          src="images/logo2.png"
+          alt="Logo of Rexburg area chamber of commerce"
+        />
+        <nav>
+          <ul class="mobile-nav">
+            <li id="menu"><a href="#">&#9776; Menu</a></li>
+            <li class="nav-btn" id="closeBtn">
+              <a href="#"><b>&#10799; </b>Close</a>
+            </li>
+            <li class="nav-btn" class="active"><a href="">Home</a></li>
+            <li class="nav-btn"><a href="">City</a></li>
+            <li class="nav-btn"><a href="">Join</a></li>
+            <li class="nav-btn"><a href="">Directory</a></li>
+            <li class="nav-btn"><a href="">Contact</a></li>
+          </ul>
+
+          <ul class="main-nav">
+            <li><a href="" class="active">Home</a></li>
+            <li><a href="">City</a></li>
+            <li><a href="">Join</a></li>
+            <li><a href="">Directory</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <aside class="weather-summary">
+          <h2 data-latitude="43.82602" data-longitude="-111.8766173">Current Weather</h2>
+          <ul>
+            <li class="temp-symbol"><span id="current-temp"></span>&deg;F</li>
+          </ul>
+          <ul class="weather-summary-info">
+            <li id="city-name">Preston</li>
+            <li id="current-condition"></li>
+            <li>
+              Hi &nbsp;<span id="high-temp"></span>&deg;F&nbsp;&nbsp;&nbsp;&nbsp; Lo
+              &nbsp;<span id="low-temp"></span>&deg;F
+            </li>
+          </ul>
+
+          <ul class="weather-summary-labels">
+            <li>Feels like:</li>
+            <li>Humidity:</li>
+            <li>Wind Speed:</li>
+          </ul>
+
+          <ul class="weather-summary-info">
+            <li><span id="feels-like"></span></li>
+            <li><span id="humidity"></span>&percnt;</li>
+            <li><span id="wind-speed"></span> mph</li>
+          </ul>
+        </aside>
+      </main>
+    </body>
+  </html>
+</html>

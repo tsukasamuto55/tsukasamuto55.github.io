@@ -1,0 +1,21 @@
+@media (min-width: 70em) {
+  header {
+    background-position: 25% 75%;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .main-nav {
+    display: flex;
+    position: absolute;
+    width: 20%;
+    right: 55%;
+    top: 4em;
+  }
+
+  .main-nav li {
+    padding: 0 1em;
+  }
+}
