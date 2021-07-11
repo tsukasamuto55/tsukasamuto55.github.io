@@ -21,31 +21,31 @@
       <link rel="stylesheet" href="css/small.css" />
       <link rel="stylesheet" href="css/medium.css" />
       <link rel="stylesheet" href="css/large.css" />
-      <!-- <script src="js/modal.js" defer></script> -->
-      <script
-        src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
-        defer
-      ></script>
-      <script defer>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+      <script>
         WebFont.load({
           google: {
             families: ["Open Sans", "Lora"],
           },
         });
       </script>
+      <script src="js/weatherAPI.js" defer></script>
       <script src="js/toggleButton.js" defer></script>
+      <!-- <script src="js/modal.js" defer></script> -->
     </head>
     <body>
       <div id="overlay"></div>
-      <div id="modal">
-        <h3>This is a modal</h3>
-        <button id="close-modal-btn">Close</button>
+      <div id="alerts">
+        <h3 id="alerts-title"></h3>
+        <p id="alerts-content"></p>
+        <button id="close-alerts-btn">Close</button>
       </div>
 
       <header>
         <img
           class="logo"
-          src="images/logo2.png"
+          src="images/logo.png"
           alt="Logo of Rexburg area chamber of commerce"
         />
         <nav>
@@ -55,50 +55,175 @@
               <a href="#"><b>&#10799; </b>Close</a>
             </li>
             <li class="nav-btn" class="active"><a href="">Home</a></li>
-            <li class="nav-btn"><a href="">City</a></li>
-            <li class="nav-btn"><a href="">Join</a></li>
-            <li class="nav-btn"><a href="">Directory</a></li>
-            <li class="nav-btn"><a href="">Contact</a></li>
+            <li class="nav-btn"><a href="city.html">City</a></li>
+            <li class="nav-btn"><a href="join.html">Join</a></li>
+            <li class="nav-btn"><a href="directory.html">Directory</a></li>
+            <li class="nav-btn"><a href="contact.html">Contact</a></li>
           </ul>
 
           <ul class="main-nav">
-            <li><a href="" class="active">Home</a></li>
-            <li><a href="">City</a></li>
-            <li><a href="">Join</a></li>
-            <li><a href="">Directory</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="city.html">City</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
+
+        <aside class="current-weather">
+          <h1>Current Weather</h1>
+          <div class="weather-icon"></div>
+
+          <div class="temp-symbol"><span id="current-temp"></span>&deg;F</div>
+
+          <div class="current-condition"></div>
+
+          <div class="humidity-container">humidity: <span class="humidity"></span>%</div>
+        </aside>
       </header>
 
       <main>
-        <aside class="weather-summary">
-          <h2 data-latitude="43.82602" data-longitude="-111.8766173">Current Weather</h2>
-          <ul>
-            <li class="temp-symbol"><span id="current-temp"></span>&deg;F</li>
-          </ul>
-          <ul class="weather-summary-info">
-            <li id="city-name">Preston</li>
-            <li id="current-condition"></li>
-            <li>
-              Hi &nbsp;<span id="high-temp"></span>&deg;F&nbsp;&nbsp;&nbsp;&nbsp; Lo
-              &nbsp;<span id="low-temp"></span>&deg;F
-            </li>
-          </ul>
+        <section class="home-hero-container">
+          <p class="home-hero-content">We are here for you</p>
+          <div class="call-to-action">
+            <a href="">Join the Chamber now</a>
+          </div>
+        </section>
 
-          <ul class="weather-summary-labels">
-            <li>Feels like:</li>
-            <li>Humidity:</li>
-            <li>Wind Speed:</li>
-          </ul>
+        <section class="purpose-container">
+          <h2 class="purpose-title">Our mission</h2>
+          <p class="purpose-content">
+            The main purpose of the site is to advocate the local business community to
+            stimulate the local economy. It promotes the local businesses by listing brief
+            information about them including contact information and their website, and by
+            displaying their advertisement. The site also keeps the members informed about
+            upcoming events and programs, and it also helps them strengthen the
+            relationships with others through social media such as facebook and Instagram.
+            The members are encouraged to share their stories/ businesses on those sites.
+          </p>
+        </section>
 
-          <ul class="weather-summary-info">
-            <li><span id="feels-like"></span></li>
-            <li><span id="humidity"></span>&percnt;</li>
-            <li><span id="wind-speed"></span> mph</li>
-          </ul>
+        <h2 class="events-title">Upcoming Events near Rexburg</h2>
+
+        <div class="events-container">
+          <article class="events-card">
+            <div class="events-img">
+              <img
+                src="images/event-1.jpg"
+                alt="Logo of Wines in the Wild at the Idaho Falls Zoo event"
+              />
+            </div>
+            <h3 class="events-content">Wines in the Wild at the Idaho Falls Zoo 2021</h3>
+            <div class="events-date">JUL 09</div>
+          </article>
+
+          <article class="events-card">
+            <div class="events-img">
+              <img
+                src="images/event-1.jpg"
+                alt="Logo of Wines in the Wild at the Idaho Falls Zoo event"
+              />
+            </div>
+            <h3 class="events-content">Wines in the Wild at the Idaho Falls Zoo 2021</h3>
+            <div class="events-date">JUL 09</div>
+          </article>
+
+          <article class="events-card">
+            <div class="events-img">
+              <img
+                src="images/event-1.jpg"
+                alt="Logo of Wines in the Wild at the Idaho Falls Zoo event"
+              />
+            </div>
+            <h3 class="events-content">Wines in the Wild at the Idaho Falls Zoo 2021</h3>
+            <div class="events-date">JUL 09</div>
+          </article>
+
+          <article class="events-card">
+            <div class="events-img">
+              <img
+                src="images/event-1.jpg"
+                alt="Logo of Wines in the Wild at the Idaho Falls Zoo event"
+              />
+            </div>
+            <h3 class="events-content">Wines in the Wild at the Idaho Falls Zoo 2021</h3>
+            <div class="events-date">JUL 09</div>
+          </article>
+
+          <article class="events-card">
+            <div class="events-img">
+              <img
+                src="images/event-1.jpg"
+                alt="Logo of Wines in the Wild at the Idaho Falls Zoo event"
+              />
+            </div>
+            <h3 class="events-content">Wines in the Wild at the Idaho Falls Zoo 2021</h3>
+            <div class="events-date">JUL 09</div>
+          </article>
+        </div>
+
+        <aside class="forecast-container">
+          <h2 class="forecast-heading">Rexburg 3 day Forecast</h2>
         </aside>
       </main>
+
+      <footer>
+        <footer>
+          <section class="contact-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46051.89887738041!2d-111.82320231674545!3d43.83004510345833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540a4b807a98b1%3A0x4a49d8d1d2181c73!2sRexburg%2C%20ID!5e0!3m2!1sen!2sus!4v1625894157763!5m2!1sen!2sus"
+              width="450"
+              height="315"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+            <div class="contact-info">
+              <div class="address">
+                <h3>Rexburg Area Chamber of Commerce</h3>
+                <div>
+                  <i class="fas fa-home"></i>
+                  167 W Main St #2<br />
+                  Rexburg, ID 83440
+                </div>
+              </div>
+              <div><i class="fas fa-phone"></i>(012)345-6789</div>
+              <div><i class="fas fa-envelope"></i>reburgchamber@mail.com</div>
+            </div>
+            <div class="social">
+              <a href="https://www.instagram.com/"
+                ><img
+                  src="images/instagram.png"
+                  alt="instagram icon"
+                  width="24"
+                  height="24"
+              /></a>
+              <a href="https://www.pinterest.com/"
+                ><img
+                  src="images/pinterest.png"
+                  alt="pinterest icon"
+                  width="24"
+                  height="24"
+              /></a>
+              <a href="https://www.youtube.com/"
+                ><img
+                  src="images/iconfinder_YouTube_570623.png"
+                  alt="youtube icon"
+                  width="24"
+                  height="24"
+              /></a>
+            </div>
+          </section>
+
+          <p>
+            &copy; <span id="currentYear"></span> | Rexburg Area Chamber of Commerce |
+            Tsukasa Muto |
+            <a href="https://tsukasamuto55.github.io/">Assignment Portal</a>
+          </p>
+          <p><span id="currentDate"></span></p>
+          <p><span id="different-days"></span></p>
+        </footer>
+      </footer>
     </body>
   </html>
 </html>

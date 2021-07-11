@@ -1,24 +1,24 @@
-const modal = document.querySelector("#modal");
-const closeBtn = document.querySelector("#close-modal-btn");
+const alerts = document.querySelector("#alerts");
+const closeBtn = document.querySelector("#close-alerts-btn");
 const overlay = document.querySelector("#overlay");
 
 window.addEventListener("load", () => {
-  modal.classList.add("open");
+  alerts.classList.add("open");
   overlay.classList.add("open");
 });
 
-function closeModal() {
-  modal.classList.remove("open");
+function closeAlerts() {
+  alerts.classList.remove("open");
   overlay.classList.remove("open");
 }
 
-closeBtn.addEventListener("click", closeModal);
+closeBtn.addEventListener("click", closeAlerts);
 
-overlay.addEventListener("click", closeModal);
+overlay.addEventListener("click", closeAlerts);
 
 document.addEventListener("keydown", (event) => {
   if (event.code == "Escape") {
-    modal.classList.remove("open");
+    alerts.classList.remove("open");
     overlay.classList.remove("open");
   }
 });

@@ -9,10 +9,7 @@
 
   .main-nav {
     display: flex;
-    position: absolute;
-    width: 20%;
-    right: 55%;
-    top: 4em;
+    justify-content: space-between;
   }
 
   .main-nav li {
