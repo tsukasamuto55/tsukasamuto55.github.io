@@ -1,4 +1,4 @@
-const directoryURL = `https://tsukasamuto55.github.io/final/json/directory.json`;
+const directoryURL = `https://tsukasamuto55.github.io/final/json/data.json`;
 
 fetch(directoryURL)
   .then((response) => response.json())

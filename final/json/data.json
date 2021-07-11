@@ -1,5 +1,5 @@
 {
-  "directory": [
+  "directories": [
     {
       "name": "Company name",
       "address": "Company address",
@@ -57,6 +57,16 @@
       "phone": "Company phone number",
       "logo": "Company logo",
       "website": "Company website"
+    }
+  ],
+
+  "events": [
+    {
+      "name": "Event name",
+      "description": "Event description",
+      "date": "Event date",
+      "pic": "pic.jpg",
+      "url": "example.com"
     }
   ]
 }
