@@ -11,7 +11,7 @@
 
     {
       "name": "A-1 Rental Inc.",
-      "address": "Company address",
+      "address": "920 University Blvd, Rexburg, ID 83440",
       "phone": "(208) 356-6371 ",
       "description": "Rentals",
       "logo": "https://a1rental.net/images/logo.png",
@@ -19,7 +19,7 @@
     },
 
     {
-      "name": "ABRI ASSOCIATES, LLC ",
+      "name": "ABRI Associates, LLC ",
       "address": "220 E 1st S, Rexburg, ID 83440",
       "phone": "(707) 363-4685",
       "description": "BYU-I APPROVED HOUSING ",
@@ -27,54 +27,89 @@
       "website": "https://liveabri.com/"
     },
     {
-      "name": "Company name",
-      "address": "Company address",
+      "name": "Madison Library District",
+      "address": "1539, 73 N Center St, Rexburg, ID 83440",
+      "phone": "(208) 356-3461",
+      "description": "Education",
+      "logo": "Company logo",
+      "website": "https://madisonlib.org/"
+    },
+    {
+      "name": "Fisher's Technology",
+      "address": "76 E 1st N, Rexburg, ID 83440",
       "phone": "Company phone number",
-      "description": "",
+      "description": "Technology",
+      "logo": "Company logo",
+      "website": "https://www.fisherstech.com/"
+    },
+    {
+      "name": "Gravity Factory",
+      "address": "165 N Airport Rd, Rexburg, ID 83440",
+      "phone": "916.960.3093",
+      "description": "Entertainment",
+      "logo": "Company logo",
+      "website": "https://www.gravityfactory.net/"
+    },
+    {
+      "name": "Madison Memorial Hospital",
+      "address": "450 E Main St, Rexburg, ID 83440",
+      "phone": "Company phone number",
+      "description": "Health & Pharmacy",
       "logo": "Company logo",
       "website": "Company website"
     },
     {
-      "name": "Company name",
-      "address": "Company address",
-      "phone": "Company phone number",
-      "description": "",
+      "name": "Rexburg Rapids-at Riverside Park",
+      "address": "50 W 2nd N, Rexburg, ID 83440",
+      "phone": "208.372.2490",
+      "description": "Entertainment",
       "logo": "Company logo",
-      "website": "Company website"
-    },
-    {
-      "name": "Company name",
-      "address": "Company address",
-      "phone": "Company phone number",
-      "description": "",
-      "logo": "Company logo",
-      "website": "Company website"
-    },
-    {
-      "name": "Company name",
-      "address": "Company address",
-      "phone": "Company phone number",
-      "description": "",
-      "logo": "Company logo",
-      "website": "Company website"
-    },
-    {
-      "name": "Company name",
-      "address": "Company address",
-      "phone": "Company phone number",
-      "description": "",
-      "logo": "Company logo",
-      "website": "Company website"
+      "website": "https://www.rexburgrapids.com/"
     }
   ],
 
   "events": [
     {
-      "name": "Event name",
-      "description": "Event description",
-      "date": "Event date",
-      "pic": "pic.jpg",
-      "url": "example.com"
+      "name": "Tails and Tales- Summer Reading- End date",
+      "date": "JUL 31",
+      "location": "Madison Library District - Rexburg ID",
+      "pic": "images/events/tails-and-tales.jpg",
+      "url": "https://madisonlib.org/summer-reading-online/"
+    },
+    {
+      "name": "BRB of Idaho 5-D Barrel Racing",
+      "date": "JUL 30-31",
+      "location": "Broken Bit Arena- Idaho Falls, ID",
+      "pic": "images/events/barrel-racing.jpg",
+      "url": "https://www.facebook.com/brbofidaho/"
+    },
+    {
+      "name": "Madison County Fair",
+      "date": "AUG 18 - AUG 21",
+      "location": "Madison County Fairgrounds - Rexburg, ID",
+      "pic": "images/events/madison-fair.png",
+      "url": "https://www.madisonfairgrounds.com/"
+    },
+    {
+      "name": "Sons of the Utah Pioneers 2021 National Encampment",
+      "date": "SEP 16 - SEP 18",
+      "location": "LDS Stake Center - Rexburg ID",
+      "pic": "images/events/encampment.jpg",
+      "url": "https://www.sup1847.com/calendar/2021/9/16/2021-national-encampment"
+    },
+    {
+      "name": "Know Your Lemons Week: Breast Cancer Awareness",
+      "date": "OCT 1 - OCT 8",
+      "location": "Rexburg, ID, ID",
+      "pic": "images/events/know-lemon.png",
+      "url": "https://knowyourlemons.org/week"
+    },
+    {
+      "name": "A Christmas Carol",
+      "date": "DEC 10-11, 13, & 16-18",
+      "location": "Rexburg Community Theatre, Rexburg ID",
+      "pic": "images/events/christmas.jpg",
+      "url": "https://www.rctheatre.org/"
     }
   ]
 }

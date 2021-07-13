@@ -157,14 +157,19 @@ nav a:hover {
 
 /*********** Styling Home page Main***********/
 
-.home-hero-container {
-  background-image: url("../images/rexburg-home-hero.jpg");
+.home-hero-container,
+.city-hero-container,
+.join-hero-container {
   background-size: cover;
   color: white;
   display: grid;
   isolation: isolate;
   min-height: 35vh;
   position: relative;
+}
+
+.home-hero-container {
+  background-image: url("../images/hero-images/home-hero.jpg");
 }
 
 .home-hero-content,
@@ -178,15 +183,20 @@ nav a:hover {
   font-size: 3em;
 }
 
-.home-hero-content::after {
+.home-hero-content::after,
+.city-hero-content::after,
+.join-hero-container::after {
   content: "";
   position: absolute;
   inset: 0;
   z-index: -1;
+  opacity: 0.8;
+  mix-blend-mode: multiply;
+}
+
+.home-hero-content::after {
   background: #555af7;
   background: linear-gradient(-45deg, #555af7, #05098a);
-  opacity: 0.7;
-  mix-blend-mode: multiply;
 }
 
 .call-to-action a {
@@ -218,7 +228,6 @@ nav a:hover {
   display: grid;
   background-color: #ebecfe;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  margin: 0 auto;
   max-width: 100%;
   justify-items: center;
 }
@@ -234,7 +243,7 @@ nav a:hover {
 
 .events-card {
   width: 80%;
-  padding-bottom: 1rem;
+  padding: 1rem;
 }
 
 .events-card:hover {
@@ -292,11 +301,11 @@ nav a:hover {
 /************ Styling footer starts below*************/
 footer {
   width: 100%;
-  margin: 0 auto;
   font-size: 1rem;
   text-align: center;
   background-color: #03064d;
   color: #fff;
+  line-height: 1.5;
 }
 
 footer p:first-child {
@@ -321,15 +330,52 @@ footer p span#currentDate {
 
 .contact-container {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .location-map {
-  display: block;
+  display: none;
   margin-right: 2rem;
+  justify-self: right;
+  grid-row: 1/3;
+  margin: 1rem;
+}
+
+.contact-info,
+.social {
+  justify-self: center;
+  text-align: center;
+  align-self: center;
+  margin: 1rem;
 }
 
 .social {
   grid-column: 2/3;
-  margin: -9rem -1.5rem 0 -0.5rem;
+}
+
+.social img {
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+/************* Styling City Page ************/
+.city-hero-container {
+  background-image: url("../images/hero-images/city-hero.jpg");
+}
+
+.city-hero-content::after {
+  background: #55bcf7;
+  background: linear-gradient(-45deg, #55bcf7, #295d7a);
+}
+
+/************* Styling join Page ************/
+.join-hero-container {
+  background-image: url("../images/hero-images/join-hero.jpg");
+  background-size: cover;
+  background-position: 50% 25%;
+}
+
+.join-hero-container::after {
+  background: #55f7cf;
+  background: linear-gradient(-45deg, #55f7cf, #29816b);
 }

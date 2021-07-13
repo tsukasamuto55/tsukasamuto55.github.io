@@ -30,9 +30,12 @@
           },
         });
       </script>
-      <script src="js/weatherAPI.js" defer></script>
+      <script src="js/currentDate.js" defer></script>
+      <script src="js/currentWeather.js" defer></script>
       <script src="js/toggleButton.js" defer></script>
-      <script src="js/directory.js" defer></script>
+      <script src="js/forecast.js" defer></script>
+      <script src="js/events.js" defer></script>
+      <!-- <script src="js/directory.js" defer></script> -->
       <!-- <script src="js/modal.js" defer></script> -->
     </head>
     <body>
@@ -44,11 +47,12 @@
       </div>
 
       <header>
-        <img
-          class="logo"
-          src="images/logo.png"
-          alt="Logo of Rexburg area chamber of commerce"
-        />
+        <a href="index.html">
+          <img
+            class="logo"
+            src="images/logo.png"
+            alt="Logo of Rexburg area chamber of commerce"
+        /></a>
         <nav>
           <ul class="mobile-nav">
             <li id="menu"><a href="#">&#9776; Menu</a></li>
@@ -87,7 +91,7 @@
         <section class="home-hero-container">
           <p class="home-hero-content">We are here for you</p>
           <div class="call-to-action">
-            <a href="">Join the Chamber now</a>
+            <a href="join.html">Join the Chamber now</a>
           </div>
         </section>
 
@@ -106,62 +110,7 @@
 
         <h2 class="events-title">Upcoming Events near Rexburg</h2>
 
-        <div class="events-container">
-          <article class="events-card">
-            <div class="events-img">
-              <img
-                src="images/event-1.jpg"
-                alt="Logo of Wines in the Wild at the Idaho Falls Zoo event"
-              />
-            </div>
-            <h3 class="events-content">Wines in the Wild at the Idaho Falls Zoo 2021</h3>
-            <div class="events-date">JUL 09</div>
-          </article>
-
-          <article class="events-card">
-            <div class="events-img">
-              <img
-                src="images/event-1.jpg"
-                alt="Logo of Wines in the Wild at the Idaho Falls Zoo event"
-              />
-            </div>
-            <h3 class="events-content">Wines in the Wild at the Idaho Falls Zoo 2021</h3>
-            <div class="events-date">JUL 09</div>
-          </article>
-
-          <article class="events-card">
-            <div class="events-img">
-              <img
-                src="images/event-1.jpg"
-                alt="Logo of Wines in the Wild at the Idaho Falls Zoo event"
-              />
-            </div>
-            <h3 class="events-content">Wines in the Wild at the Idaho Falls Zoo 2021</h3>
-            <div class="events-date">JUL 09</div>
-          </article>
-
-          <article class="events-card">
-            <div class="events-img">
-              <img
-                src="images/event-1.jpg"
-                alt="Logo of Wines in the Wild at the Idaho Falls Zoo event"
-              />
-            </div>
-            <h3 class="events-content">Wines in the Wild at the Idaho Falls Zoo 2021</h3>
-            <div class="events-date">JUL 09</div>
-          </article>
-
-          <article class="events-card">
-            <div class="events-img">
-              <img
-                src="images/event-1.jpg"
-                alt="Logo of Wines in the Wild at the Idaho Falls Zoo event"
-              />
-            </div>
-            <h3 class="events-content">Wines in the Wild at the Idaho Falls Zoo 2021</h3>
-            <div class="events-date">JUL 09</div>
-          </article>
-        </div>
+        <div class="events-container"></div>
 
         <aside class="forecast-container">
           <h2 class="forecast-heading">Rexburg 3 day Forecast</h2>
@@ -169,61 +118,56 @@
       </main>
 
       <footer>
-        <footer>
-          <section class="contact-container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46051.89887738041!2d-111.82320231674545!3d43.83004510345833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540a4b807a98b1%3A0x4a49d8d1d2181c73!2sRexburg%2C%20ID!5e0!3m2!1sen!2sus!4v1625894157763!5m2!1sen!2sus"
-              width="450"
-              height="315"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-            ></iframe>
-            <div class="contact-info">
-              <div class="address">
-                <h3>Rexburg Area Chamber of Commerce</h3>
-                <div>
-                  <i class="fas fa-home"></i>
-                  167 W Main St #2<br />
-                  Rexburg, ID 83440
-                </div>
+        <section class="contact-container">
+          <iframe
+            class="location-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46051.89887738041!2d-111.82320231674545!3d43.83004510345833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540a4b807a98b1%3A0x4a49d8d1d2181c73!2sRexburg%2C%20ID!5e0!3m2!1sen!2sus!4v1625894157763!5m2!1sen!2sus"
+            width="400"
+            height="275"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+          <div class="contact-info">
+            <div class="address">
+              <h3>Rexburg Area<br />Chamber of Commerce</h3>
+              <div>
+                <i class="fas fa-home"></i>
+                167 W Main St #2<br />
+                Rexburg, ID 83440
               </div>
-              <div><i class="fas fa-phone"></i>(012)345-6789</div>
-              <div><i class="fas fa-envelope"></i>reburgchamber@mail.com</div>
             </div>
-            <div class="social">
-              <a href="https://www.instagram.com/"
-                ><img
-                  src="images/instagram.png"
-                  alt="instagram icon"
-                  width="24"
-                  height="24"
-              /></a>
-              <a href="https://www.pinterest.com/"
-                ><img
-                  src="images/pinterest.png"
-                  alt="pinterest icon"
-                  width="24"
-                  height="24"
-              /></a>
-              <a href="https://www.youtube.com/"
-                ><img
-                  src="images/iconfinder_YouTube_570623.png"
-                  alt="youtube icon"
-                  width="24"
-                  height="24"
-              /></a>
-            </div>
-          </section>
+            <div><i class="fas fa-phone"></i>(012)345-6789</div>
+            <div><i class="fas fa-envelope"></i>reburgchamber@mail.com</div>
+          </div>
+          <div class="social">
+            <a href="https://www.facebook.com//"
+              ><img
+                src="images/SNS logos/facebook.png"
+                alt="facebook icon"
+                width="32"
+                height="32"
+            /></a>
+            <a href="https://www.pinterest.com/"
+              ><img
+                src="images/SNS logos/pinterest.png"
+                alt="pinterest icon"
+                width="32"
+                height="32"
+            /></a>
+            <a href="https://www.youtube.com/"
+              ><img
+                src="images/SNS logos/youtube.png"
+                alt="youtube icon"
+                width="32"
+                height="32"
+            /></a>
+          </div>
+        </section>
 
-          <p>
-            &copy; <span id="currentYear"></span> | Rexburg Area Chamber of Commerce |
-            Tsukasa Muto |
-            <a href="https://tsukasamuto55.github.io/">Assignment Portal</a>
-          </p>
-          <p><span id="currentDate"></span></p>
-          <p><span id="different-days"></span></p>
-        </footer>
+        <p>&copy; <span id="currentYear"></span> | Rexburg Area Chamber of Commerce</p>
+        <p id="last_modified">Last Modified: <span id="currentDate"></span></p>
+        <p><a href="attribution.html">Attribution</a></p>
       </footer>
     </body>
   </html>

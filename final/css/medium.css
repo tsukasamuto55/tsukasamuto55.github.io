@@ -13,6 +13,10 @@
     margin: 0 0 0 1rem;
   }
 
+  .events-container {
+    padding: 0 2rem;
+  }
+
   .forecast-container {
     grid-auto-flow: column;
     max-width: 1200px;
@@ -63,5 +67,15 @@
     justify-self: center;
     padding: 0.5rem;
     color: #05098a;
+  }
+
+  .location-map {
+    display: block;
+  }
+
+  .contact-info,
+  .social {
+    justify-self: left;
+    text-align: left;
   }
 }
