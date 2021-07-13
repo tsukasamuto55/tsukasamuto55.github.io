@@ -6,7 +6,6 @@ fetch(eventsURL)
     const eventsData = data["events"];
     const eventsContainer = document.querySelector(".events-container");
 
-    // Retrieve the forecast data for 3 days by looping the list three times.
     for (data of eventsData) {
       const eventsCard = document.createElement("article");
       eventsCard.classList.add("events-card");
@@ -18,7 +17,6 @@ fetch(eventsURL)
       imageLink.setAttribute("href", `${data.url}`);
 
       const image = document.createElement("img");
-      console.log(eventsData.name);
       image.setAttribute("src", `${data.pic}`);
       image.setAttribute("alt", `${data.name}`);
 
@@ -32,7 +30,7 @@ fetch(eventsURL)
 
       const eventsLocation = document.createElement("div");
       eventsLocation.classList.add("events-location");
-      eventsLocation.textContent = data.eventsLocation;
+      eventsLocation.textContent = data.location;
       eventsCard.appendChild(eventsLocation);
 
       const eventsDate = document.createElement("div");

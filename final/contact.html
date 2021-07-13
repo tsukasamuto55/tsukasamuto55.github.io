@@ -1,144 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta
-        name="description"
-        content="Contact page for Chamber of Commerce site for Tsukasa Muto in WWD230 at BYU Idaho"
-      />
-      <title>Rexburg Area Chamber of Commerce | Contact</title>
-      <link rel="stylesheet" href="css/normalize.css" />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans&display=swap"
-        rel="stylesheet"
-      />
-      <link rel="stylesheet" href="css/small.css" />
-      <link rel="stylesheet" href="css/medium.css" />
-      <link rel="stylesheet" href="css/large.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact page for Chamber of Commerce site for Tsukasa Muto in WWD230 at BYU Idaho"
+    />
+    <title>Rexburg Area Chamber of Commerce | Contact</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
 
-      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-      <script>
-        WebFont.load({
-          google: {
-            families: ["Open Sans", "Lora"],
-          },
-        });
-      </script>
-      <script src="js/currentDate.js" defer></script>
-      <script src="js/currentWeather.js" defer></script>
-      <script src="js/toggleButton.js" defer></script>
-    </head>
-    <body>
-      <div id="overlay"></div>
-      <div id="alerts">
-        <h3 id="alerts-title"></h3>
-        <p id="alerts-content"></p>
-        <button id="close-alerts-btn">Close</button>
-      </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Open Sans", "Lora"],
+        },
+      });
+    </script>
+    <script src="js/currentDate.js" defer></script>
+    <script src="js/currentWeather.js" defer></script>
+    <script src="js/toggleButton.js" defer></script>
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <div id="alerts">
+      <h3 id="alerts-title"></h3>
+      <p id="alerts-content"></p>
+      <button id="close-alerts-btn">Close</button>
+    </div>
 
-      <header>
-        <a href="index.html">
-          <img
-            class="logo"
-            src="images/logo.png"
-            alt="Logo of Rexburg area chamber of commerce"
-        /></a>
-        <nav>
-          <ul class="mobile-nav">
-            <li id="menu"><a href="#">&#9776; Menu</a></li>
-            <li class="nav-btn" id="closeBtn">
-              <a href="#"><b>&#10799; </b>Close</a>
-            </li>
-            <li class="nav-btn" class="active"><a href="">Home</a></li>
-            <li class="nav-btn"><a href="city.html">City</a></li>
-            <li class="nav-btn"><a href="join.html">Join</a></li>
-            <li class="nav-btn"><a href="directory.html">Directory</a></li>
-            <li class="nav-btn"><a href="contact.html">Contact</a></li>
-          </ul>
+    <header>
+      <a href="index.html">
+        <img
+          class="logo"
+          src="images/logo.png"
+          alt="Logo of Rexburg area chamber of commerce"
+      /></a>
+      <nav>
+        <ul class="mobile-nav">
+          <li id="menu"><a href="#">&#9776; Menu</a></li>
+          <li class="nav-btn" id="closeBtn">
+            <a href="#"><b>&#10799; </b>Close</a>
+          </li>
+          <li class="nav-btn" class="active"><a href="">Home</a></li>
+          <li class="nav-btn"><a href="city.html">City</a></li>
+          <li class="nav-btn"><a href="join.html">Join</a></li>
+          <li class="nav-btn"><a href="directory.html">Directory</a></li>
+          <li class="nav-btn"><a href="contact.html">Contact</a></li>
+        </ul>
 
-          <ul class="main-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="city.html">City</a></li>
-            <li><a href="join.html">Join</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-          </ul>
-        </nav>
+        <ul class="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="city.html">City</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
 
-        <aside class="current-weather">
-          <h1>Current Weather</h1>
-          <div class="weather-icon"></div>
+      <aside class="current-weather">
+        <h1>Current Weather</h1>
+        <div class="weather-icon"></div>
 
-          <div class="temp-symbol"><span id="current-temp"></span>&deg;F</div>
+        <div class="temp-symbol"><span id="current-temp"></span>&deg;F</div>
 
-          <div class="current-condition"></div>
+        <div class="current-condition"></div>
 
-          <div class="humidity-container">humidity: <span class="humidity"></span>%</div>
-        </aside>
-      </header>
+        <div class="humidity-container">humidity: <span class="humidity"></span>%</div>
+      </aside>
+    </header>
 
-      <main></main>
+    <main></main>
 
+    <footer>
       <footer>
-        <footer>
-          <section class="contact-container">
-            <iframe
-              class="location-map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46051.89887738041!2d-111.82320231674545!3d43.83004510345833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540a4b807a98b1%3A0x4a49d8d1d2181c73!2sRexburg%2C%20ID!5e0!3m2!1sen!2sus!4v1625894157763!5m2!1sen!2sus"
-              width="400"
-              height="275"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-            ></iframe>
-            <div class="contact-info">
-              <div class="address">
-                <h3>Rexburg Area<br />Chamber of Commerce</h3>
-                <div>
-                  <i class="fas fa-home"></i>
-                  167 W Main St #2<br />
-                  Rexburg, ID 83440
-                </div>
+        <section class="contact-container">
+          <iframe
+            class="location-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46051.89887738041!2d-111.82320231674545!3d43.83004510345833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540a4b807a98b1%3A0x4a49d8d1d2181c73!2sRexburg%2C%20ID!5e0!3m2!1sen!2sus!4v1625894157763!5m2!1sen!2sus"
+            width="400"
+            height="275"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+          <div class="contact-info">
+            <div class="address">
+              <h3>Rexburg Area<br />Chamber of Commerce</h3>
+              <div>
+                <i class="fas fa-home"></i>
+                167 W Main St #2<br />
+                Rexburg, ID 83440
               </div>
-              <div><i class="fas fa-phone"></i>(012)345-6789</div>
-              <div><i class="fas fa-envelope"></i>reburgchamber@mail.com</div>
             </div>
-            <div class="social">
-              <a href="https://www.facebook.com//"
-                ><img
-                  src="images/SNS logos/facebook.png"
-                  alt="facebook icon"
-                  width="32"
-                  height="32"
-              /></a>
-              <a href="https://www.pinterest.com/"
-                ><img
-                  src="images/SNS logos/pinterest.png"
-                  alt="pinterest icon"
-                  width="32"
-                  height="32"
-              /></a>
-              <a href="https://www.youtube.com/"
-                ><img
-                  src="images/SNS logos/youtube.png"
-                  alt="youtube icon"
-                  width="32"
-                  height="32"
-              /></a>
-            </div>
-          </section>
+            <div><i class="fas fa-phone"></i>(012)345-6789</div>
+            <div><i class="fas fa-envelope"></i>reburgchamber@mail.com</div>
+          </div>
+          <div class="social">
+            <a href="https://www.facebook.com//"
+              ><img
+                src="images/SNS logos/facebook.png"
+                alt="facebook icon"
+                width="32"
+                height="32"
+            /></a>
+            <a href="https://www.pinterest.com/"
+              ><img
+                src="images/SNS logos/pinterest.png"
+                alt="pinterest icon"
+                width="32"
+                height="32"
+            /></a>
+            <a href="https://www.youtube.com/"
+              ><img
+                src="images/SNS logos/youtube.png"
+                alt="youtube icon"
+                width="32"
+                height="32"
+            /></a>
+          </div>
+        </section>
 
-          <p>&copy; <span id="currentYear"></span> | Rexburg Area Chamber of Commerce</p>
-          <p id="last_modified">Last Modified: <span id="currentDate"></span></p>
-          <p><a href="attribution.html">Attribution</a></p>
-        </footer>
+        <p>&copy; <span id="currentYear"></span> | Rexburg Area Chamber of Commerce</p>
+        <p id="last_modified">Last Modified: <span id="currentDate"></span></p>
+        <p><a href="attribution.html">Attribution</a></p>
       </footer>
-    </body>
-  </html>
+    </footer>
+  </body>
 </html>
