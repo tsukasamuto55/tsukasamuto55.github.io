@@ -64,7 +64,8 @@ body {
 /*********** Styling Header***********/
 
 header,
-.purpose-container {
+.purpose-container,
+.ads-container {
   max-width: 1200px;
   width: 100%;
   padding: 2em;
@@ -220,7 +221,8 @@ nav a:hover {
   color: #05098a;
 }
 
-.purpose-title {
+.purpose-title,
+.ads-container {
   text-align: center;
 }
 
@@ -230,6 +232,7 @@ nav a:hover {
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   max-width: 100%;
   justify-items: center;
+  margin-bottom: 3rem;
 }
 
 .events-title {
@@ -252,7 +255,6 @@ nav a:hover {
 
 .events-img img {
   width: 100%;
-  border: 1px solid #999;
 }
 
 .events-content,
@@ -269,14 +271,16 @@ nav a:hover {
   font-weight: 800;
 }
 
-.forecast-container {
+.forecast-container,
+.ads-container {
   display: grid;
   width: 90%;
   margin: 0 auto;
 }
 
-.forecast-heading {
-  margin: 1rem 0;
+.forecast-heading,
+.ads-heading {
+  margin-bottom: 1rem;
   text-align: center;
   width: 100%;
   color: #05098a;
@@ -302,16 +306,6 @@ nav a:hover {
   margin-left: 0;
   font-size: 1.2rem;
   font-weight: 900;
-}
-
-.ad-container {
-  max-width: 1200px;
-  width: 100%;
-  height: 20vh;
-}
-
-.ad-container {
-  width: 100%;
 }
 
 /************ Styling footer starts below*************/

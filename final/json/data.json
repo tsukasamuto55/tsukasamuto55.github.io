@@ -23,7 +23,7 @@
       "address": "220 E 1st S, Rexburg, ID 83440",
       "phone": "(707) 363-4685",
       "description": "BYU-I APPROVED HOUSING ",
-      "logo": "https://liveabri.com/wp-content/uploads/2017/03/abri-logo.png",
+      "logo": "../images/business-logos/abri-logo.png",
       "website": "https://liveabri.com/"
     },
     {
@@ -47,7 +47,7 @@
       "address": "165 N Airport Rd, Rexburg, ID 83440",
       "phone": "916.960.3093",
       "description": "Entertainment",
-      "logo": "Company logo",
+      "logo": "/images/business-logos/gravity-factory.png",
       "website": "https://www.gravityfactory.net/"
     },
     {
@@ -63,7 +63,7 @@
       "address": "50 W 2nd N, Rexburg, ID 83440",
       "phone": "208.372.2490",
       "description": "Entertainment",
-      "logo": "Company logo",
+      "logo": "../images/business-logos/rapids.png",
       "website": "https://www.rexburgrapids.com/"
     }
   ],
