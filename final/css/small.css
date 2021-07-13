@@ -308,6 +308,10 @@ nav a:hover {
   font-weight: 900;
 }
 
+.ads-heading > span {
+  font-size: 1rem;
+}
+
 /************ Styling footer starts below*************/
 footer {
   width: 100%;
