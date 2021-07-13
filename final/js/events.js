@@ -25,6 +25,7 @@ fetch(eventsURL)
       eventsCard.appendChild(eventsImg);
 
       const eventsContent = document.createElement("h3");
+      eventsContent.classList.add("events-content");
       eventsContent.textContent = data.name;
       eventsCard.appendChild(eventsContent);
 
