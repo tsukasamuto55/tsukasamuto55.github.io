@@ -5,6 +5,7 @@ fetch(directoryURL)
   .then((data) => {
     const directory = data["directories"];
 
+    console.log(directory);
     for (ele of directory) {
       const card = document.getElementById("test");
       const image = document.createElement("img");
