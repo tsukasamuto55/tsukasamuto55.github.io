@@ -5,7 +5,7 @@
       "address": "390 S. 5th W , Rexburg, ID 83440",
       "phone": "(208) 356-0500 ",
       "description": "Auto Repair",
-      "logo": "https://www.0500mechanics.com/Files/Images/logo.svg",
+      "logo": "../images/business-logos/0500-mechanics.PNG",
       "website": "https://www.0500mechanics.com/"
     },
 
@@ -14,7 +14,7 @@
       "address": "920 University Blvd, Rexburg, ID 83440",
       "phone": "(208) 356-6371 ",
       "description": "Rentals",
-      "logo": "https://a1rental.net/images/logo.png",
+      "logo": "../images/business-logos/A-1-rental-logo.png",
       "website": "https://a1rental.net/"
     },
 
@@ -31,7 +31,7 @@
       "address": "1539, 73 N Center St, Rexburg, ID 83440",
       "phone": "(208) 356-3461",
       "description": "Education",
-      "logo": "Company logo",
+      "logo": "../images/business-logos/madison-library.png",
       "website": "https://madisonlib.org/"
     },
     {
@@ -39,7 +39,7 @@
       "address": "76 E 1st N, Rexburg, ID 83440",
       "phone": "Company phone number",
       "description": "Technology",
-      "logo": "Company logo",
+      "logo": "../images/business-logos/Fishers.png",
       "website": "https://www.fisherstech.com/"
     },
     {
@@ -47,7 +47,7 @@
       "address": "165 N Airport Rd, Rexburg, ID 83440",
       "phone": "916.960.3093",
       "description": "Entertainment",
-      "logo": "/images/business-logos/gravity-factory.png",
+      "logo": "../images/business-logos/gravity-factory.png",
       "website": "https://www.gravityfactory.net/"
     },
     {
@@ -55,7 +55,7 @@
       "address": "450 E Main St, Rexburg, ID 83440",
       "phone": "Company phone number",
       "description": "Health & Pharmacy",
-      "logo": "Company logo",
+      "logo": "/images/business-logos/MadisonMemorialLogo.jpg",
       "website": "Company website"
     },
     {

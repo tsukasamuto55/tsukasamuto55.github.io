@@ -1,11 +1,23 @@
 @media (min-width: 40em) {
   header {
     grid-template-columns: 2fr 0.8fr 2fr;
+    justify-items: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1;
   }
 
   main {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  header,
+  .purpose-container,
+  .ads-container {
+    padding-bottom: 1.5rem;
   }
 
   .home-hero-container,
@@ -18,14 +30,22 @@
     grid-column: 1/-1;
   }
 
+  nav {
+    grid-column: 2/3;
+    grid-row: 1;
+    font-size: 1.2rem;
+  }
+
   .current-weather {
-    align-self: flex-start;
-    justify-self: end;
-    height: 88px;
+    grid-row: 1;
+    grid-column: 3/4;
+    justify-self: center;
+    margin: -1rem 0;
+    transform: scale(1);
   }
 
   .current-weather h1 {
-    margin: 0 0 0 1rem;
+    margin-left: 1rem;
   }
 
   .events-container {
