@@ -9,7 +9,7 @@
     z-index: 1;
   }
 
-  main {
+  home-main {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -129,5 +129,78 @@
   .social {
     justify-self: left;
     text-align: left;
+  }
+
+  /******** Styling Directory page *********/
+
+  .directory-container {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 4fr;
+    max-width: 1200px;
+    width: 100%;
+  }
+
+  .directory-heading {
+    grid-column: 1/-1;
+    grid-row: 1;
+    justify-items: center;
+    align-self: center;
+  }
+
+  #list-icon,
+  #grid-icon {
+    grid-column: 1/2;
+    grid-row: 1;
+  }
+
+  #grid-icon {
+    margin-right: 7rem;
+  }
+
+  .directory-card-container {
+    display: grid;
+    grid-column: 1/-1;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .directory-card {
+    margin: 2rem;
+    border: 1px solid #999;
+    border-radius: 20px;
+  }
+
+  .list-card-container {
+    grid-template-columns: 1fr;
+    justify-content: space-evenly;
+  }
+
+  .list-card {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2.5fr 1fr 1fr;
+    padding: 0.5rem;
+    margin-bottom: -0.5rem;
+    width: 100%;
+    border-radius: 0;
+    text-align: left;
+    border: none;
+    border-top: 2px solid #999;
+  }
+
+  .list-card .directory-name {
+    grid-column: 1/2;
+    grid-row: 1;
+  }
+
+  .list-card a {
+    grid-column: 2/3;
+  }
+
+  .list-card .directory-address {
+    grid-column: 3/4;
+  }
+
+  .list-card:last-of-type {
+    margin-bottom: 1.5rem;
   }
 }

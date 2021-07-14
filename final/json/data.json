@@ -5,8 +5,8 @@
       "address": "390 S. 5th W , Rexburg, ID 83440",
       "phone": "(208) 356-0500 ",
       "description": "Auto Repair",
-      "logo": "../images/business-logos/0500-mechanics.PNG",
-      "website": "https://www.0500mechanics.com/"
+      "logo": "/images/business-logos/0500-mechanics.PNG",
+      "website": "https://www.0500mechanics.com"
     },
 
     {
@@ -14,57 +14,57 @@
       "address": "920 University Blvd, Rexburg, ID 83440",
       "phone": "(208) 356-6371 ",
       "description": "Rentals",
-      "logo": "../images/business-logos/A-1-rental-logo.png",
-      "website": "https://a1rental.net/"
+      "logo": "/images/business-logos/A-1-rental-logo.png",
+      "website": "https://a1rental.net"
     },
 
     {
       "name": "ABRI Associates, LLC ",
       "address": "220 E 1st S, Rexburg, ID 83440",
       "phone": "(707) 363-4685",
-      "description": "BYU-I APPROVED HOUSING ",
-      "logo": "../images/business-logos/abri-logo.png",
-      "website": "https://liveabri.com/"
+      "description": "BYU-I Approved Housing ",
+      "logo": "/images/business-logos/abri-logo.png",
+      "website": "https://liveabri.com"
     },
     {
       "name": "Madison Library District",
       "address": "1539, 73 N Center St, Rexburg, ID 83440",
       "phone": "(208) 356-3461",
       "description": "Education",
-      "logo": "../images/business-logos/madison-library.png",
-      "website": "https://madisonlib.org/"
+      "logo": "/images/business-logos/madison-library.png",
+      "website": "https://madisonlib.org"
     },
     {
       "name": "Fisher's Technology",
       "address": "76 E 1st N, Rexburg, ID 83440",
-      "phone": "Company phone number",
+      "phone": "(208) 947-3606",
       "description": "Technology",
-      "logo": "../images/business-logos/Fishers.png",
-      "website": "https://www.fisherstech.com/"
+      "logo": "/images/business-logos/Fishers.png",
+      "website": "https://www.fisherstech.com"
     },
     {
       "name": "Gravity Factory",
       "address": "165 N Airport Rd, Rexburg, ID 83440",
       "phone": "916.960.3093",
       "description": "Entertainment",
-      "logo": "../images/business-logos/gravity-factory.png",
-      "website": "https://www.gravityfactory.net/"
+      "logo": "/images/business-logos/gravity-factory.png",
+      "website": "https://www.gravityfactory.net"
     },
     {
       "name": "Madison Memorial Hospital",
       "address": "450 E Main St, Rexburg, ID 83440",
-      "phone": "Company phone number",
+      "phone": "(208) 359-6900",
       "description": "Health & Pharmacy",
       "logo": "/images/business-logos/MadisonMemorialLogo.jpg",
-      "website": "Company website"
+      "website": "https://madisonmemorial.org"
     },
     {
       "name": "Rexburg Rapids-at Riverside Park",
       "address": "50 W 2nd N, Rexburg, ID 83440",
       "phone": "208.372.2490",
       "description": "Entertainment",
-      "logo": "../images/business-logos/rapids.png",
-      "website": "https://www.rexburgrapids.com/"
+      "logo": "/images/business-logos/rapids.png",
+      "website": "https://www.rexburgrapids.com"
     }
   ],
 
