@@ -144,12 +144,11 @@
   .directory-heading {
     grid-column: 1/-1;
     grid-row: 1;
-    justify-items: center;
-    align-self: center;
   }
 
   #list-icon,
   #grid-icon {
+    display: block;
     grid-column: 1/2;
     grid-row: 1;
   }
@@ -158,16 +157,28 @@
     margin-right: 7rem;
   }
 
+  #grid-icon:hover,
+  #list-icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+
   .directory-card-container {
     display: grid;
     grid-column: 1/-1;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
   }
 
   .directory-card {
-    margin: 2rem;
+    margin: 1rem;
     border: 1px solid #999;
     border-radius: 20px;
+    padding: 1rem;
+  }
+
+  .directory-icon {
+    margin-bottom: 1rem;
   }
 
   .list-card-container {
@@ -185,6 +196,14 @@
     text-align: left;
     border: none;
     border-top: 2px solid #999;
+  }
+
+  .list-card .directory-icon {
+    display: none;
+  }
+
+  .list-card .directory-url {
+    display: block;
   }
 
   .list-card .directory-name {

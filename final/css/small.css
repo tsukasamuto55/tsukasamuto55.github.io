@@ -436,4 +436,22 @@ footer p span#currentDate {
   margin: 2rem;
   border: 1px solid #999;
   border-radius: 20px;
+  gap: 1rem;
+}
+
+#list-icon,
+#grid-icon {
+  display: none;
+}
+
+.directory-heading {
+  text-align: center;
+}
+
+.directory-icon {
+  display: inline;
+}
+
+.directory-url {
+  display: none;
 }

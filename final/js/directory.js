@@ -15,7 +15,7 @@ fetch(directoryURL)
       const image = document.createElement("img");
       image.setAttribute("src", `${ele.logo}`);
       image.setAttribute("alt", `${ele.name}`);
-      image.setAttribute("class", `business-icon`);
+      image.setAttribute("class", `directory-icon`);
       image.setAttribute("width", `150`);
       image.setAttribute("height", `150`);
 
@@ -56,19 +56,19 @@ fetch(directoryURL)
     const listBtn = document.getElementById("list-icon");
     const directoryCard = document.querySelectorAll(".directory-card");
     const directoryCardContainer = document.querySelector(".directory-card-container");
-    const businessIcons = document.querySelectorAll(".business-icon");
+    const businessIcons = document.querySelectorAll(".directory-icon");
 
     for (let i = 0; i < businessIcons.length; i++) {
       gridBtn.addEventListener("click", () => {
         directoryCardContainer.classList.remove("list-card-container");
         directoryCard[i].classList.remove("list-card");
-        businessIcons[i].style.display = "inline";
+        // businessIcons[i].style.display = "inline";
       });
 
       listBtn.addEventListener("click", () => {
         directoryCardContainer.classList.add("list-card-container");
         directoryCard[i].classList.add("list-card");
-        businessIcons[i].style.display = "none";
+        // businessIcons[i].style.display = "none";
       });
     }
   });
