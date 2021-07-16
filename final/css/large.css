@@ -43,5 +43,6 @@
     height: 200px;
     grid-column: 2/3;
     font-size: 0.9rem;
+    width: 100%;
   }
 }
