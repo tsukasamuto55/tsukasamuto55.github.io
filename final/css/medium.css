@@ -226,13 +226,12 @@
   }
 
   /************* Style Contact page **************/
-
-  .contact-form-container {
-    justify-content: end;
-  }
-
   .directors-list-container {
     width: 80%;
     margin: 1rem auto;
+  }
+
+  .contact-form-container {
+    width: 70%;
   }
 }
