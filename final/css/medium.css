@@ -38,7 +38,11 @@
 
   .home-hero-content {
     font-size: 3em;
-    margin-bottom: -10rem;
+    margin-bottom: -12rem;
+  }
+
+  .call-to-action {
+    padding: 6rem;
   }
 
   .current-weather {
@@ -219,5 +223,16 @@
 
   .list-card:last-of-type {
     margin-bottom: 1.5rem;
+  }
+
+  /************* Style Contact page **************/
+
+  .contact-form-container {
+    justify-content: end;
+  }
+
+  .directors-list-container {
+    width: 80%;
+    margin: 1rem auto;
   }
 }

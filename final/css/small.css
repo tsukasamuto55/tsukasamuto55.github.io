@@ -485,11 +485,17 @@ footer p span#currentDate {
   background: linear-gradient(-45deg, #eb6d47, #743421);
 }
 
-.contact-form-container {
+.contact {
+  display: grid;
+  grid-template-columns: 1fr;
   max-width: 1400px;
   margin: 1rem auto;
+}
+
+.contact-form-container {
   color: #03064d;
   padding: 1rem;
+  margin: 5rem auto;
 }
 
 .user-info {
@@ -529,7 +535,6 @@ form input.submitBtn {
   background-color: #03064d;
   color: white;
   padding: 0.75rem 1.5rem;
-  margin: 1rem auto;
   max-width: 20rem;
   text-align: center;
 }
@@ -559,6 +564,42 @@ form label.top textarea {
   display: block;
   max-width: 40rem;
   width: 100%;
+}
+
+.directors-list-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 250px;
+  margin: 1rem;
+  font-size: 0.8rem;
+  grid-row: 1;
+  color: #03064d;
+}
+
+.contact-heading,
+.directors-list-container > h2 {
+  margin-bottom: 1rem;
+}
+
+.directors-list {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  border-top: 1px solid #aaa;
+  padding: 0.5rem;
+}
+
+.directors-name,
+.directors-phone,
+.directors-website {
+  padding: 0.5rem;
+}
+
+.directors-list:nth-of-type(odd) {
+  background-color: #ddd;
+}
+
+.directors-list:first-of-type {
+  background-color: hsla(214, 97%, 23%, 0.2);
 }
 
 /********** Styling Thanks page of Contact page below**********/

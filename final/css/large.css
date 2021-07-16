@@ -26,4 +26,22 @@
   .forecast-container:nth-of-type(4) {
     border-bottom: 1px solid hsla(0, 0%, 80%, 0.7);
   }
+
+  /********* Style Contact Page ********/
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-form-container {
+    color: #03064d;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+
+  .directors-list-container {
+    height: 200px;
+    grid-column: 2/3;
+    font-size: 0.9rem;
+  }
 }
