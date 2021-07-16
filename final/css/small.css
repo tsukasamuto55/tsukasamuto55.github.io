@@ -604,6 +604,11 @@ form label.top textarea {
   background-color: hsla(214, 97%, 23%, 0.2);
 }
 
+.chamber-info {
+  padding: 2rem 1rem;
+  font-size: 1.2rem;
+}
+
 /********** Styling Thanks page of Contact page below**********/
 main.thanks-main h2,
 main.thanks-main p {

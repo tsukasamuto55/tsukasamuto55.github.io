@@ -82,93 +82,107 @@
         </h2>
       </section>
 
-    <div class="contact">
-      <section class="contact-form-container">
-        <h2 class="contact-heading">Your Information</h2>
+      <div class="contact">
+        <section class="contact-form-container">
+          <h2 class="contact-heading">Your Information</h2>
 
-        <form action="thanks_contact.html">
-          <div class="user-info">
+          <form action="thanks_contact.html">
+            <div class="user-info">
+              <label class="top"
+                >First Name<span style="color: #9c2c13">*</span
+                ><input
+                  type="text"
+                  name="fullname"
+                  pattern="[a-zA-Z -.]{2,}"
+                  required
+                  autofocus
+              /></label>
+              <label class="top"
+                >Last Name<span style="color: #9c2c13">*</span
+                ><input type="text" name="fullname" pattern="[a-zA-Z -.]{3,}" required
+              /></label>
+              <label class="top"
+                >Email<span style="color: #9c2c13">*</span
+                ><input
+                  type="email"
+                  name="email"
+                  placeholder="example@gmail.com"
+                  required
+              /></label>
+              <label class="top"
+                >Phone<span style="color: #9c2c13">*</span
+                ><input
+                  type="tel"
+                  name="phone"
+                  pattern="(?:(\+\d{1,})[ -]?)?\(?(\d{3})\)?[ -]?(\d{3})[ -]?(\d{4})"
+                  placeholder="(012)345-6789"
+                  required
+              /></label>
+            </div>
+
             <label class="top"
-              >First Name<span style="color: #9c2c13">*</span
-              ><input
-                type="text"
-                name="fullname"
-                pattern="[a-zA-Z -.]{2,}"
-                required
-                autofocus
-            /></label>
-            <label class="top"
-              >Last Name<span style="color: #9c2c13">*</span
-              ><input
-                type="text"
-                name="fullname"
-                pattern="[a-zA-Z -.]{3,}"
-                required
-                autofocus
-            /></label>
-            <label class="top"
-              >Email<span style="color: #9c2c13">*</span
-              ><input type="email" name="email" placeholder="example@gmail.com" required
-            /></label>
-            <label class="top"
-              >Phone<span style="color: #9c2c13">*</span
-              ><input
-                type="tel"
-                name="phone"
-                pattern="(?:(\+\d{1,})[ -]?)?\(?(\d{3})\)?[ -]?(\d{3})[ -]?(\d{4})"
-                placeholder="(012)345-6789"
-                required
-            /></label>
+              >Please leave us a comment<textarea
+                name="comment"
+                rows="12"
+                cols="100"
+              ></textarea>
+            </label>
+
+            <input class="submitBtn" type="submit" value="Send Information  " />
+          </form>
+        </section>
+
+        <section class="directors-list-container">
+          <h2>2021 Board of Directors</h2>
+          <div class="directors-list">
+            <h3 class="directors-name">DIRECTORS</h3>
+            <h3 class="directors-phone">PHONE</h3>
+            <h3 class="directors-website">WEBSITE</h3>
           </div>
 
-          <label class="top"
-            >Please leave us a comment<textarea
-              name="comment"
-              rows="12"
-              cols="100"
-            ></textarea>
-          </label>
+          <div class="directors-list">
+            <h4 class="directors-name">EXECUTIVE BOARD</h4>
+          </div>
 
-          <input class="submitBtn" type="submit" value="Send Information  " />
-        </form>
-      </section>
+          <div class="directors-list">
+            <h5 class="directors-name">Chris Mann (CEO/President)</h5>
+            <p class="directors-phone">(208) 356-5700</p>
+            <p class="directors-website">
+              <a href="https://rexburgchamber.org">https://rexburgchamber.org/</a>
+            </p>
+          </div>
 
-      <section class="directors-list-container">
-        <h2>2021 Board of Directors</h2>
-        <div class="directors-list">
-          <h3 class="directors-name">DIRECTORS</h3>
-          <h3 class="directors-phone">PHONE</h3>
-          <h3 class="directors-website">WEBSITE</h3>
-        </div>
+          <div class="directors-list">
+            <h5 class="directors-name">
+              Brandon Tighe (Chairman of the Board)(Citizen's Community Bank)
+            </h5>
+            <p class="directors-phone">(208) 239-8742)</p>
+            <p class="directors-website">
+              <a href="https://www.ccb-idaho.com">https://www.ccb-idaho.com/</a>
+            </p>
+          </div>
 
-        <div class="directors-list">
-          <h4 class="directors-name">EXECUTIVE BOARD</h4>
-        </div>
+          <div class="directors-list">
+            <h5 class="directors-name">
+              Jane Call (Vice Chairman) (Idaho Central Credit Union)
+            </h5>
+            <p class="directors-phone">(208) 637-8494)</p>
+            <p class="directors-website">
+              <a href="https://www.iccu.com">https://www.iccu.com/</a>
+            </p>
+          </div>
 
-        <div class="directors-list">
-          <h5 class="directors-name">Chris Mann (CEO/President)</h2>
-          <p class="directors-phone">(208) 356-5700</p>
-          <p class="directors-website"><a href="https://rexburgchamber.org">https://rexburgchamber.org/</a></p>
-        </div>
-
-        <div class="directors-list">
-          <h5 class="directors-name">
-            Brandon Tighe (Chairman of the Board)(Citizen's Community Bank)
-          </h5>
-          <p class="directors-phone">(208) 239-8742)</p>
-          <p class="directors-website"><a href="https://www.ccb-idaho.com">https://www.ccb-idaho.com/</a></p>
-        </div>
-
-        <div class="directors-list">
-          <h5 class="directors-name">
-            Jane Call (Vice Chairman) (Idaho Central Credit Union)
-          </h5>
-          <p class="directors-phone">(208) 637-8494)</p>
-          <p class="directors-website"><a href="https://www.iccu.com">https://www.iccu.com/</a></p>
-        </div>
-      </section>
-
-    </div>
+          <div class="chamber-info">
+            <h3>General Contact Info</h3>
+            <p>
+              167 W. Main St. Ste. 2<br />
+              Rexburg, ID 83440<br />
+              Phone: 208-356-5700<br />
+              FAX: 208-356-5799
+            </p>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer>
@@ -191,7 +205,7 @@
               Rexburg, ID 83440
             </div>
           </div>
-          <div><i class="fas fa-phone"></i>(012) 345-6789</div>
+          <div><i class="fas fa-phone"></i>(208) 356-5700</div>
           <div><i class="fas fa-envelope"></i>reburgchamber@mail.com</div>
         </div>
         <div class="social">
