@@ -34,13 +34,6 @@
     <script src="js/toggleButton.js" defer></script>
   </head>
   <body>
-    <div id="overlay"></div>
-    <div id="alerts">
-      <h3 id="alerts-title"></h3>
-      <p id="alerts-content"></p>
-      <button id="close-alerts-btn">Close</button>
-    </div>
-
     <header>
       <a href="index.html">
         <img
@@ -82,7 +75,63 @@
       </aside>
     </header>
 
-    <main></main>
+    <main>
+      <section class="contact-hero-container">
+        <h2 class="contact-hero-content">
+          Want to talk to a real person?<br />Contact us Today
+        </h2>
+      </section>
+
+      <section class="contact-form-container">
+        <h2 class="contact_heading">Your Information</h2>
+
+        <form action="thanks_contact.html">
+          <div class="user-info">
+            <label class="top"
+              >First Name<span style="color: #9c2c13">*</span
+              ><input
+                type="text"
+                name="fullname"
+                pattern="[a-zA-Z -.]{5,}"
+                required
+                autofocus
+            /></label>
+            <label class="top"
+              >Last Name<span style="color: #9c2c13">*</span
+              ><input
+                type="text"
+                name="fullname"
+                pattern="[a-zA-Z -.]{5,}"
+                required
+                autofocus
+            /></label>
+            <label class="top"
+              >Email<span style="color: #9c2c13">*</span
+              ><input type="email" name="email" placeholder="example@gmail.com" required
+            /></label>
+            <label class="top"
+              >Phone<span style="color: #9c2c13">*</span
+              ><input
+                type="tel"
+                name="phone"
+                pattern="(?:(\+\d{1,})[ -]?)?\(?(\d{3})\)?[ -]?(\d{3})[ -]?(\d{4})"
+                placeholder="(012)345-6789"
+                required
+            /></label>
+          </div>
+
+          <label class="top"
+            >Please leave us a comment<textarea
+              name="comment"
+              rows="12"
+              cols="100"
+            ></textarea>
+          </label>
+
+          <input class="submitBtn" type="submit" value="Send Information  " />
+        </form>
+      </section>
+    </main>
 
     <footer>
       <section class="contact-container">
@@ -110,21 +159,21 @@
         <div class="social">
           <a href="https://www.facebook.com//"
             ><img
-              src="images/SNS logos/facebook.png"
+              src="images/SNS-logos/facebook.png"
               alt="facebook icon"
               width="32"
               height="32"
           /></a>
           <a href="https://www.pinterest.com/"
             ><img
-              src="images/SNS logos/pinterest.png"
+              src="images/SNS-logos/pinterest.png"
               alt="pinterest icon"
               width="32"
               height="32"
           /></a>
           <a href="https://www.youtube.com/"
             ><img
-              src="images/SNS logos/youtube.png"
+              src="images/SNS-logos/youtube.png"
               alt="youtube icon"
               width="32"
               height="32"

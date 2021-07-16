@@ -199,6 +199,8 @@ nav a:hover {
 
 .home-hero-container {
   background-image: url("../images/hero-images/home-hero.jpg");
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
 }
 
 .home-hero-content,
@@ -210,6 +212,11 @@ nav a:hover {
 
 .home-hero-content {
   font-size: 1.5em;
+  margin-bottom: -8rem;
+}
+
+.call-to-action {
+  padding: 5rem;
 }
 
 .home-hero-container::after,
@@ -234,8 +241,9 @@ nav a:hover {
 }
 
 .call-to-action a {
-  font-size: 1.5em;
   padding: 1em;
+  font-size: 0.8rem;
+  font-weight: 900;
   border-radius: 35px;
   background-color: #9fb4fa;
   text-decoration: none;
@@ -432,7 +440,7 @@ footer p span#currentDate {
 }
 
 .directory-hero-container::after {
-  background: linear-gradient(-45deg, #ceee17, #70810c);
+  background: linear-gradient(-45deg, #29ee17, #0b4406);
 }
 
 .directory-card-container {
@@ -465,6 +473,92 @@ footer p span#currentDate {
 
 .directory-url {
   display: none;
+}
+
+/************* Styling Contact Page ****************/
+.contact-hero-container {
+  background-image: url("../images/hero-images/contact-hero.jpg");
+  background-position: 45% 55%;
+}
+
+.contact-hero-container::after {
+  background: linear-gradient(-45deg, #eb6d47, #743421);
+}
+
+.contact-form-container {
+  max-width: 1400px;
+  margin: 1rem auto;
+  color: #03064d;
+  padding: 1rem;
+}
+
+.user-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  max-width: 40rem;
+}
+
+form label.top {
+  display: block;
+  color: hsl(214, 97%, 10%);
+  font-size: 1rem;
+}
+
+form label.top:last-of-type {
+  margin-bottom: 1rem;
+}
+
+form label.top input,
+form label.top textarea {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: none;
+  border-bottom: solid 3px #aaa;
+  padding: 0.5rem;
+  color: hsl(214, 97%, 10%);
+  width: 100%;
+  max-width: 20rem;
+  background-color: hsla(214, 97%, 23%, 0.2);
+  line-height: 1.2;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #03064d;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  margin: 1rem auto;
+  max-width: 20rem;
+  text-align: center;
+}
+
+form input.submitBtn:hover {
+  background: radial-gradient(hsl(214, 97%, 23%), hsl(214, 97%, 50%));
+}
+
+form label.top input:required {
+  background: hsla(11, 78%, 34%, 0.2);
+}
+form label.top input:required:valid {
+  background: hsla(214, 97%, 23%, 0.2);
+}
+form label.top textarea:active,
+form label.top textarea:focus,
+form label input:active,
+form label input:focus {
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  border-bottom: 3px solid #03064d;
+}
+
+form label.top textarea {
+  display: block;
+  max-width: 40rem;
+  width: 100%;
 }
 
 /********** Styling Thanks page of Contact page below**********/
