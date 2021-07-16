@@ -9,6 +9,7 @@
       content="Business Directory page for Chamber of Commerce site for Tsukasa Muto in WWD230 at BYU Idaho"
     />
     <title>Rexburg Area Chamber of Commerce | Directory</title>
+    <link rel="shortcut icon" href="images/logo.ico" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,7 +37,7 @@
   <body>
     <div id="overlay"></div>
     <div id="alerts">
-      <h3 id="alerts-title"></h3>
+      <div id="alerts-title"></div>
       <p id="alerts-content"></p>
       <button id="close-alerts-btn">Close</button>
     </div>
@@ -57,7 +58,7 @@
           <li class="nav-btn"><a href="">Home</a></li>
           <li class="nav-btn"><a href="city.html">Rexburg</a></li>
           <li class="nav-btn"><a href="join.html">Join</a></li>
-          <li class="nav-btn" class="active"><a href="directory.html">Directory</a></li>
+          <li class="nav-btn active"><a href="directory.html">Directory</a></li>
           <li class="nav-btn"><a href="contact.html">Contact</a></li>
         </ul>
 
@@ -86,11 +87,11 @@
       <section class="directory-hero-container">
         <h2 class="city-hero-content">Business Directory</h2>
       </section>
-      <section class="directory-container">
+      <div class="directory-container">
         <img id="grid-icon" src="images/icon-sets/grid.png" alt="grid-icon" width="32" />
         <img id="list-icon" src="images/icon-sets/list.png" alt="list-icon" width="32" />
         <div class="directory-card-container"></div>
-      </section>
+      </div>
     </main>
 
     <footer>
