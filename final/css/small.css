@@ -495,8 +495,9 @@ footer p span#currentDate {
 .contact-form-container {
   color: #03064d;
   padding: 1rem;
-  margin: 5rem auto;
+  margin-left: 0.8rem;
   width: 90%;
+  margin: 1rem auto;
 }
 
 .user-info {
@@ -570,11 +571,12 @@ form label.top textarea {
 .directors-list-container {
   display: grid;
   grid-template-columns: 1fr;
-  margin: 1rem;
+  /* margin: 1rem; */
   width: 90%;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   grid-row: 1;
   color: #03064d;
+  margin: 1rem;
 }
 
 .contact-heading,
@@ -607,6 +609,7 @@ form label.top textarea {
 .chamber-info {
   padding: 2rem 1rem;
   font-size: 1.2rem;
+  width: 90%;
 }
 
 /********** Styling Thanks page of Contact page below**********/

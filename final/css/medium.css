@@ -233,5 +233,6 @@
 
   .contact-form-container {
     width: 70%;
+    margin: 1rem auto;
   }
 }
