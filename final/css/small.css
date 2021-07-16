@@ -212,11 +212,11 @@ nav a:hover {
 
 .home-hero-content {
   font-size: 1.5em;
-  margin-bottom: -8rem;
+  margin-bottom: -5rem;
 }
 
 .call-to-action {
-  padding: 5rem;
+  padding: 3rem;
 }
 
 .home-hero-container::after,
