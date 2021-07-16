@@ -36,6 +36,10 @@
     font-size: 1.2rem;
   }
 
+  .home-hero-content {
+    font-size: 3em;
+  }
+
   .current-weather {
     grid-row: 1;
     grid-column: 3/4;
@@ -149,7 +153,7 @@
   #list-icon,
   #grid-icon {
     display: block;
-    grid-column: 1/2;
+    grid-column: 1/-1;
     grid-row: 1;
   }
 
@@ -168,17 +172,6 @@
     display: grid;
     grid-column: 1/-1;
     grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
-  }
-
-  .directory-card {
-    margin: 1rem;
-    border: 1px solid #999;
-    border-radius: 20px;
-    padding: 1rem;
-  }
-
-  .directory-icon {
-    margin-bottom: 1rem;
   }
 
   .list-card-container {

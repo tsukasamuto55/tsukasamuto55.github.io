@@ -50,7 +50,11 @@ body {
 #overlay {
   display: none;
   position: absolute;
-  inset: 0;
+  /* inset: 0; */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background-color: rgba(0, 0, 0, 0.75);
   z-index: 1;
 }
@@ -193,6 +197,7 @@ nav a:hover {
 }
 
 .home-hero-container {
+  background-color: #05098a;
   background-image: url("../images/hero-images/home-hero.jpg");
 }
 
@@ -204,7 +209,7 @@ nav a:hover {
 }
 
 .home-hero-content {
-  font-size: 3em;
+  font-size: 1.5em;
 }
 
 .home-hero-container::after,
@@ -214,7 +219,11 @@ nav a:hover {
 .contact-hero-container::after {
   content: "";
   position: absolute;
-  inset: 0;
+  /* inset: 0; */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   z-index: -1;
   opacity: 0.8;
   mix-blend-mode: multiply;
@@ -433,10 +442,11 @@ footer p span#currentDate {
 }
 
 .directory-card {
-  margin: 2rem;
+  margin: 1rem;
+  padding: 1rem;
   border: 1px solid #999;
   border-radius: 20px;
-  gap: 1rem;
+  line-height: 1.5;
 }
 
 #list-icon,
@@ -450,8 +460,25 @@ footer p span#currentDate {
 
 .directory-icon {
   display: inline;
+  margin-bottom: 1rem;
 }
 
 .directory-url {
   display: none;
+}
+
+/********** Styling Thanks page of Contact page below**********/
+main.thanks-main h2,
+main.thanks-main p {
+  font-family: "Merriweather Sans", sans-serif;
+  text-align: center;
+}
+
+main.thanks-main h2 {
+  margin: 5rem 0 2rem 0;
+  font-size: 1.4rem;
+}
+
+main.thanks-main p {
+  margin-bottom: 15rem;
 }
