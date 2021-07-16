@@ -194,10 +194,10 @@ nav a:hover {
   isolation: isolate;
   min-height: 35vh;
   position: relative;
+  background-color: #05098a;
 }
 
 .home-hero-container {
-  background-color: #05098a;
   background-image: url("../images/hero-images/home-hero.jpg");
 }
 
