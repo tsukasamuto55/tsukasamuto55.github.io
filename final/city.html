@@ -32,6 +32,7 @@
     <script src="js/currentDate.js" defer></script>
     <script src="js/currentWeather.js" defer></script>
     <script src="js/toggleButton.js" defer></script>
+    <script src="js/imageCarousel.js" defer></script>
   </head>
   <body>
     <header>
@@ -47,7 +48,7 @@
           <li class="nav-btn" id="closeBtn">
             <a href="#"><b>&#10799; </b>Close</a>
           </li>
-          <li class="nav-btn"><a href="">Home</a></li>
+          <li class="nav-btn"><a href="index.html">Home</a></li>
           <li class="nav-btn active"><a href="city.html">Rexburg</a></li>
           <li class="nav-btn"><a href="join.html">Join</a></li>
           <li class="nav-btn"><a href="directory.html">Directory</a></li>
@@ -79,6 +80,24 @@
       <section class="city-hero-container">
         <h2 class="city-hero-content">Rexburg</h2>
       </section>
+
+      <section class="city-content">
+      <div class="carousel">
+        <div class="image-card" id="imgs">
+          <img src="images/city-pics/rexburg1.jpg" width="600" height="400" alt="picture of Rexburg Temple"/>
+  
+          <img src="images/city-pics/rexburg2.jpg" width="600" height="400" alt="picture of BYU Idaho campus"/>
+     
+          <img src="images/city-pics/rexburg3.jpg" width="600" height="400" alt="picture of down town rexburg" />
+     
+          <img src="images/city-pics/rexburg4.jpg" width="600" height="400" alt="picture of teton mountain" />
+        </div>
+  
+        <button class="prev" ">&#10094;</button>
+        <button class="next" ">&#10095;</button>
+      </div>
+    </section>
+
     </main>
 
     <footer>

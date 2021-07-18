@@ -225,6 +225,49 @@
     margin-bottom: 1.5rem;
   }
 
+  /************ Style Join Page ****************/
+  .membership-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .membership-heading {
+    grid-column: 1/-1;
+    grid-row: 1;
+  }
+
+  .join-form-container h3 {
+    grid-column: 1/-1;
+    grid-row: 1;
+  }
+
+  .join-form-container {
+    grid-template-columns: 1fr 1fr;
+    /* max-width: 100%; */
+  }
+
+  .join-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/-1;
+    grid-row: 2;
+  }
+
+  form label.join-top input,
+  form label.join-top select {
+    max-width: 22rem;
+    width: 95%;
+  }
+
+  form label.join-top + .join-top {
+    margin-top: 0.1rem;
+  }
+
+  .submitBtn {
+    grid-column: 1/-1;
+    grid-row: 4;
+    margin: 0 auto;
+  }
+
   /************* Style Contact page **************/
   .directors-list-container {
     width: 80%;

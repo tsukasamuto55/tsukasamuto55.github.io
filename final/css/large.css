@@ -27,6 +27,30 @@
     border-bottom: 1px solid hsla(0, 0%, 80%, 0.7);
   }
 
+  /******** Style Join Page ************/
+  .membership-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .join-form-container {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .join-form {
+    grid-column: 1/2;
+    grid-row: 2;
+  }
+
+  .join-image {
+    display: block;
+    grid-column: 2/3;
+    grid-row: 2;
+  }
+
+  .submitBtn {
+    grid-column: 1/2;
+  }
+
   /********* Style Contact Page ********/
   .contact {
     display: grid;
