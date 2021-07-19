@@ -34,9 +34,10 @@
     <script src="js/toggleButton.js" defer></script>
     <script src="js/forecast.js" defer></script>
     <script src="js/events.js" defer></script>
-    <!-- <script src="js/directory.js" defer></script> -->
+    <script src="js/imageCarousel.js" defer></script>
     <!-- <script src="js/modal.js" defer></script> -->
   </head>
+ 
   <body>
     <div id="overlay"></div>
     <div id="alerts">
@@ -105,11 +106,31 @@
           relationships with others through social media such as facebook and Instagram.
           The members are encouraged to share their stories/ businesses on those sites.
         </p>
+
+        <section class="home-carousel-content">
+          <div class="carousel">
+            <div class="image-card" id="imgs">
+              <img src="images/city-pics/rexburg1.jpg" width="600" height="400" alt="picture of Rexburg Temple"/>
+      
+              <img src="images/city-pics/rexburg2.jpg" width="600" height="400" alt="picture of BYU Idaho campus"/>
+         
+              <img src="images/city-pics/rexburg3.jpg" width="600" height="400" alt="picture of down town rexburg" />
+         
+              <img src="images/city-pics/rexburg4.jpg" width="600" height="400" alt="picture of teton mountain" />
+            </div>
+      
+            <button class="prev" ">&#10094;</button>
+            <button class="next" ">&#10095;</button>
+          </div>
+        </section>
+
       </section>
 
       <section class="events">
         <h2 class="events-title">Upcoming Events near Rexburg</h2>
+        <div class="events-wrapper">
         <div class="events-container"></div>
+      </div>
       </section>
 
       <section class="forecast-container">
