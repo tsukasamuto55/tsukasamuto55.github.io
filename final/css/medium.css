@@ -155,6 +155,10 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  .promotion-container {
+    grid-template-columns: 2fr 1fr;
+  }
+
   /******** Styling Directory page *********/
 
   .directory-container {
