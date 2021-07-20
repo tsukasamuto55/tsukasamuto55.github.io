@@ -27,6 +27,11 @@
     border-bottom: 1px solid hsla(0, 0%, 80%, 0.7);
   }
 
+  /******** Style City Page ************/
+  .demographic-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   /******** Style Join Page ************/
   .membership-container {
     grid-template-columns: repeat(4, 1fr);

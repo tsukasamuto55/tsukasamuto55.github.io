@@ -144,6 +144,11 @@
     text-align: left;
   }
 
+  /******** Styling City Page ***************/
+  .demographic-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
   /******** Styling Directory page *********/
 
   .directory-container {
