@@ -188,6 +188,7 @@ nav a:hover {
 .home-hero-container,
 .city-hero-container,
 .join-hero-container,
+.thanks-container,
 .directory-hero-container,
 .contact-hero-container {
   background-size: cover;
@@ -206,10 +207,15 @@ nav a:hover {
 }
 
 .home-hero-content,
-.call-to-action {
+.call-to-action,
+.city-hero-content,
+.contact-hero-content,
+.directory-hero-content,
+.join-hero-content {
   justify-self: center;
   align-self: center;
   color: #fff;
+  text-align: center;
 }
 
 .home-hero-content {
@@ -224,6 +230,7 @@ nav a:hover {
 .home-hero-container::after,
 .city-hero-container::after,
 .join-hero-container::after,
+.thanks-container::after,
 .directory-hero-container::after,
 .contact-hero-container::after {
   content: "";
@@ -471,7 +478,8 @@ footer p span#currentDate {
 }
 
 .contact-info,
-.social {
+.social,
+.join-social {
   justify-self: center;
   text-align: center;
   align-self: center;
@@ -494,6 +502,15 @@ footer p span#currentDate {
 
 .city-hero-container::after {
   background: linear-gradient(-45deg, #55bcf7, #295d7a);
+}
+
+.city-hero-content {
+  align-self: end;
+  margin: 2rem 0 1rem 0;
+}
+
+.city-hero-container p {
+  text-align: center;
 }
 
 .city-history {
@@ -564,6 +581,17 @@ footer p span#currentDate {
 
 .join-hero-container::after {
   background: linear-gradient(-45deg, #55f7cf, #29816b);
+}
+
+.join-hero-content {
+  align-self: end;
+  margin-bottom: 1rem;
+}
+
+.join-hero-container p,
+.city-hero-container p {
+  text-align: center;
+  font-size: 1.4rem;
 }
 
 .membership-container {
@@ -671,6 +699,46 @@ form label.join-top input:required:valid {
 
 .join-image {
   display: none;
+}
+
+.thanks-container {
+  background-image: url("../images/hero-images/thank-you-join.jpg");
+  margin-bottom: 20rem;
+}
+
+.thanks-container::after {
+  background: linear-gradient(-45deg, #55f7cf, #083a2e);
+}
+
+.thanks-content {
+  display: grid;
+}
+
+.thanks-content .thanks-heading,
+.contact-hero-content,
+.city-hero-content,
+.join-hero-content,
+.directory-hero-content {
+  font-size: 3rem;
+}
+
+.thanks-content p:nth-of-type(1) {
+  margin-bottom: 8rem;
+  font-size: 1.6rem;
+}
+
+.thanks-content p:nth-of-type(2) {
+  margin-bottom: 1rem;
+}
+
+.join-social {
+  grid-row: 4/5;
+  margin-bottom: 5rem;
+}
+
+.join-social img {
+  border-radius: 10px;
+  margin: 0 1rem;
 }
 
 /************* Styling Directory Page ****************/
