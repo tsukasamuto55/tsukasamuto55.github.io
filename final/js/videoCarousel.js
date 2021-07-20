@@ -1,25 +1,23 @@
 const imgs = document.getElementById("imgs");
 const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
+const dot = document.querySelectorAll(".dot");
 const img = document.querySelectorAll(".image-card img");
 
 let idx = 0;
 
-function slideImage() {
-  if (idx > img.length - 1) {
-    idx = 0;
-  } else if (idx < 0) {
-    idx = img.length - 1;
-  }
-  imgs.style.display = block;
+function slideImage(idx) {
+  img[idx].style.zIndex = -idx * "15";
 }
 
-nextBtn.addEventListener("click", () => {
-  idx++;
-  slideImage();
+dot[0].addEventListener("click", () => {
+  slideImage(0);
 });
 
-prevBtn.addEventListener("click", () => {
-  idx--;
-  slideImage();
+dot[1].addEventListener("click", () => {
+  slideImage(1);
+});
+
+dot[2].addEventListener("click", () => {
+  slideImage(2);
 });
