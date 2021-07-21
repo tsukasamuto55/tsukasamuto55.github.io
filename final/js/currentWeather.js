@@ -19,6 +19,17 @@ fetch(URL)
       currentWeather.charAt(0).toUpperCase() + currentWeather.slice(1);
     document.querySelector(".current-condition").textContent = formattedWeather;
 
+    const alerts = data.alerts;
+    const alertsTitle = document.querySelector("#alerts-title");
+    const alertsContent = document.querySelector("#alerts-content");
+
+    if (alerts !== undefined) {
+      alerts.forEach((x) => {
+        alertsTitle.textContent = x.event;
+        alertsContent.textContent = x.description;
+      });
+    }
+
     const humidity = currentData.humidity;
     document.querySelector(".humidity").textContent = humidity;
   });

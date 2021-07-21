@@ -21,18 +21,19 @@ body {
 /*********** Styling a modal on top of the page***********/
 
 #alerts.open {
-  display: block;
+  display: none;
 }
 
 #overlay.open {
-  display: block;
+  display: none;
 }
 
 #alerts {
   display: none;
   position: fixed;
-  width: 305px;
-  top: 0;
+  max-width: 00px;
+  min-width: 500px;
+  top: 5%;
   left: 50%;
   transform: translate(-50%, 0);
   color: #fff;
@@ -46,7 +47,7 @@ body {
 #alerts-content,
 #alerts-title {
   padding-bottom: 0.5rem;
-  text-align: center;
+  text-align: justify;
   line-height: 1.6;
 }
 
@@ -70,7 +71,12 @@ body {
   padding: 10px 0;
   width: 100px;
   position: relative;
-  left: 32%;
+  border: #999;
+}
+
+#close-alerts-btn:hover {
+  background-color: rgba(66, 85, 248, 0.75);
+  color: #fff;
 }
 
 /*********** Styling Header***********/
@@ -205,6 +211,7 @@ nav a:hover {
 .join-hero-container,
 .thanks-container,
 .thanks-main,
+.attribution-main,
 .directory-hero-container,
 .contact-hero-container {
   background-size: cover;
@@ -252,6 +259,7 @@ nav a:hover {
 .join-hero-container::after,
 .thanks-container::after,
 .thanks-main::after,
+.attribution-main::after,
 .directory-hero-container::after,
 .contact-hero-container::after {
   content: "";
@@ -484,7 +492,7 @@ span#different-days {
 
 footer a:hover,
 footer p span#currentDate {
-  color: #fff;
+  color: #ffff00;
 }
 
 .contact-container {
@@ -1044,4 +1052,49 @@ main.thanks-main p {
 
 .thanks-main::after {
   background: linear-gradient(-45deg, #55f7cf, #083a2e);
+}
+
+/********** Styling Attribution page**********/
+.attribution-main {
+  background-image: url("../images/hero-images/thank-you-contact.jpg");
+  height: 20vh;
+}
+
+.attribution-main::after {
+  background: linear-gradient(-45deg, #55f7cf, #083a2e);
+}
+
+.attribution-main h2 {
+  font-size: 1.4rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.attribution h3 {
+  margin-bottom: 0.5rem;
+}
+
+.attribution {
+  max-width: 1200px;
+  margin: 0 auto 1rem auto;
+  padding: 2rem;
+  color: #05098a;
+  font-family: "Open Sans", sans-serif;
+}
+
+.attribution-img,
+.attribution-info,
+.attribution-logo {
+  border: 1px solid hsla(0, 0%, 67%, 1);
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.attribution li {
+  list-style: none;
+}
+
+.attribution li,
+.attribution a {
+  display: block;
 }

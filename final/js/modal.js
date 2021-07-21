@@ -17,7 +17,7 @@ closeBtn.addEventListener("click", closeAlerts);
 overlay.addEventListener("click", closeAlerts);
 
 document.addEventListener("keydown", (event) => {
-  if (event.code == "Escape") {
+  if (event.code == "Escape" || event.code == "Enter") {
     alerts.classList.remove("open");
     overlay.classList.remove("open");
   }
