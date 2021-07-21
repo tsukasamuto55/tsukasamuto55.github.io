@@ -86,6 +86,10 @@
     grid-column: 1/-1;
   }
 
+  .carousel {
+    margin-right: 1rem;
+  }
+
   .home-contact-info {
     align-self: center;
     text-align: left;
@@ -176,6 +180,28 @@
   .promotion-container {
     grid-template-columns: 2fr 1fr;
   }
+
+  .current-events {
+    grid-column: 2/3;
+  }
+
+  .month:nth-of-type(2) {
+    margin-top: -0.8rem;
+  }
+
+  .month:nth-of-type(4) {
+    margin-top: -0.2rem;
+  }
+
+  .month:nth-of-type(6) {
+    margin-top: -1rem;
+  }
+
+  .month:nth-of-type(8) {
+    margin-top: -1.8rem;
+  }
+
+  .date, 
 
   /******** Styling Directory page *********/
 
@@ -316,5 +342,13 @@
     margin: 1rem auto;
     padding: 1rem;
     color: #03064d;
+  }
+
+  main.thanks-main h2 {
+    font-size: 3rem;
+  }
+
+  main.thanks-main p {
+    font-size: 1.5rem;
   }
 }

@@ -32,6 +32,27 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .promotion-container {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  .current-events {
+    grid-column: 3/4;
+  }
+
+  .month:nth-of-type(2),
+  .month:nth-of-type(6) {
+    margin-top: -1.6rem;
+  }
+
+  .month:nth-of-type(4) {
+    margin-top: -0.8rem;
+  }
+
+  .month:nth-of-type(8) {
+    margin-top: -3.8rem;
+  }
+
   /******** Style Join Page ************/
   .membership-container {
     grid-template-columns: repeat(4, 1fr);
