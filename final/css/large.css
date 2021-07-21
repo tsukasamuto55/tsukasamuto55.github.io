@@ -16,6 +16,14 @@
     padding: 0 1em;
   }
 
+  .home-hero-content {
+    font-size: 3em;
+  }
+
+  .call-to-action a {
+    font-size: 1.5em;
+  }
+
   .forecast-container,
   .ads-container {
     display: grid;
