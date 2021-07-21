@@ -59,15 +59,8 @@
   /********* Style Contact Page ********/
   .contact {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
   }
-
-  .contact-form-container {
-    color: #03064d;
-    padding: 1rem;
-    margin: 0 auto;
-  }
-
   .directors-list-container {
     height: 200px;
     grid-column: 2/3;

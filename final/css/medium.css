@@ -44,11 +44,20 @@
 
   .home-hero-content {
     font-size: 3em;
-    margin-bottom: -12rem;
+    margin-bottom: -8rem;
+  }
+
+  .thanks-content .thanks-heading,
+  .contact-hero-content,
+  .city-hero-content,
+  .join-hero-content,
+  .directory-hero-content {
+    font-size: 3rem;
   }
 
   .call-to-action {
-    padding: 6rem;
+    padding: 1rem;
+    margin-bottom: 5rem;
   }
 
   .current-weather {
@@ -142,12 +151,6 @@
 
   .location-map {
     display: block;
-  }
-
-  .contact-info,
-  .social {
-    justify-self: left;
-    text-align: left;
   }
 
   /******** Styling City Page ***************/
@@ -286,11 +289,17 @@
   /************* Style Contact page **************/
   .directors-list-container {
     width: 80%;
-    margin: 1rem auto;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .directors-list {
+    grid-column: 1/-1;
   }
 
   .contact-form-container {
-    width: 70%;
+    width: 80%;
     margin: 1rem auto;
+    padding: 1rem;
+    color: #03064d;
   }
 }

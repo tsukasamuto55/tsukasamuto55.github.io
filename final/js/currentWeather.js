@@ -21,10 +21,4 @@ fetch(URL)
 
     const humidity = currentData.humidity;
     document.querySelector(".humidity").textContent = humidity;
-
-    // const weatherAlerts = document.getElementById("alerts-title");
-    // weatherAlerts.textContent = data.alerts[0].event;
-
-    // const alertsContent = document.getElementById("alerts-content");
-    // alertsContent.textContent = data.alerts[0].description;
   });
