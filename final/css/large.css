@@ -74,11 +74,19 @@
     grid-column: 1/2;
     grid-row: 2;
   }
+  .join-business-form {
+    grid-column: 1/2;
+  }
 
   .join-image {
     display: block;
     grid-column: 2/3;
-    grid-row: 2;
+    grid-row: 2/4;
+    align-self: center;
+  }
+
+  .join-business-form textarea {
+    width: 98%;
   }
 
   .submitBtn {

@@ -313,14 +313,30 @@
 
   .join-form-container {
     grid-template-columns: 1fr 1fr;
-    /* max-width: 100%; */
+  }
+
+  .join-form,
+  .join-business-form {
+    grid-template-columns: 1fr 1fr;
   }
 
   .join-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-column: 1/-1;
     grid-row: 2;
+  }
+
+  .join-business-form {
+    grid-column: 1/-1;
+    grid-row: 3;
+  }
+
+  .join-business-form label:last-child {
+    grid-column: 1/-1;
+    grid-row: 3;
+  }
+
+  .join-business-form textarea {
+    width: 95%;
   }
 
   form label.join-top input,
@@ -334,9 +350,7 @@
   }
 
   .submitBtn {
-    grid-column: 1/-1;
-    grid-row: 4;
-    margin: 0 auto;
+    justify-self: left;
   }
 
   /************* Style Contact page **************/

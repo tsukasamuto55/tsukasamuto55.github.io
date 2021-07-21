@@ -156,21 +156,22 @@
               pattern="(?:(\+\d{1,})[ -]?)?\(?(\d{3})\)?[ -]?(\d{3})[ -]?(\d{4})"
               placeholder="(012) 345-6789"
           /></label>
+        </div>
+        <div class="join-business-form">
           <label class="join-top"
             >Business Name<span style="color: #9c2c13">*</span
             ><input type="text" name="bname" required
           /></label>
+
           <label class="join-top"
             >Business Address<input type="text" name="baddress"
           /></label>
+
           <label class="join-top"
             >Business Website<input
               type="url"
               name="url"
               placeholder="https://example.com"
-          /></label>
-          <label class="join-top"
-            >Business Description<input type="text" name="bdescription"
           /></label>
 
           <label class="join-top"
@@ -182,6 +183,14 @@
               <option value="silver">Silver</option>
               <option value="gold">Gold</option>
             </select>
+          </label>
+
+          <label class="join-top"
+            >Business description<textarea
+              name="bdescription"
+              rows="8"
+              cols="80"
+            ></textarea>
           </label>
         </div>
 
