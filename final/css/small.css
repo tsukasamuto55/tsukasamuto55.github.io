@@ -89,6 +89,18 @@ header,
   width: 100%;
 }
 
+.purpose-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.home-contact-info {
+  text-align: center;
+  margin: 2rem 0 -1rem 0;
+  line-height: 1.5;
+  color: #05098a;
+}
+
 header {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
@@ -292,7 +304,7 @@ nav a:hover {
   grid-template-columns: 1fr;
   align-items: center;
   justify-content: center;
-  margin: 1rem auto 2rem auto;
+  margin: 1rem 1rem 2rem 1rem;
   max-width: 900px;
 }
 
@@ -303,6 +315,7 @@ nav a:hover {
   overflow: hidden;
   position: relative;
   background-color: hsl(214, 97%, 23%);
+  margin-right: 1rem;
 }
 
 .image-card {

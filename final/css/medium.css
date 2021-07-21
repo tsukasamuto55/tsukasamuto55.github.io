@@ -76,6 +76,21 @@
     font-size: 1.5em;
   }
 
+  .purpose-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .purpose-title,
+  .purpose-content {
+    grid-column: 1/-1;
+  }
+
+  .home-contact-info {
+    align-self: center;
+    text-align: left;
+  }
+
   .events-container {
     padding: 0 2rem;
   }
