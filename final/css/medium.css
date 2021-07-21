@@ -359,7 +359,8 @@
     grid-template-columns: 2fr 1fr;
   }
 
-  .directors-list {
+  .directors-list,
+  .directors-list-container h2 {
     grid-column: 1/-1;
   }
 
