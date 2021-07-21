@@ -801,8 +801,7 @@ form label.join-top input:required:valid {
 
 .thanks-container {
   background-image: url("../images/hero-images/thank-you-join.jpg");
-  height: 50vh;
-  margin-bottom: 20rem;
+  height: 100vh;
 }
 
 .thanks-container::after {
@@ -1046,8 +1045,7 @@ main.thanks-main p {
 
 .thanks-main {
   background-image: url("../images/hero-images/thank-you-contact.jpg");
-  height: 50vh;
-  margin-bottom: 20rem;
+  height: 100vh;
 }
 
 .thanks-main::after {
