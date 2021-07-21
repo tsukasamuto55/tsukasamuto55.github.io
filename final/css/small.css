@@ -620,7 +620,7 @@ footer p span#currentDate {
 .month,
 .date {
   grid-column: 1/2;
-  justify-self: center;
+  justify-self: flex-start;
   align-self: flex-start;
   color: #05098a;
   margin-right: 1rem;
