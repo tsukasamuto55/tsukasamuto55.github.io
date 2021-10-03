@@ -52,7 +52,6 @@
 
   .home-hero-content {
     font-size: 2em;
-    margin-bottom: -8rem;
   }
 
   .thanks-content .thanks-heading,
@@ -65,7 +64,7 @@
 
   .call-to-action {
     padding: 0.5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 
   .current-weather {
@@ -354,9 +353,17 @@
   }
 
   /************* Style Contact page **************/
+  .user-info {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .directors-list-container {
-    width: 80%;
+    display: grid;
     grid-template-columns: 2fr 1fr;
+    width: 80%;
+    font-size: 0.9rem;
+    color: #03064d;
+    margin: 1rem auto;
   }
 
   .directors-list,

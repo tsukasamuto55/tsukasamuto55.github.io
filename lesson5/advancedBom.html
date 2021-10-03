@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Book of Mormon - Top 25 activity for Tsukasa Muto in WWD230 at BYU Idaho"
+    />
+    <title>List of Book of Mormon Chapters</title>
+    <link rel="stylesheet" href="css/bom.css" />
+    <script src="js/advancedBom.js" defer></script>
+  </head>
+  <body>
+    <h1>📘 Book of Mormon - List of Favorite Chapters</h1>
+    <main>
+      <form class="input">
+        <label for="chapter">Enter Book and Chapter</label>
+        <input id="chapter" type="text" placeholder="Alma 5" />
+        <button type="submit">Add Chapter</button>
+      </form>
+
+      <template id="list-item-template">
+        <li class="list-item">
+          <label class="list-item-label">
+            <input type="checkbox" data-list-item-checkbox />
+            <span data-list-item-text></span>
+          </label>
+          <button data-button-delete>Delete</button>
+        </li>
+      </template>
+      <div class="list"><ul></ul></div>
+    </main>
+  </body>
+</html>

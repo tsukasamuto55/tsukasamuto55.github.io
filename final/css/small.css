@@ -229,10 +229,9 @@ nav a:hover {
   background-image: url("../images/hero-images/home-hero.jpg");
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
+  position: relative;
 }
 
-.home-hero-content,
-.call-to-action,
 .city-hero-content,
 .contact-hero-content,
 .directory-hero-content,
@@ -243,17 +242,19 @@ nav a:hover {
   text-align: center;
 }
 
-.home-hero-content,
-.city-hero-content,
-.contact-hero-content,
-.directory-hero-content,
-.join-hero-content {
+.home-hero-content {
   font-size: 1.5em;
-  margin-bottom: -5rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .call-to-action {
-  margin-bottom: 3rem;
+  position: absolute;
+  left: 50%;
+  bottom: 20%;
+  transform: translate(-50%, 20%);
 }
 
 .home-hero-container::after,
@@ -281,7 +282,8 @@ nav a:hover {
 
 .call-to-action a {
   padding: 0.6em;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+  width: max-content;
   font-weight: 900;
   border-radius: 35px;
   background-color: #9fb4fa;
@@ -923,7 +925,7 @@ form label.join-top input:required:valid {
 
 .user-info {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 1rem;
   max-width: 40rem;
 }
@@ -991,12 +993,7 @@ form label.top textarea {
 }
 
 .directors-list-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  width: 90%;
-  font-size: 0.9rem;
-  color: #03064d;
-  margin: 1rem auto;
+  display: none;
 }
 
 .contact-heading,
