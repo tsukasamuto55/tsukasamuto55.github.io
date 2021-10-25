@@ -340,7 +340,6 @@ nav a:hover {
 
 .image-card img {
   object-fit: cover;
-  width: 100%;
 }
 
 .carousel .prev,
